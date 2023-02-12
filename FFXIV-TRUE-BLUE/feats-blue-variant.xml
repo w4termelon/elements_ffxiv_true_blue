@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Blua Mage Variant Feats</name>
+		<update version="1.0.0">
+			<file name="feats-blue-variant.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats-blue-variant.xml" />
+		</update>
+	</info>
+    <!--Cosmic -->
+    <element name="Research Journal - Cosmic Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 1" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 2" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 3" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 4" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 5" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 6" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 7" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <element name="Research Journal - Cosmic Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 8" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Cosmic Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 9" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Cosmic Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 10" supports="Monster Mimicry Cosmic" />
+		</rules>
+    </element>
+    <!--Natural-->
+    <element name="Research Journal - Natural Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 1" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 2" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 3" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 4" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 5" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 6" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 7" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <element name="Research Journal - Natural Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 8" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Natural Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 9" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Natural Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 10" supports="Monster Mimicry Natural" />
+		</rules>
+    </element>
+    <!--Primordial-->
+    <element name="Research Journal - Primordial Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 1" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 2" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 3" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 4" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 5" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 6" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 7" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <element name="Research Journal - Primordial Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 8" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Primordial Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 9" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Primordial Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 10" supports="Monster Mimicry Primordial" />
+		</rules>
+    </element>
+    <!--Sacred-->
+    <element name="Research Journal - Sacred Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 1" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 2" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 3" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 4" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 5" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 6" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 7" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <element name="Research Journal - Sacred Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 8" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Sacred Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 9" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Sacred Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 10" supports="Monster Mimicry Sacred" />
+		</rules>
+    </element>
+    <!--Paranormal-->
+    <element name="Research Journal - Paranormal Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 1" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 2" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 3" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 4" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 5" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 6" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 7" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <element name="Research Journal - Paranormal Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 8" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Paranormal Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 9" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Paranormal Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 10" supports="Monster Mimicry Paranormal" />
+		</rules>
+    </element>
+    <!--Mythical-->
+    <element name="Research Journal - Mythical Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_1">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 1" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_2">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_1</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 2" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_3">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_2</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 3" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_4">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_3</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 4" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_5">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_4</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 5" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_6">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_5</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 6" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_7">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_6</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 7" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <element name="Research Journal - Mythical Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_8">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_7</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 8" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>    
+    <element name="Research Journal - Mythical Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_9">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_8</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 9" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>   
+    <element name="Research Journal - Mythical Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_10">
+        <requirements>ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_9</requirements>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 10" supports="Monster Mimicry Mythical" />
+		</rules>
+    </element>
+    <!--LORE-->
+    <element name="Aberrant Ground" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ABERRANT_GROUND">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element> 
+    <element name="AMORPHOUS_BODY" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_AMORPHOUS_BODY">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="Adhesive Appendage" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ADHESIVE_APPENDAGE">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="All-Around Vision" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ALL_AROUND_VISION">
+            <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Amorphous Body" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_AMORPHOUS_BODY">
+            <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Gelatinous Decoy" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GELATINOUS_DECOY">
+            <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="Instinctive Attack" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_INSTINCTIVE_ATTACK">
+            <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="King of the Puddings" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_KING_OF_THE_PUDDINGS">
+            <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Limited Telepathy" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_LIMITED_TELEPATHY">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>   
+    <element name="Maddening Glare" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MADDENING_GLARE">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="Mind-Breaking Touch" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MIND_BREAKING_TOUCH">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Ooze Climb" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_OOZE_CLIMB">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Pseudopod Appendage" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PSEUDOPOD_APPENDAGE">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Sensorium" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SENSORIUM">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Shape-Shift" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SHAPE_SHIFT">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Slime Breath" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SLIME_BREATH">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="Sticky Secretions" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_STICKY_SECRETIONS">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>    
+    <element name="Vomit Ooze" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_VOMIT_OOZE">
+        <supports>Monster Mimicry Cosmic</supports>
+    </element>
+    <element name="Alien Mind" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ALIEN_MIND">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>    
+    <element name="Blinding Spores" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BLINDING_SPORES">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>
+    <element name="Caustic Expulsion" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_CAUSTIC_EXPULSION">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:9]</requirements>
+    </element>
+    <element name="Dream Eater" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DREAM_EATER">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>
+    <element name="Eat Memories" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_EAT_MEMORIES">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:6]</requirements>
+    </element>
+    <element name="Enslave" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ENSLAVE">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:7]</requirements>
+    </element>
+    <element name="Exert Will" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_EXERT_WILL">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>
+    <element name="Implosion" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_IMPLOSION">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>
+    <element name="Psionic Rally" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PSIONIC_RALLY">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>    
+    <element name="Psychewall" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHEWALL">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:7]</requirements>
+    </element>
+    <element name="Psychic Backlash" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHIC_BACKLASH">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:6]</requirements>
+    </element>
+    <element name="Telepathic Hub" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_TELEPATHIC_HUB">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:5]</requirements>
+    </element>
+    <element name="Protective Thrall" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PROTECTIVE_THRALL">
+        <supports>Monster Mimicry Cosmic</supports>
+        <requirements>[level:11]</requirements>
+    </element>
+    <!-- Mythical Lore -->
+    <element name="Azure Minora" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_AZURE_MINORA">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Gaze of the Warden" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GAZE_OF_THE_WARDEN">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Heart Sight" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_HEART_SIGHT">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Illumination" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ILLUMINATION">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Inscrutable" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_INSCRUTABLE">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Iron Scent" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_IRON_SCENT">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Labyrinthine Recall" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_LABYRINTHINE_RECALL">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Merfolks Blessing" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MERFOLKS_BLESSING">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Oil Spray" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_OIL_SPRAY">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Oxidizing Touch" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_OXIDIZING_TOUCH">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Psychometry" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHOMETRY">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Repulsive Breath" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_REPULSIVE_BREATH">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Serpent Hair" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SERPENT_HAIR">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Temporal Flux" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_TEMPORAL_FLUX">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Vanity Mirror" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_VMIMICRY_ANITY_MIRROR">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <element name="Web of Hair" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WEB_OF_HAIR">
+        <supports>Monster Mimicry Mythical</supports>
+    </element>
+    <!--Natural Lore-->
+    <element name="Adaptive Camouflage" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ADAPTIVE_CAMOUFLAGE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Aggressive" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_AGGRESSIVE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Athletic Endurance" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ATHLETIC_ENDURANCE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Celerity" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_CELERITY">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Danger Sense" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DANGER_SENSE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Deadly Maul" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DEADLY_MAUL">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Extraordinary Leap" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_EXTRAORDINARY_LEAP">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Fledgling Wings" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_FLEDGLING_WINGS">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Hedge Wisdom" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_HEDGE_WISDOM">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Keen Senses" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_KEEN_SENSES">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Mighty Charge" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MIGHTY_CHARGE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Natural Projectiles" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_NATURAL_PROJECTILES">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Natures Gift" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_NATURES_GIFT">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Piercing Roar" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PIERCING_ROAR">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Savage" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SAVAGE">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Thermal Vision" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_THERMAL_VISION">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Tunneler" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_TUNNELER">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Web Crawler" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WEB_CRAWLER">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <element name="Wing Attack" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WING_ATTACK">
+        <supports>Monster Mimicry Natural</supports>
+    </element>
+    <!--Primordial Lore-->
+    <element name="Breath Weapon (Lesser)" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BREATH_WEAPON_LESSER">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Chromatic Lens" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_CHROMATIC_LENS">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Dracolore" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DRACOLORE">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Energy Absorption" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ENERGY_ABSORPTION">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Flaming Leap" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_FLAMING_LEAP">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Frigid Shield" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_FRIGID_SHIELD">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Heart of the Dragon" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_HEART_OF_THE_DRAGON">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Hide of the Ancients" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_HIDE_OF_THE_ANCIENTS">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Ice Skate" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ICE_SKATE">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Mud Breath" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MUD_BREATH">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Olach Morrah" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_OLACH_MORRAH">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Primal Erudition" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PRIMAL_ERUDITION">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Secrets of the Hordekeeper" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SECRETS_OF_THE_HORDEKEEPER">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Snowshoe" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SNOWSHOE">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <element name="Sonic Scream" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SONIC_SCREAM">
+        <supports>Monster Mimicry Primordial</supports>
+    </element>
+    <!--Sacred Lore-->
+    <element name="Boon of the Postmaster" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BOON_OF_THE_POSTMASTER">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Discern Honesty" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DISCERN_HONESTY">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>    
+    <element name="Divine Will" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_DIVINE_WILL">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <!--To-Do:Add grants-->
+    <element name="Enlightenment" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_ENLIGHTENMENT">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Get Down!" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GET_DOWN">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Glorious Light" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GLORIOUS_LIGHT">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Guiding Winds" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GUIDING_WINDS">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Pack Formation" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PACK_FORMATION">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Phalanx Formation" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PHALANX_FORMATION">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Return to Nyx" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_RETURN_TO_NYX">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Self Sacrifice" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SELF_SACRIFICE">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Spiritual Sustenance" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SPIRITUAL_SUSTENANCE">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Word of Truespeech: Forward" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_FORWARD">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Word of Truespeech: Hold" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_HOLD">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <element name="Word of Truespeech: Rally" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_RALLY">
+        <supports>Monster Mimicry Sacred</supports>
+    </element>
+    <!--Paranormal Lore-->
+    <element name="Bite of the Kindred" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BITE_OF_THE_KINDRED">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Bloodthirst" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BLOODTHIRST">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Bottom Treader" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_BOTTOM_TREADER">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Cloak of Shadows" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_CLOAK_OF_SHADOWS">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Ghost Sight" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_GHOST_SIGHT">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Hellish Weapons" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_HELLISH_WEAPONS">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Maddening Feast" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_MADDENING_FEAST">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Pale Blessing" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PALE_BLESSING">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element> 
+    <element name="Pest Shapes" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_PEST_SHAPES">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Raxivorts Tongue" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_RAXIVORTS_TONGUE">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Shadow Blend" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SHADOW_BLEND">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Shadow Dance" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SHADOW_DANCE">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Soul Weapon" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SOUL_WEAPON">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Swarm Shapes" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_SWARM_SHAPES">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+    <element name="Vermin Form" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIMICRY_VERMIN_FORM">
+        <supports>Monster Mimicry Paranormal</supports>
+    </element>
+</elements>
+    

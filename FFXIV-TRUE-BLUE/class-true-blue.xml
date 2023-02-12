@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Blue Mage - Variant</name>
+		<update version="1.0.0">
+			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
+		</update>
+	</info>
+    <!--Cosmic,Natural,Primordial,Sacred,Paranormal,Mythical -->
+    <element name="Blue Mage Variant" type="Class" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_TRUE_BLUE_VARIANT">
+        <description>
+            <p>Head buried in a Monster Encyclopedia, a small kobold quickly identifies the snarling beast attacking the nearby shelter as a Chimera, offering his allies valuable insight into its strengths, weaknesses before charging into battle with sword drawn.</p>
+            <p class="indent">Cornered and separated from her allies in a dark sewer a dwarf steels herself, calling upon the lore of a shadow demon to step into the darkness, emerging behind the patrol. Her grinning mouth distends delivering a fatal bite to an ooze, devouring it whole.</p>
+            <p class="indent">Her eyes light up with understanding as she unravels new secret lore.</p>
+            <p class="indent">An orc dives between the ankheg and his ally, mandibles clattering off his shield. He focuses for a moment on the multitude of monstrous essences within his mind and draws one of them out, his eyes shimmering with an unearthly glow as the monster rapidly turns to stone.</p>
+            <p class="indent">Monstrous as they may seem blue mages come in as many forms as the fascinating creatures they research.</p>
+            <p class="indent">By mastering the exotic power of blue magic they can adopt the magical abilities of monsters, turning their foes greatest strengths against them.</p>
+            <h4>Taming the Beast</h4>
+            <p>Blue mages approach their studies in a variety of ways, but each of them rely on the same principle - learning to alter their inner beast.</p>
+            <p>Every living being has a primal force within them that drives their base instincts - be it fight or flight, the need to sate hunger, or the gut feeling that informs your decisions - this is the beast.</p>
+            <p>By accessing the beasts within other creatures it is possible to teach your beast their tricks!</p>
+            <p>How they manipulate magic, how they alter their bodies, and shape their minds to perform the extraordinary feats that monsters are famed for.</p>
+            <p>Through the study of monsterology these bestial secrets are uncovered and recorded as Lore, which can be memorized, made part of your own beast, and expressed through your physical form.</p>
+            <p>Lore allows the blue mage to mimic just about anything a monster can do, no matter its size - the hard part is surviving long enough to learn it!</p>
+            <h4>Weird Science</h4>
+            <p>Unfortunately, blue magic is a new endeavor and as such often fraught with misunderstandings and skepticism from the arcane establishment.</p>
+            <p>It is also a double edged sword, trying to achieve what monsters can do without being labeled as a monster yourself.</p>
+            <p>These social roadblocks lead most blue mages to researching in the field, engaging with monsters up close and personal - not a task for the faint of heart but certainly a necessity.</p>
+            <p>Many will join adventuring parties simply because it gives them better odds of survival while taking notes.</p>
+            <p>The research subjects don't last very long, but better them than you!</p>
+            <p>It's only by adventuring and encountering monsters in person that the schools of monsterology can be built upon, boundaries pushed, and the study of blue magic legitimized in the eyes of academic naysayers.</p>
+            <h4>CREATING A BLUE MAGE</h4>
+            <p>Creating a blue mage character demands an unorthodox history.</p>
+            <p>How did your character discover this strange new kind of magic? How did you discover you had a talent for it?</p>
+            <p>Do you have a natural aptitude, or did you study hard and keep trying things until you found something that worked?</p>
+            <p>Did you have a run in with a monster, or a strange event that revealed the inner beast to you? What made you decide to do more than just study?</p>
+            <p>Did making contact with your inner beast change you? Does it hunger for power or perhaps encourage you to better yourself?</p>
+            <p>Do you seek a journey of self discovery, or do you want to contribute to the budding academic presence of monsterology? Perhaps you're looking for notoriety, vengeance against a monster that wronged you, or maybe you seek to become a monster yourself.</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a Blue Mage quickly by following these suggestions. First make Intelligence your highest ability scorescore. Second choose the Lore Master discipline. Third, choose the sage background. Lastly choose the Flumph: Limited Telepathy and Magmin: Flaming Leap lore for your research journal.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an blue mage, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per blue mage level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per blue mage level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, Medium armour</li>
+                <li><strong>Weapons:</strong> Simple Weapons, Longswords, Scimitars, Shortswords</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+                <li><strong>Skills:</strong> Choose two from Athletics, Animal Handling, Arcana, History, Intimidation, Nature, Perception, Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a scimitar, (b) a longsword, or (c) any simple weapon</li>
+                <li>(a) scale mail or (b) leather armor</li>
+                <li>(a) a component pouch or (b) an arcane focus</li>
+                <li>(a) an explorer's pack or (b) a scholar's pack</li>
+                <li>a research journal</li>
+                <li>a dagger</li>
+            </ul>
+            <h5 class="caption">MULTICLASSING</h5>
+            <p>A character that takes one or more levels in blue mage cannot take levels in any other class, and forfeits levels they already have in other classes.</p>
+            <h5 class="caption">THE BLUE MAGE</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Memoriztation Limit</td><td class="col-10">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>2</td><td>1</td><td class="left">Blue Mage Discipline, Lore, Research Journal</td></tr>
+                <tr><td> 2nd</td><td>2</td><td>2</td><td class="left">Libra</td></tr>
+                <tr><td> 3rd</td><td>2</td><td>3</td><td class="left">Research Specialization</td></tr>
+                <tr><td> 4th</td><td>2</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>3</td><td>5</td><td class="left">Extra Attack, Bestial Might</td></tr>
+                <tr><td> 6th</td><td>3</td><td>5</td><td class="left">Blue Mage Discipline Feature</td></tr>
+                <tr><td> 7th</td><td>3</td><td>6</td><td class="left">-</td></tr>
+                <tr><td> 8th</td><td>3</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>4</td><td>7</td><td class="left">Scan</td></tr>
+                <tr><td>10th</td><td>4</td><td>7</td><td class="left">Blue Mage Discipline Feature</td></tr>
+                <tr><td>11th</td><td>4</td><td>8</td><td class="left">Legendary Lore (Limit 1)</td></tr>
+                <tr><td>12th</td><td>4</td><td>8</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>5</td><td>9</td><td class="left">Legendary Lore (Limit 2)</td></tr>
+                <tr><td>14th</td><td>5</td><td>9</td><td class="left">Blue Mage Discipline Feature</td></tr>
+                <tr><td>15th</td><td>5</td><td>10</td><td class="left">Legendary Lore (Limit 3)</td></tr>
+                <tr><td>16th</td><td>5</td><td>10</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>6</td><td>11</td><td class="left">Legendary Lore (Limit 4)</td></tr>
+                <tr><td>18th</td><td>6</td><td>11</td><td class="left">-</td></tr>
+                <tr><td>19th</td><td>6</td><td>12</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>6</td><td>12</td><td class="left">Blue Mage Discipline Feature</td></tr>
+            </table>
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BLUE_MAGE_DISCIPLINE" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LORE" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LIBRA" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_RESEARCH_SPECIALIZATION" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_EXTRA_ATTACK" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BESTIAL_MIGHT" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_ABILITY_SCORE_IMPROVEMENT" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_SCAN" />
+            <div element="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LEGENDARY_LORE" />
+        </description>
+        <setters>
+            <set name="hd">d10</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"  />
+            <select type="Proficiency" name="Skill Proficiency" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BLUE_MAGE_DISCIPLINE" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LORE" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_COSMIC_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_NATURAL_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PRIMORDIAL_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_SACRED_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_PARANORMAL_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_1" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_2" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_3" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_4" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_5" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_6" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_7" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_8" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_9" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL_MYTHICAL_10" level="1" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LIBRA" level="2"  />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_RESEARCH_SPECIALIZATION" level="3" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_ABILITY_SCORE_IMPROVEMENT" level="4" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BESTIAL_MIGHT" level="5" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_SCAN" level="9" />
+            <grant type="Class Feature" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LEGENDARY_LORE" level="11" />
+        </rules>
+
+    </element>
+    <element name="Lore" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LORE">
+        <description>
+            <p>Also at 1st level, your study of the inner beast has reached a breakthrough revealing the art of Lore - studies and insights into other creatures that allow you to manifest the features and qualities of monsters.</p>
+            <h4>Memorizing and Using Lore</h4>
+            <p>You memorize a list of blue mage lore from those you have available in your research journal. While memorized a lore is treated as a class feature for you, and you can make use of it as described.</p>
+            <p>To memorize lore, choose any combination of blue mage lore up to the memorization limit for your level as shown on the blue mage table. Using lore doesn't remove it from your list.</p>
+            <p class="indent">You can change your list of memorized lore when you finish a long rest. Memorizing a new list of blue mage lore requires time spent studying your research journal and meditating to commune with your inner beast: at least 5 minutes per lore.</p>
+            <h4>Learning Lore</h4>
+            <p>When you successfully use your discipline's learning style on a creature you automatically learn that creature's <strong>species</strong> and <strong>type</strong>, creating a blank entry for that creature in your research journal (eg. Wolf is a species of type Beast; Pixie is a species of type Fey; and Zombie is a species of type Undead etc).</p>
+            <p class="indent">You can work for 1 hour as part of a long rest, selecting a blank entry from your research journal to develop a new lore for it. Check the Schools of Monsterology table below and select one bestial lore that you meet the prerequisites for from the corresponding school of the creature's type. Your choice is added to the species' entry in your journal.</p>
+            <p class="indent">You can only know one lore for each species at a time, unless otherwise specified.</p>
+            <p>You can replace the lore associated with an existing species in your journal by using your learning style on that species again and following the process described above, replacing the existing entry instead of learning a new lore during your hour's work.</p>
+            <p>Doing so removes the old lore from your memorized list if it is currently memorized.</p>
+            <h5 class="caption">Schools of Monsterology</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Creature Type</td><td class="col-10">Monsterology School</td></tr>
+                </thead>
+                <tr><td>Dragon</td><td>Primordial</td></tr>
+                <tr><td>Elemental</td><td>Primordial</td></tr>
+                <tr><td>Aberration</td><td>Cosmic</td></tr>
+                <tr><td>Beast</td><td>Natural</td></tr>
+                <tr><td>Ooze</td><td>Cosmic</td></tr>
+                <tr><td>Monstrosity</td><td>Mythical</td></tr>
+                <tr><td>Fiend</td><td>Supernatural</td></tr>
+                <tr><td>Plant</td><td>Natural</td></tr>
+                <tr><td>Celestial</td><td>Sacred</td></tr>
+                <tr><td>Fey</td><td>Mythical</td></tr>
+                <tr><td>Undead</td><td>Supernatural</td></tr>
+            </table>
+            <p>*Note that you cannot learn lore for humanoids, giants, or constructs at present, attempting to do so will fail.</p>
+            <h4>Bestial Dice</h4>
+            <p>You gain a bestial die which is a d6. Some lore and class features will call on you to roll a specified number of bestial dice, or deal 'bestial damage' which requires you to roll all bestial dice you have available.</p>
+            <p>These dice are not expent when used unless otherwise specified. Any expent die are restored at the end of your next short rest.</p>
+            <p class="indent">You gain additional bestial dice when you reach 5th level (2d6), 11th Level (3d6), and 17th Level (4d6).</p>
+            <h4>Lore Ability</h4>
+            <p>Intelligence is the ability score used for your blue mage lore, so you use your Intelligence whenever a lore refers to your lore ability.</p>
+            <p>In addition, you use your Intelligence modifier when setting the saving throw DC for a blue mage lore and when making an attack roll with one.</p>
+            <center>
+            <p><strong>Lore save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p><br />
+            <p><strong>Lore attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet display="false">
+			<description>You can prepare {{blue mage variant:spellcasting:prepare}} Learned Lore from the your Research Journal. You may need to roll additional bestial die.</description>
+		</sheet>
+        <spellcasting name="Blue Mage Variant" ability="Intelligence" allowReplace="true" prepare="true">
+			<list>Blue Mage Variant</list>
+		</spellcasting>
+        <rules>
+            <!--Number of Spell Slots-->
+            <stat name="blue mage variant:spellcasting:slots:count" value="1" level="1"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="2"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="3"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="4"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="5"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="7"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="9"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="11"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="13"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="15"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="17"/>
+			<stat name="blue mage variant:spellcasting:slots:count" value="1" level="19"/>
+
+            <!--Number of Memorizied Blue Lore-->
+            <stat name="blue mage variant:spellcasting:prepare" value="1" level="1"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="2"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="3"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="4"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="5"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="7"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="9"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="11"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="13"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="15"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="17"/>
+			<stat name="blue mage variant:spellcasting:prepare" value="1" level="19"/>
+
+            <!--  Level  = Tier
+                    1st  = Tier 1
+                    5th  = Tier 2
+                    6th  = Tier 3
+                    7th  = Tier 4
+                    9th  = Tier 5
+                    11th = Tier 6
+                    Legendary Lore:
+                    13th = Tier 7
+                    15th = Tier 8
+                    17th = Tier 9
+            -->
+            <!-- Adjust Tier of Slots based on Character Level -->
+            <!-- negative count to remove slots -->
+            <stat name="blue mage variant:spellcasting:slots:1" value="blue mage variant:spellcasting:slots:count" level="1" />
+			<stat name="blue mage variant:spellcasting:slots:1" value="-blue mage variant:spellcasting:slots:count" level="5" />
+            <stat name="blue mage variant:spellcasting:slots:2" value="blue mage variant:spellcasting:slots:count" level="5" />
+			<stat name="blue mage variant:spellcasting:slots:2" value="-blue mage variant:spellcasting:slots:count" level="6" />
+            <stat name="blue mage variant:spellcasting:slots:3" value="blue mage variant:spellcasting:slots:count" level="6" />
+			<stat name="blue mage variant:spellcasting:slots:3" value="-blue mage variant:spellcasting:slots:count" level="7" />
+            <stat name="blue mage variant:spellcasting:slots:4" value="blue mage variant:spellcasting:slots:count" level="7" />
+			<stat name="blue mage variant:spellcasting:slots:4" value="-blue mage variant:spellcasting:slots:count" level="9" />
+            <stat name="blue mage variant:spellcasting:slots:5" value="blue mage variant:spellcasting:slots:count" level="9" />
+            <stat name="blue mage variant:spellcasting:slots:5" value="-blue mage variant:spellcasting:slots:count" level="11" />
+            <stat name="blue mage variant:spellcasting:slots:6" value="blue mage variant:spellcasting:slots:count" level="11" />
+          
+            <!--Number of Memorizied Blue Lore, equal to spell slots-->
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Blue Mage Variant"/>
+			<select type="Spell" name="Learned Lore (Blue Mage Variant)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Blue Mage Variant"/>
+        </rules>
+    </element>
+    <element name="Research Journal" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_RESEARCH_JOURNAL">
+        <description> 
+            <p>Your research journal is the repository of blue mage lore you know. When you gain this feature at 1st level you add two species of your choice from the Case Studies table below, adding their related Lore to your research journal.</p>
+        </description>
+        <sheet>
+            <description>Repository of blue mage lore you know. Memorizied Lore will appear in Spell List.</description>
+        </sheet>
+        <rules>
+			<select type="Feat Feature" name="Monster Mimicry" supports="(Monster Mimicry Cosmic||Monster Mimicry Natural||Monster Mimicry Mythical||Monster Mimicry Sacred||Monster Mimicry Paranormal||Monster Mimicry Primordial)" number="2" />
+		</rules>
+    </element>
+    <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BLUE_MAGE_DISCIPLINE">
+        <description>
+            <p>At 1st level, you have started training in one of the blue mage disciplines of your choice: The Gourmand, Immortal Lion, or Lore Master each of which are detailed at the end of the class description. Your choice grants you features at 6th level, and again at 10th, 14th, and 20th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Blue Mage Discpline" supports="Blue Mage Variant Archetype" />
+        </rules>
+    </element>
+    <element name="Libra" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LIBRA">
+        <description>
+            <p>At 2nd level, your extensive documentation on different species can be used to learn about creatures. By spending at least 1 minute observing or interacting with another creature, the DM reveals two of the following characteristics about it of your choice:</p>
+            <ul>
+                <li>Highest Ability Score</li>
+                <li>Lowest Ability Score</li>
+                <li>Special Senses</li>
+                <li>Armor Class</li>
+                <li>Current Hit Points</li>
+                <li>A random condition or damage immunity (if any)</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description> By spending at least 1 minute observing or interacting with another creature, the DM reveals two of the following characteristics about it of your choice: Highest Ability Score, Lowest Ability Score, Special Senses, Armor Class, Current hit points, and a random condition or damage immunity (if any). Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Research Specialization" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_RESEARCH_SPECIALIZATION">
+        <description>
+            <p>Every blue mage has their favorite monsterology schools to study, ensuring you additional insights going forward.</p>
+            <p class="indent">Select two monsterology schools as your areas of specialty.</p>
+            <p>From 3rd level, every time you gain a level in this class your research reveals one new creature of a type related to one of the schools (your DM can advise you of an appropriate creature for your level). You can add a new blank entry for that species to your research journal.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Blue Mage 4)" supports="Improvement Option,Blue Mage,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Blue Mage 8)" supports="Improvement Option,Blue Mage,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Blue Mage 12)" supports="Improvement Option,Blue Mage,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Blue Mage 16)" supports="Improvement Option,Blue Mage,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Blue Mage 19)" supports="Improvement Option,Blue Mage,19" level="19" />
+		</rules>
+	</element>
+    <element name="Extra Attack" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level your experience with fighting monsters has improved your overall combat skill. You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" level="5" />
+		</rules>
+	</element>
+    <element name="Bestial Might" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_BESTIAL_MIGHT">
+        <description>
+            <p>Also at 5th level, attacks granted to you by Lore are imbued with your beast's growing power and now count as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet >
+            <description>All Lore abilities count as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage. </description>
+        </sheet>
+    </element>
+    <element name="Scan" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_SCAN">
+        <description>
+            <p>At 9th level, your expertise with studying creatures makes identifying traits almost second nature.</p>
+            <p class="indent">• Libra can now be used as an action</p>
+            <p class="indent">• You learn three characteristics instead of two</p>
+            <p>Additionally, you can now choose from the following characteristics to learn about the creature:</p>
+            <p class="indent">• Condition immunities</p>
+            <p class="indent">• Damage resistances</p>
+            <p class="indent">• Damage immunities</p>
+            <p class="indent">• Is Legendary? (Can use legendary resistance or legendary actions)</p>
+        </description>
+        <sheet action="Action">
+            <description>You can use Libra as an action. You will learn three characteristics. Additionally you can learn about: Condition immunities, Damage resistances, Damage immunities, Is Legendary?</description>
+        </sheet>
+    </element>
+    <element name="Legendary Lore" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_CLASS_FEATURE_TRUE_BLUE_VARIANT_LEGENDARY_LORE">
+        <description>
+            <p>At 11th level your education and training have prepared your inner beast to wield the power of legendary lore.</p>
+            <p>If you are able to find and successfully use your learning style on a creature that you have identified as a legendary creature, you may select a legendary lore from its related school in place of bestial lore.</p>
+            <p class="indent">You can only memorize one legendary lore at a time as part of your memorized lore list, but you can memorize an additional legendary lore at 13th, 15th, and 17th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Legendary Lore (Limit 1)" supports="Legendary Lore" level="11" />
+            <select type="Class Feature" name="Legendary Lore (Limit 2)" supports="Legendary Lore" level="13" />
+            <select type="Class Feature" name="Legendary Lore (Limit 3)" supports="Legendary Lore" level="15" />
+            <select type="Class Feature" name="Legendary Lore (Limit 4)" supports="Legendary Lore" level="17" />
+        </rules>
+    </element>
+
+    <!-- Subclasses -->
+    <element name="Immortal Lion" type="Archetype" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ARCHETYPE_IMMORTAL_LION">
+        <supports>Blue Mage Variant Archetype</supports>
+        <description>
+            <p>The immortal lions are a secretive group of Blue Mages from a long forgotten empire that mastered the dark art of binding essences together. By using forbidden alchemy, they can capture a portion of the inner beast and bind its essence to their own.</p>
+            <p>However keeping their beast in control of so many warring essences is a constant struggle that many immortals succumb to, becoming naught but monsters themselves.</p>
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SENTINEL_PROFICIENCIES" />
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_ENDURE_SCARS" />
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMPERIAL_CREED" />
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMMORTAL_ENDURANCE" />
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SOUL_SHUFFLE" />
+            <div element="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_WE_ARE_LEGION" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SENTINEL_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_ENDURE_SCARS" level="1" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMPERIAL_CREED" level="6" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMMORTAL_ENDURANCE" level="10" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SOUL_SHUFFLE" level="14" />
+            <grant type="Archetype Feature" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_WE_ARE_LEGION" level="20" />
+        </rules>
+    </element>
+    <element name="Sentinel Proficiencies" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SENTINEL_PROFICIENCIES">
+        <description>
+            <p>When you choose this discipline at 1st level, you gain proficiency with martial weapons, heavy armor, shields and alchemist's supplies.</p>
+        </description>
+        <sheet>
+            <decsription>You gain proficiency with martial weapons, heavy armor, shields and alchemist's supplies.</decsription>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Endure Scars" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_ENDURE_SCARS">
+        <description>
+            <p>Select a creature you can see in 30ft of you, your inner beast issues a primal challenge to theirs. Until the start of your next turn the target has disadvantage on attack rolls against any creature other than you.</p>
+            <p class="indent">If the creature attacks you the first attack will automatically hit, or if you are subjected to a saving throw you automatically fail.</p>
+            <p>If you take damage or suffer a condition as a result of this action, you can add a new blank entry to your research journal for the attacker's species, and you must finish a long rest before you can use this feature again.</p>
+        </description>
+        <sheet action="Action" usage="Long Rest">
+            <description>Select a creature you can see in 30ft of you. Until the start of your next turn the target has disadvantage on attack rolls against any creature other than you. If the creature attacks you the first attack will automatically hit, or if you are subjected to a saving throw you automatically fail. If you take damage or suffer a condition as a result of this action, add a new blank entry to your research journal for the attacker's species.</description>
+        </sheet>
+    </element>
+    <element name="Imperial Creed" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMPERIAL_CREED">
+        <description>
+            <p>Having descended from royal guards, the immortals are well versed in nobility.</p>
+            <p class="indent">This knowledge grants you advantage on Intelligence (History) checks related to identifying royalty, reading coats of arms, and recalling regional customs or noble etiquette.</p>
+        </description>
+		<sheet display="false">
+			<description>Advantage on Intelligence (History) checks related to identifying royalty, reading coats of arms, and recalling regional customs or noble etiquette.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+    </element>
+    <element name="Immortal Endurance" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_IMMORTAL_ENDURANCE">
+        <description>
+            <p>By 10th level, you can draw on the strength of your essences to help bolster you. When you endure scars, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</p>
+        </description>
+        <sheet>
+            <description>When you endure scars, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</description>
+        </sheet>
+    </element>
+    <element name="Soul Shuffle" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_SOUL_SHUFFLE">
+        <description>
+            <p>From 14th level, you are able to express greater control over the essences within. You can meditate for 10 minutes during a short rest to change the lore you have memorized. You can change a number of lore equal to your half your proficiency bonus rounded down.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="Long Rest">
+            <description>You can meditate for 10 minutes during a short rest to change a number of lore you have memorized equal to half of your proficiency bonus rounded down.</description>
+        </sheet>
+    </element>
+    <element name="We Are Legion" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_GMBINDER_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_WE_ARE_LEGION">
+        <description>
+            <p>At 20th level, you are able to tap into the many monstrous essences within you to alter your mind and body.</p>
+            <p class="indent">When you finish a long rest, as part of your daily memorization and meditation, you may subtract up to 4 points from amongst your ability scores and redistribute them.</p>
+            <p>You may raise an ability score above 20 this way, and the adjustment lasts until you finish your next long rest.</p>
+        </description>
+        <sheet usage="Long Rest">
+            <description>When you finish a long rest, subtract up to 4 points from amongst your ability scores and redistribute them. You may raise an ability score above 20 this way,</description>
+        </sheet>
+    </element>
+    
+</elements>
