@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>FFXIV True Blue</name>
-		<description>The Blue Mage - Draft 4: True Blue Update.</description>
+		<description>The Blue Mage - Draft 4 v2.0: True Blue Update.</description>
 		<author url="https://www.reddit.com/user/ViCaelestis/">u/ViCaelestis</author>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="FFXIV_True_Blue.index" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV_True_Blue.index" />
 		</update>
 	</info>

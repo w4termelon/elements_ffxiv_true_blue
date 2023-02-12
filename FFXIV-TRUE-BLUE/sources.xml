@@ -2,20 +2,20 @@
 <elements>
 	<info>
 		<name>Sources</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/sources.xml" />
 		</update>
 	</info>
 	<element name="The Blue Mage: True Blue Update" type="Source" source="Core" id="ID_SOURCE_FFXIV_BLU">
 		<description>
-			<p>u/ViCaelestis: The Blue Mage - Draft 4: True Blue Update</p>
+			<p>u/ViCaelestis: The Blue Mage - Draft 4 v2.0: True Blue Update</p>
 		</description>
 		<setters>
 			<set name="abbreviation">DNDFF14TRUEBLUE</set>
 			<set name="image">https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/FFXIV.png</set>
-			<set name="url">https://drive.google.com/file/d/1FSzJpiYcQaa0vk7l17P4VDCOy_L0wiiK/view</set>
-			<set name="author" abbreviation="USI" url="https://www.reddit.com/user/ViCaelestis/">u/SilentSoren</set>
-			<set name="release">20181119</set>
+			<set name="url">https://drive.google.com/file/d/1yL2Hzp7LdA7n_R2TANIV6xgDxcBIko47/view</set>
+			<set name="author" abbreviation="VIC" url="https://www.reddit.com/user/ViCaelestis/">u/ViCaelestis</set>
+			<set name="release">20230212</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

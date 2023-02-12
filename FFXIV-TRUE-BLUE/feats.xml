@@ -2,10 +2,12 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
+            <!--To-Do: rename to Class Feature-->
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
+    <!--To-Do: Change Feat to Class Feature-->
     <!--Cosmic -->
     <element name="Research Journal - Cosmic Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_1">
         <supports>Research Journal</supports>
@@ -97,6 +99,7 @@
 			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
+    <!--To-Do: rename to ancestral-->
     <!--Natural-->
     <element name="Research Journal - Natural Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_1">
         <supports>Research Journal</supports>
@@ -370,6 +373,7 @@
 			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
+    <!--To-Do: rename to Supernatural-->
     <!--Paranormal-->
     <element name="Research Journal - Paranormal Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_1">
         <supports>Research Journal</supports>
@@ -551,6 +555,8 @@
 			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
+    <!--To-Do: Change Feat Feature to Class Feature-->
+    <!--To-Do: Add <sheet display="false" /> to all Lore feat features-->
     <!--LORE-->
     <element name="Aberrant Ground" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ABERRANT_GROUND">
         <supports>Monster Mimicry Cosmic</supports>
@@ -707,6 +713,7 @@
     <element name="Web of Hair" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_OF_HAIR">
         <supports>Monster Mimicry Mythical</supports>
     </element>
+    <!--To-Do: rename to Ancestral-->
     <!--Natural Lore-->
     <element name="Adaptive Camouflage" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADAPTIVE_CAMOUFLAGE">
         <supports>Monster Mimicry Natural</supports>
@@ -858,6 +865,7 @@
     <element name="Word of Truespeech: Rally" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RALLY">
         <supports>Monster Mimicry Sacred</supports>
     </element>
+    <!--To-Do: Rename to Supernatural-->
     <!--Paranormal Lore-->
     <element name="Bite of the Kindred" type="Feat Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BITE_OF_THE_KINDRED">
         <supports>Monster Mimicry Paranormal</supports>

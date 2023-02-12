@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -18,6 +18,9 @@
         15th = Tier 8
         17th = Tier 9
     -->
+    <!--To-Do: Rename to Supernatural-->
+    <!--To-Do: Rename to Ancestral-->
+    <!--To-Do: Update Spell List-->
     <element name="Cosmic Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_COSMIC_LORE" />
     <element name="Natural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
     <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PRIMORDIAL_LORE" />

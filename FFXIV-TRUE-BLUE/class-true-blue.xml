@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
-    <!--Cosmic,Natural,Primordial,Sacred,Paranormal,Mythical -->
+    <!--Ancestral,Cosmic,Primordial,Sacred,Supernatural,Mythical -->
     <element name="True Blue Mage" type="Class" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_TRUE_BLUE_MAGE">
         <description>
             <p>Head buried in a Monster Encyclopedia, a small kobold quickly identifies the snarling beast attacking the nearby shelter as a Chimera, offering his allies valuable insight into its strengths, weaknesses before charging into battle with sword drawn.</p>
@@ -61,7 +61,6 @@
             <ul>
                 <li>(a) a scimitar, (b) a longsword, or (c) any simple weapon</li>
                 <li>(a) scale mail or (b) leather armor</li>
-                <li>(a) a component pouch or (b) an arcane focus</li>
                 <li>(a) an explorer's pack or (b) a scholar's pack</li>
                 <li>a research journal</li>
                 <li>a dagger</li>
@@ -140,45 +139,41 @@
             <p>To memorize lore, choose any combination of blue mage lore up to the memorization limit for your level as shown on the blue mage table. Using lore doesn't remove it from your list.</p>
             <p class="indent">You can change your list of memorized lore when you finish a long rest. Memorizing a new list of blue mage lore requires time spent studying your research journal and meditating to commune with your inner beast: at least 5 minutes per lore.</p>
             <h4>Learning Lore</h4>
-            <p>When you successfully use your discipline's learning style on a creature you automatically learn that creature's <strong>species</strong> and <strong>type</strong>, creating a blank entry for that creature in your research journal (eg. Wolf is a species of type Beast; Pixie is a species of type Fey; and Zombie is a species of type Undead etc).</p>
-            <p class="indent">You can work for 1 hour as part of a long rest, selecting a blank entry from your research journal to develop a new lore for it. Check the Schools of Monsterology table below and select one bestial lore that you meet the prerequisites for from the corresponding school of the creature's type. Your choice is added to the species' entry in your journal.</p>
-            <p class="indent">You can only know one lore for each species at a time, unless otherwise specified.</p>
-            <p>You can replace the lore associated with an existing species in your journal by using your learning style on that species again and following the process described above, replacing the existing entry instead of learning a new lore during your hour's work.</p>
-            <p>Doing so removes the old lore from your memorized list if it is currently memorized.</p>
+            <p>You can work for 1 hour as part of a long rest, focusing on an essence you possess to extract knowledge from it.</p>
+            <p class="indent">Select a bestial lore that you meet the prerequisites for from an appropriate school. Your choice is added to the species' entry in your journal and the essence is lost.</p>
+            <p class="indent">You can always learn lore from the Ancestral school, however some creature types grant you access to more obscure schools of lore. Check the Schools of Monsterology table below to see if the creature's type grants you access to a specialized school.</p>
+            <p>You can only know one lore for each species at a time unless otherwise specified, however you can choose to replace a lore if you acquire essence from a member of its species again. Doing so removes the old lore from your memorized list if it is currently memorized.</p>
             <h5 class="caption">Schools of Monsterology</h5>
             <table class="class-features">
                 <thead>
-                    <tr><td class="col-5">Creature Type</td><td class="col-10">Monsterology School</td></tr>
+                    <tr><td class="col-5">Creature Type</td><td class="col-10" colspan="2">Monsterology School</td></tr>
                 </thead>
-                <tr><td>Dragon</td><td>Primordial</td></tr>
-                <tr><td>Elemental</td><td>Primordial</td></tr>
-                <tr><td>Aberration</td><td>Cosmic</td></tr>
-                <tr><td>Beast</td><td>Natural</td></tr>
-                <tr><td>Ooze</td><td>Cosmic</td></tr>
-                <tr><td>Monstrosity</td><td>Mythical</td></tr>
-                <tr><td>Fiend</td><td>Supernatural</td></tr>
-                <tr><td>Plant</td><td>Natural</td></tr>
-                <tr><td>Celestial</td><td>Sacred</td></tr>
-                <tr><td>Fey</td><td>Mythical</td></tr>
-                <tr><td>Undead</td><td>Supernatural</td></tr>
+                <tr><td>Aberration</td><td>Ancestral</td><td>Cosmic</td></tr>
+                <tr><td>Beast</td><td>Ancestral</td><td>-</td></tr>
+                <tr><td>Celestial</td><td>Ancestral</td><td>Sacred</td></tr>
+                <tr><td>Construct</td><td>Ancestral</td><td>Mythical</td></tr>
+                <tr><td>Dragon</td><td>Ancestral</td><td>Primordial</td></tr>
+                <tr><td>Elemental</td><td>Ancestral</td><td>Primordial</td></tr>
+                <tr><td>Fey</td><td>Ancestral</td><td>Mythical</td></tr>
+                <tr><td>Fiend</td><td>Ancestral</td><td>Supernatural</td></tr>
+                <tr><td>Giant</td><td>Ancestral</td><td>Primordial</td></tr>
+                <tr><td>Monstrosity</td><td>Ancestral</td><td>Mythical</td></tr>
+                <tr><td>Ooze</td><td>Ancestral</td><td>Cosmic</td></tr>
+                <tr><td>Plant</td><td>Ancestral</td><td>-</td></tr>
+                <tr><td>Undead</td><td>Ancestral</td><td>Supernatural</td></tr>
             </table>
-            <p>*Note that you cannot learn lore for humanoids, giants, or constructs at present, attempting to do so will fail.</p>
-            <h4>Bestial Dice</h4>
-            <p>You gain a bestial die which is a d6. Some lore and class features will call on you to roll a specified number of bestial dice, or deal 'bestial damage' which requires you to roll all bestial dice you have available.</p>
-            <p>These dice are not expent when used unless otherwise specified. Any expent die are restored at the end of your next short rest.</p>
-            <p class="indent">You gain additional bestial dice when you reach 5th level (2d6), 11th Level (3d6), and 17th Level (4d6).</p>
+            <p>*Note that you cannot learn lore from humanoids</p>     
             <h4>Lore Ability</h4>
-            <p>Intelligence is the ability score used for your blue mage lore, so you use your Intelligence whenever a lore refers to your lore ability.</p>
-            <p>In addition, you use your Intelligence modifier when setting the saving throw DC for a blue mage lore and when making an attack roll with one.</p>
+            <p>Intelligence is the ability score used for your blue mage lore, so you use your Intelligence whenever a lore refers to your lore ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a blue mage lore and when making an attack roll with one.</p>
             <center>
             <p><strong>Lore save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p><br />
             <p><strong>Lore attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
             </center>
         </description>
-        <sheet display="false">
-			<description>You can prepare {{true blue mage:spellcasting:prepare}} Learned Lore from the your Research Journal. You may need to roll additional bestial die.</description>
+        <sheet>
+			<description>You can prepare {{true blue mage:spellcasting:prepare}} Learned Lore from the your Research Journal.</description>
 		</sheet>
-        <spellcasting name="True Blue Mage" ability="Intelligence" allowReplace="true" prepare="true">
+        <spellcasting name="True Blue Mage" ability="Intelligence" allowReplace="true">
 			<list>True Blue Mage</list>
 		</spellcasting>
         <rules>
@@ -195,21 +190,6 @@
 			<stat name="true blue mage:spellcasting:slots:count" value="1" level="15"/>
 			<stat name="true blue mage:spellcasting:slots:count" value="1" level="17"/>
 			<stat name="true blue mage:spellcasting:slots:count" value="1" level="19"/>
-
-            <!--Number of Memorizied Blue Lore-->
-            <stat name="true blue mage:spellcasting:prepare" value="1" level="1"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="2"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="3"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="4"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="5"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="7"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="9"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="11"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="13"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="15"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="17"/>
-			<stat name="true blue mage:spellcasting:prepare" value="1" level="19"/>
-
             <!--  Level  = Tier
                     1st  = Tier 1
                     5th  = Tier 2
@@ -235,8 +215,8 @@
             <stat name="true blue mage:spellcasting:slots:5" value="true blue mage:spellcasting:slots:count" level="9" />
             <stat name="true blue mage:spellcasting:slots:5" value="-true blue mage:spellcasting:slots:count" level="11" />
             <stat name="true blue mage:spellcasting:slots:6" value="true blue mage:spellcasting:slots:count" level="11" />
-          
-            <!--Number of Memorizied Blue Lore, equal to spell slots-->
+
+            <!--Number of memorizable Blue Lore, equal to spell slots-->
 			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" spellcasting="True Blue Mage"/>
 			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="True Blue Mage"/>
 			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="True Blue Mage"/>
@@ -251,6 +231,42 @@
 			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="True Blue Mage"/>
         </rules>
     </element>
+    <!--To-Do: Check if you can make additional die more visible-->
+    <element name="Bestial Die" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BESTIAL_DIE">
+        <description> 
+            <p>You gain a bestial die which is a d6. Some lore and class features will call on you to roll your bestial die, or deal 'bestial damage' in which case you roll this die. This die is not expended when used.</p>
+            <p class="indent">Your bestial die increases in size when you reach 5th level (d8), 11th Level (d10), and 17th Level (d12).</p>
+        </description>
+        <sheet>
+            <description>You gain a bestial die (d6). It increases in size: 5th level (d8), 11th Level (d10), and 17th Level (d12)</description>
+        </sheet>
+        <rules>
+		</rules>
+    </element>
+    <!--To-Do: Add Creature Type Selection up to proficiency bonus-->
+    <element name="Essences" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_ESSENCES">
+        <description> 
+            <p>When you successfully use your discipline's learning style on a creature you acquire some of its inner beast's essence. Each creautre's essence is unique, and you can hold a number of essences within yourself equal to your proficiency bonus for a number of days equal to your intelligence modifier.</p>
+            <p class="indent">As long as you carry an essence within yourself you are aware of the species and type of the creature it came from (eg. Wolf is a species of type Beast; Pixie is a species of type Fey; and Zombie is a species of type Undead etc).</p>
+            <p class="indent">If you collect a new essence while at your limit, you can replace one of the essences within you with the newly acquired essence.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+
+		</rules>
+    </element>
+    <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE">
+        <description>
+            <p>At 1st level, you have started training in one of the blue mage disciplines of your choice: The Gourmand, Immortal Lion, or Lore Master each of which are detailed at the end of the class description. Your choice grants you features at 6th level, and again at 10th, 14th, and 20th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Blue Mage Discpline" supports="True Blue Mage Archetype" />
+        </rules>
+    </element>
+    <!--To-Do: Update supports -->
     <element name="Research Journal" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL">
         <description> 
             <p>Your research journal is the repository of blue mage lore you know. When you gain this feature at 1st level you add two species of your choice from the Case Studies table below, adding their related Lore to your research journal.</p>
@@ -262,15 +278,6 @@
 			<select type="Feat Feature" name="Monster Mimicry" supports="(Monster Mimicry Cosmic||Monster Mimicry Natural||Monster Mimicry Mythical||Monster Mimicry Sacred||Monster Mimicry Paranormal||Monster Mimicry Primordial)" number="2" />
 			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
-    </element>
-    <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE">
-        <description>
-            <p>At 1st level, you have started training in one of the blue mage disciplines of your choice: The Gourmand, Immortal Lion, or Lore Master each of which are detailed at the end of the class description. Your choice grants you features at 6th level, and again at 10th, 14th, and 20th level.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Archetype" name="Blue Mage Discpline" supports="True Blue Mage Archetype" />
-        </rules>
     </element>
     <element name="Libra" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LIBRA">
         <description>
@@ -285,10 +292,11 @@
             </ul>
             <p class="indent">Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</p>
         </description>
-        <sheet>
+        <sheet action="1 minute" usage="Long Rest">
             <description> By spending at least 1 minute observing or interacting with another creature, the DM reveals two of the following characteristics about it of your choice: Highest Ability Score, Lowest Ability Score, Special Senses, Armor Class, Current hit points, and a random condition or damage immunity (if any). Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</description>
         </sheet>
     </element>
+    <!--To-Do: Add monster school selection-->
     <element name="Research Specialization" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_SPECIALIZATION">
         <description>
             <p>Every blue mage has their favorite monsterology schools to study, ensuring you additional insights going forward.</p>
@@ -338,13 +346,15 @@
             <p>Additionally, you can now choose from the following characteristics to learn about the creature:</p>
             <p class="indent">• Condition immunities</p>
             <p class="indent">• Damage resistances</p>
+            <p class="indent">• Damage vulnerabilities</p>
             <p class="indent">• Damage immunities</p>
             <p class="indent">• Is Legendary? (Can use legendary resistance or legendary actions)</p>
         </description>
-        <sheet action="Action">
-            <description>You can use Libra as an action. You will learn three characteristics. Additionally you can learn about: Condition immunities, Damage resistances, Damage immunities, Is Legendary?</description>
+        <sheet>
+            <description>You can use Libra as an action. You will learn three characteristics. Additionally you can learn about: Condition immunities, Damage resistances, immunities or vulnerabilities, Is Legendary</description>
         </sheet>
     </element>
+    <!--To-Do: Update supports -->
     <element name="Legendary Lore" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LEGENDARY_LORE">
         <description>
             <p>At 11th level your education and training have prepared your inner beast to wield the power of legendary lore.</p>
@@ -360,6 +370,7 @@
         </rules>
     </element>
 
+    <!--To-Do: Add other subclasses-->
     <!-- Subclasses -->
     <element name="Immortal Lion" type="Archetype" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ARCHETYPE_IMMORTAL_LION">
         <supports>True Blue Mage Archetype</supports>
@@ -383,6 +394,7 @@
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_WE_ARE_LEGION" level="20" />
         </rules>
     </element>
+    <!--To-Do: grant alchemist's supplies proficiency-->
     <element name="Sentinel Proficiencies" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SENTINEL_PROFICIENCIES">
         <description>
             <p>When you choose this discipline at 1st level, you gain proficiency with martial weapons, heavy armor, shields and alchemist's supplies.</p>
@@ -397,31 +409,33 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
         </rules>
     </element>
-    <element name="Endure Scars" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ENDURE_SCARS">
+    <element name="Fearless Intercept" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT">
         <description>
-            <p>Select a creature you can see in 30ft of you, your inner beast issues a primal challenge to theirs. Until the start of your next turn the target has disadvantage on attack rolls against any creature other than you.</p>
-            <p class="indent">If the creature attacks you the first attack will automatically hit, or if you are subjected to a saving throw you automatically fail.</p>
-            <p>If you take damage or suffer a condition as a result of this action, you can add a new blank entry to your research journal for the attacker's species, and you must finish a long rest before you can use this feature again.</p>
+            <p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your Constitution modifier (to a minimum of 0 damage). You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</p>
         </description>
-        <sheet action="Action" usage="Long Rest">
-            <description>Select a creature you can see in 30ft of you. Until the start of your next turn the target has disadvantage on attack rolls against any creature other than you. If the creature attacks you the first attack will automatically hit, or if you are subjected to a saving throw you automatically fail. If you take damage or suffer a condition as a result of this action, add a new blank entry to your research journal for the attacker's species.</description>
+        <sheet action="Reaction">
+            <description>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you reduce the damage the target takes by 1d10 + your Constitution modifier (to a minimum of 0 damage). You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</description>
         </sheet>
     </element>
-    <element name="Imperial Creed" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMPERIAL_CREED">
+    <element name="Siphon Essence" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE">
         <description>
-            <p>Having descended from royal guards, the immortals are well versed in nobility.</p>
-            <p class="indent">This knowledge grants you advantage on Intelligence (History) checks related to identifying royalty, reading coats of arms, and recalling regional customs or noble etiquette.</p>
+            <p>When you use fearless intercept, you can make use of the momentary opening to siphon essence from the attacking creature. You can siphon essence a number of times equal to your Constitution modifier and regain all expended uses when you finish a long rest.</p>
         </description>
-		<sheet display="false">
-			<description>Advantage on Intelligence (History) checks related to identifying royalty, reading coats of arms, and recalling regional customs or noble etiquette.</description>
-		</sheet>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-		</rules>
+        <sheet action="CON mod" useage="Long Rest">
+            <description>When you use fearless intercept, you can make use of the momentary opening to siphon essence from the attacking creature.</description>
+        </sheet>
     </element>
-    <element name="Immortal Endurance" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_ENDURANCE">
+    <element name="Urhgan Defense" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_URHGAN_DEFENSE">
         <description>
-            <p>By 10th level, you can draw on the strength of your essences to help bolster you. When you endure scars, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</p>
+            <p>You are trained in Aht Urhganian military techniques. Once per turn, when you take the Attack action on your turn, you can forgo one of your attacks to focus on defensive positioning and parrying blows. You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</p>
+        </description>
+		<sheet action="Action">
+			<description> You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</description>
+		</sheet>
+    </element>
+    <element name="Immortal Strength" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH">
+        <description>
+            <p>By 10th level, you can draw on the strength of your essencesto block your foes attacks. When you use Fearless Intercept, you now reduce the damage by 2d10 + your Constitution modifier instead.</p>
         </description>
         <sheet>
             <description>When you endure scars, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</description>
@@ -432,7 +446,7 @@
             <p>From 14th level, you are able to express greater control over the essences within. You can meditate for 10 minutes during a short rest to change the lore you have memorized. You can change a number of lore equal to your half your proficiency bonus rounded down.</p>
             <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
         </description>
-        <sheet usage="Long Rest">
+        <sheet action="10 minutes" usage="Long Rest">
             <description>You can meditate for 10 minutes during a short rest to change a number of lore you have memorized equal to half of your proficiency bonus rounded down.</description>
         </sheet>
     </element>
