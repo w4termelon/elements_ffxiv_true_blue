@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
     <!--Cosmic,Natural,Primordial,Sacred,Paranormal,Mythical -->
-    <element name="Blue Mage Mage" type="Class" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_TRUE_BLUE_MAGE">
+    <element name="True Blue Mage" type="Class" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_TRUE_BLUE_MAGE">
         <description>
             <p>Head buried in a Monster Encyclopedia, a small kobold quickly identifies the snarling beast attacking the nearby shelter as a Chimera, offering his allies valuable insight into its strengths, weaknesses before charging into battle with sword drawn.</p>
             <p class="indent">Cornered and separated from her allies in a dark sewer a dwarf steels herself, calling upon the lore of a shadow demon to step into the darkness, emerging behind the patrol. Her grinning mouth distends delivering a fatal bite to an ooze, devouring it whole.</p>
