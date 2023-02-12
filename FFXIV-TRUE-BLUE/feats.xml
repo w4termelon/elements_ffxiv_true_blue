@@ -2,374 +2,553 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
     <!--Cosmic -->
     <element name="Research Journal - Cosmic Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 1" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 2" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_3">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 3" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 4" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 5" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 6" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 7" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Cosmic Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 8" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Cosmic Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 9" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Cosmic Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Cosmic Lore 10" supports="Monster Mimicry Cosmic" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--Natural-->
     <element name="Research Journal - Natural Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 1" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 2" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_3">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 3" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 4" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 5" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 6" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 7" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Natural Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 8" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Natural Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 9" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Natural Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Natural Lore 10" supports="Monster Mimicry Natural" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--Primordial-->
     <element name="Research Journal - Primordial Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 1" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 2" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_3">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 3" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 4" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 5" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 6" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 7" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Primordial Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 8" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Primordial Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 9" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Primordial Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Primordial Lore 10" supports="Monster Mimicry Primordial" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--Sacred-->
     <element name="Research Journal - Sacred Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 1" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 2" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_3">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 3" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 4" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 5" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 6" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 7" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Sacred Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 8" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Sacred Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 9" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Sacred Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Sacred Lore 10" supports="Monster Mimicry Sacred" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--Paranormal-->
     <element name="Research Journal - Paranormal Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 1" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 2" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_3">
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 3" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 4" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 5" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 6" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 7" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Paranormal Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 8" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Paranormal Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 9" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Paranormal Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Paranormal Lore 10" supports="Monster Mimicry Paranormal" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--Mythical-->
     <element name="Research Journal - Mythical Lore 1" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_1">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL,[type:spell]</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 1" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 2" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_2">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_1</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 2" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 3" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_3">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_2</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 3" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 4" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_4">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_3</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 4" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 5" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_5">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_4</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 5" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 6" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_6">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_5</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 6" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 7" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_7">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_6</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 7" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Research Journal - Mythical Lore 8" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_8">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_7</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 8" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>    
     <element name="Research Journal - Mythical Lore 9" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_9">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_8</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 9" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>   
     <element name="Research Journal - Mythical Lore 10" type="Feat" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_10">
+        <supports>Research Journal</supports>
         <requirements>ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_9</requirements>
+        <sheet display="false" />
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry - Mythical Lore 10" supports="Monster Mimicry Mythical" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <!--LORE-->

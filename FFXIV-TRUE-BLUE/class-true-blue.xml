@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -122,66 +122,6 @@
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LORE" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_COSMIC_10" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_NATURAL_10" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PRIMORDIAL_10" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_SACRED_10" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_PARANORMAL_10" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_1" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_2" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_3" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_4" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_5" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_6" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_7" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_8" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_9" level="1" />
-            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_MYTHICAL_10" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LIBRA" level="2"  />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_SPECIALIZATION" level="3" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_ABILITY_SCORE_IMPROVEMENT" level="4" />
@@ -320,6 +260,7 @@
         </sheet>
         <rules>
 			<select type="Feat Feature" name="Monster Mimicry" supports="(Monster Mimicry Cosmic||Monster Mimicry Natural||Monster Mimicry Mythical||Monster Mimicry Sacred||Monster Mimicry Paranormal||Monster Mimicry Primordial)" number="2" />
+			<select type="Feat" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE">
