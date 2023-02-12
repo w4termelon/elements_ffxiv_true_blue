@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
-		<name>Blua Mage Variant Lore</name>
-		<update version="1.0.0">
-			<file name="spells-blue-variant.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells-blue-variant.xml" />
+		<name>True Blue Mage Lore</name>
+		<update version="1.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
     <!--  Level  = Tier
@@ -18,16 +18,16 @@
         15th = Tier 8
         17th = Tier 9
     -->
-    <element name="Cosmic Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_COSMIC_LORE" />
-    <element name="Natural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_NATURAL_LORE" />
-    <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_PRIMORDIAL_LORE" />
-    <element name="Sacred Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_SACRED_LORE" />
-    <element name="Paranormal Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_PARANORMAL_LORE" />
-    <element name="Mythical Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MS_MYTHICAL_LORE" />
+    <element name="Cosmic Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_COSMIC_LORE" />
+    <element name="Natural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
+    <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PRIMORDIAL_LORE" />
+    <element name="Sacred Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_SACRED_LORE" />
+    <element name="Paranormal Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PARANORMAL_LORE" />
+    <element name="Mythical Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_MYTHICAL_LORE" />
     <!-- Cosmic Lore -->
-    <element name="Aberrant Ground" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ABERRANT_GROUND">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ABERRANT_GROUND</requirements>
+    <element name="Aberrant Ground" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ABERRANT_GROUND">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ABERRANT_GROUND</requirements>
         <description>
                 <p>You can use your bonus action to make the ground around you in a 5ft radius dough-like difficult terrain for up to 1 minute.</p>
                 <p>The effect is centered on you and travels with you, ending early if you are unconscious or choose to dismiss it (no action required).</p>
@@ -48,9 +48,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Adhesive Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ADHESIVE_APPENDAGE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_PSEUDOPOD_APPENDAGE, ID_FFXIV_TRUE_BLUE_MIMICRY_ADHESIVE_APPENDAGE</requirements>
+    <element name="Adhesive Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ADHESIVE_APPENDAGE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE, ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADHESIVE_APPENDAGE</requirements>
         <description>
                 <p>As an action your pseudopod can secrete a sticky coating and be thrown at a target within 30 feet of you, using a ranged lore attack.</p>
                 <p>If the target is a creature, a hit deals your pseudopod's usual damage and it becomes grappled.</p>
@@ -71,9 +71,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="All-Around Vision" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ALL_AROUND_VISION">
-            <supports>Blue Mage Variant</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ALL_AROUND_VISION</requirements>
+    <element name="All-Around Vision" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ALL_AROUND_VISION">
+            <supports>True Blue Mage</supports>
+            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ALL_AROUND_VISION</requirements>
             <description>
                     <p>Be it by additional eyes, eye-stalks, or a preternatural sense, you are able to see in all directions at once.</p>
                     <p>You double your proficiency bonus when making Wisdom(Perception) checks, and you cannot be surprised while your are notincapacitated.</p>
@@ -93,9 +93,9 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>    
-    <element name="Amorphous Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_AMORPHOUS_BODY">
-            <supports>Blue Mage Variant</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_ABERRANT_GROUND, ID_FFXIV_TRUE_BLUE_MIMICRY_AMORPHOUS_BODY</requirements>
+    <element name="Amorphous Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AMORPHOUS_BODY">
+            <supports>True Blue Mage</supports>
+            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_ABERRANT_GROUND, ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AMORPHOUS_BODY</requirements>
             <description>
                     <p>You can move through a space as narrow as 1 inch wide without squeezing.</p>
             </description>
@@ -114,9 +114,9 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>    
-    <element name="Gelatinous Decoy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GELATINOUS_DECOY">
-            <supports>Blue Mage Variant</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MIMICRY_GELATINOUS_DECOY</requirements>
+    <element name="Gelatinous Decoy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GELATINOUS_DECOY">
+            <supports>True Blue Mage</supports>
+            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GELATINOUS_DECOY</requirements>
             <description>
                     <p>You can spend 10 minutes magically producing a mannequin composed of hardened slime that retains its form for up to 1 hour.</p>
                     <p>The doll can take the appearance of a medium sized humanoid creature you can see, one you are familiar with, or you can produce a generic appearance.</p>
@@ -141,9 +141,9 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>
-    <element name="Instinctive Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_INSTINCTIVE_ATTACK">
-            <supports>Blue Mage Variant</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MIMICRY_INSTINCTIVE_ATTACK</requirements>
+    <element name="Instinctive Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_INSTINCTIVE_ATTACK">
+            <supports>True Blue Mage</supports>
+            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSTINCTIVE_ATTACK</requirements>
             <description>
                     <p>When you use your action to make an attack, you can use a bonus action to make an attack with your pseudopod.</p>
             </description>
@@ -162,9 +162,9 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>    
-    <element name="King of the Puddings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_KING_OF_THE_PUDDINGS">
-            <supports>Blue Mage Variant</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_KING_OF_THE_PUDDINGS</requirements>
+    <element name="King of the Puddings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_KING_OF_THE_PUDDINGS">
+            <supports>True Blue Mage</supports>
+            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_KING_OF_THE_PUDDINGS</requirements>
             <description>
                     <p>Your inner beast radiates a calming aura that puts oozes at ease - a tactic they employ so as not to cannibalize one another.</p>
                     <p>Ooze type monsters are indifferent to you, provided you aren't otherwise hostile and don't disturb them. If provoked to an aggressive state they will still treat you with hostility as normal.</p>
@@ -184,9 +184,9 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>    
-    <element name="Limited Telepathy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_LIMITED_TELEPATHY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_LIMITED_TELEPATHY</requirements>
+    <element name="Limited Telepathy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIMITED_TELEPATHY</requirements>
         <description>
                 <p>As a bonus action, choose one creature you can see within 30ft of you.</p>
                 <p>A telepathic bond between you is formed, allowing you to speak telepathically with each other provided you both speak a language the other knows.</p>
@@ -198,7 +198,7 @@
             <set name="level">1</set>
             <set name="school">Cosmic Lore</set>
             <set name="time">1 bonus action</set>
-            <set name="duration">{{level:blue mage variant}}</set>
+            <set name="duration">{{level:True Blue Mage}}</set>
             <set name="range">30 feat to cast and {{}}</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
@@ -209,8 +209,8 @@
         </setters>
     </element>   
     <element name="Maddening Glare" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MADDENING_GLARE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_MADDENING_GLARE</requirements>
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MADDENING_GLARE</requirements>
         <description>
                 <p>You can use your action to instill momentary insanity in a creature by channeling the beast within.</p>
                 <p>Select a creature you can see in 30 feet to make a Wisdom saving throw. On a failed save, the creature becomes incapacitated until the end of its next turn.</p>
@@ -231,9 +231,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Mind-Breaking Touch" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIND_BREAKING_TOUCH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_MIND_BREAKING_TOUCH</requirements>
+    <element name="Mind-Breaking Touch" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIND_BREAKING_TOUCH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MIND_BREAKING_TOUCH</requirements>
         <description>
                 <p>As an action you make a melee lore attack against a creature adjacent to you. On a hit, the creature takes bestial psychic damage, as a momentary exposure to your inner beast leaves them shaken. Until the end of their next turn, they have disadvantage on Wisdom saving throws.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short, or long rest.</p>
@@ -253,9 +253,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Ooze Climb" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_OOZE_CLIMB">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_OOZE_CLIMB</requirements>
+    <element name="Ooze Climb" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OOZE_CLIMB">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OOZE_CLIMB</requirements>
         <description>
                 <p>By studying the movement of the ooze, you have learned to adopt their secret climbing methods. You gain a climbing speed equal to your move speed, and  an climb on any surface, across vertical surfaces and upside down along ceilings without needing to make any ability checks.</p>
         </description>
@@ -274,9 +274,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Pseudopod Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PSEUDOPOD_APPENDAGE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_PSEUDOPOD_APPENDAGE</requirements>
+    <element name="Pseudopod Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSEUDOPOD_APPENDAGE</requirements>
         <description>
                 <p>You grow a pseudopod which you can use to make a melee attack against an adjacent foe. If you hit, you deal 1d4 bludgeoning damage + 1d4 psychic damage.</p>
         </description>
@@ -295,9 +295,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Sensorium" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SENSORIUM">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MIMICRY_SENSORIUM</requirements>
+    <element name="Sensorium" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SENSORIUM">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SENSORIUM</requirements>
         <description>
                 <p>You can use your action to perceive through the senses of a willing creature you have a telepathic bond with. For the duration you see and hear what it does, and continue to do so until you use your action to return to your normal senses. While perceiving through the creature's senses you gain the benefit of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings. You can only perceive through one creatures senses at a time, though you can use your action to switch between willing creatures.</p>
         </description>
@@ -316,9 +316,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Shape-Shift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SHAPE_SHIFT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SHAPE_SHIFT</requirements>
+    <element name="Shape-Shift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SHAPE_SHIFT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHAPE_SHIFT</requirements>
         <description>
                 <p>You can use your action to polymorph into an inanimate object or back into your true form. Your statistics are the same in each form. Any equipment you are wearing or carrying are not transformed, and you revert to your true form if you are slain. You can use this lore a number of times per day equal to your Intelligence modifier.</p>
         </description>
@@ -337,9 +337,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Slime Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SLIME_BREATH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SLIME_BREATH</requirements>
+    <element name="Slime Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SLIME_BREATH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SLIME_BREATH</requirements>
         <description>
                 <p>You can use your action to expel a spray of gelatinous ooze in a 30-foot cone before pulling it back in. Each creature in that area must make a Dexterity saving throw or be pulled up to 30 feet straight toward you.</p>
                 <p class="ident">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -359,9 +359,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Sticky Secretions" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_STICKY_SECRETIONS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_STICKY_SECRETIONS</requirements>
+    <element name="Sticky Secretions" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_STICKY_SECRETIONS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_STICKY_SECRETIONS</requirements>
         <description>
                 <p>You body secretes an adhesive solution in your sweat that gives you advantage on attack rolls and ability checks made to start or maintain a grapple.</p>
         </description>
@@ -380,9 +380,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Vomit Ooze" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_VOMIT_OOZE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_VOMIT_OOZE</requirements>
+    <element name="Vomit Ooze" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_VOMIT_OOZE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VOMIT_OOZE</requirements>
         <description>
                 <p>You can use your action to expend a bestial die and vomit an Ooze Spawn into an empty space adjacent to you. The ooze spawn is an ally to you and your companions and can maintain its form for up to 1 hour or until dismissed, after which it dissolves into a harmless puddle of muck. In combat, the spawn shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you), but cannot speak. If you don't issue any, it takes the Dodge action and uses its move to avoid danger. Once the ooze spawn is disolved you regain your bestial die.</p>
         </description>
@@ -401,9 +401,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Alien Mind" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ALIEN_MIND">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_ALIEN_MIND</requirements>
+    <element name="Alien Mind" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ALIEN_MIND">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ALIEN_MIND</requirements>
         <description>
                 <p>Your mind is altered to such a degree, others can be harmed just by connecting to it. As a reaction, when a creature tries to read your thoughts or deal psychic damage to you, they must succeed on an Intelligence saving throw or become Stunned until the end of your next turn. The stunned creature can repeat its saving throw at the end of each of its turns, ending the effect on a success.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short, or long rest.</p>
@@ -423,9 +423,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Blinding Spores" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BLINDING_SPORES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_BLINDING_SPORES</requirements>
+    <element name="Blinding Spores" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BLINDING_SPORES">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES</requirements>
         <description>
                 <p>You can use your action to emit noxious spores. Each creature in a 10 foot radius of you must succeed on a Constitution saving throw or become Poisoned and Blinded for up to 1 minute. A poisoned creature can repeat its saving throw at the end of each turn.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short, or long rest.</p>
@@ -445,9 +445,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Caustic Expulsion" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CAUSTIC_EXPULSION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_SLIME_BREATH,ID_FFXIV_TRUE_BLUE_MIMICRY_CAUSTIC_EXPULSION</requirements>
+    <element name="Caustic Expulsion" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CAUSTIC_EXPULSION">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_MAGE_SLIME_BREATH,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CAUSTIC_EXPULSION</requirements>
         <description>
                 <p>Your slime breath is accompanied by a caustic stomach acid which burns those it touches. A creature that is pulled by your slime breath suffers 8d8 acid damage, or half on a failed save as it washes out over the area before dissolving.</p>
         </description>
@@ -466,9 +466,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Dream Eater" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DREAM_EATER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_DREAM_EATER</requirements>
+    <element name="Dream Eater" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DREAM_EATER">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREAM_EATER</requirements>
         <description>
                 <p>As a reaction, when a creature wakes from being unconscious, you can feed on the momentary miasma of dreams still in their mind. The creature must make a Wisdom saving throw or take 3d10 psychic damage, and you regain hit points equal to the amount of damage taken.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -488,9 +488,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Eat Memories" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_EAT_MEMORIES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:6],ID_FFXIV_TRUE_BLUE_MIMICRY_EAT_MEMORIES</requirements>
+    <element name="Eat Memories" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_EAT_MEMORIES">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:6],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EAT_MEMORIES</requirements>
         <description>
                 <p> You can use your action to prey on the vulnerable mind of an adjacent incapacitated creature. The target must succeed on a Wisdom saving throw or you can select a 1hr period from the past 24 hours in its mind. The selected hour of memories are lost from the creature and gained by you. Without prior knowledge you cannot know the contents of a given hour period before you steal it. The creature's memory can be restored with a lesser restoration spell or similar magic.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -510,9 +510,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Enslave" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ENSLAVE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MIMICRY_ENSLAVE</requirements>
+    <element name="Enslave" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENSLAVE">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENSLAVE</requirements>
         <description>
                 <p>Employing aggressive psionics you can use your action to impose your will on a creature you can see in 30ft. The target makes a wisdom saving throw or becomes charmed by you for 1 hour. For the duration, the creature obeys your commands as best it can, cannot use reactions, and has a telepathic bond with you. The enslavement ends early if you are slain, fall unconscious, or the creature moves beyond the range of your bond. The creature can repeat its saving throw whenever it takes damage, ending the effect on itself on a success.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -532,9 +532,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Exert Will" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_EXERT_WILL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5], ID_FFXIV_TRUE_BLUE_ENSLAVE,ID_FFXIV_TRUE_BLUE_MIMICRY_EXERT_WILL</requirements>
+    <element name="Exert Will" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_EXERT_WILL">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5], ID_FFXIV_TRUE_BLUE_MAGE_ENSLAVE,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EXERT_WILL</requirements>
         <description>
                 <p>You can use your action to force a creature you have charmed to make a Wisdom saving throw. On a failed save the creature moves up to it's speed as you mentally direct, and makes a melee attack against a target you designate. The creature cannot be compelled to move into an obviously deadly hazard, such as a fire or pit, but will provoke opportunity attacks to move to the desired location. Once it has made the attack, the charm ends.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -554,9 +554,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Implosion" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_IMPLOSION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_IMPLOSION</requirements>
+    <element name="Implosion" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_IMPLOSION">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IMPLOSION</requirements>
         <description>
                 <p>As an action you manifest a powerful distortion in the fabric of space at a point you can see within 120ft. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, the target takes bestial force damage, is knocked prone, and is moved to an unoccupied space closest to the sphere's center. On a success a target only takes half damage and isn't knocked prone or moved. Large and smaller objects that aren't being worn or carried in the sphere automatically take the damage and are similarly moved.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -576,9 +576,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Psionic Rally" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PSIONIC_RALLY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_PSIONIC_RALLY</requirements>
+    <element name="Psionic Rally" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSIONIC_RALLY">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSIONIC_RALLY</requirements>
         <description>
                 <p>You can use your action to focus and release a psionic pulse that targets all allies within 30 feet of you that aren't obscured by cover. Each creature effected is shocked to their senses and can end any charmed or frightened conditions affecting them.</p>
                 
@@ -598,9 +598,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Psychewall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PSYCHEWALL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:7], ID_FFXIV_TRUE_BLUE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHEWALL</requirements>
+    <element name="Psychewall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSYCHEWALL">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7], ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHEWALL</requirements>
         <description>
                 <p>You are at one with the psionic power of your inner beast, and together your defenses are formidable. You become immune to any magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can only telepathically communicate with you if you allow it.</p>
         </description>
@@ -620,9 +620,9 @@
         </setters>
     </element>
     <!--To-Do: Only one death lore!!-->
-    <element name="Psychic Backlash" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PSYCHIC_BACKLASH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:6],ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHIC_BACKLASH</requirements>
+    <element name="Psychic Backlash" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSYCHIC_BACKLASH">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:6],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHIC_BACKLASH</requirements>
         <description>
                 <p>When you are critically hit or reduced to 0 hit points you unleash a burst of psychic energy that shares your pain to those nearby. All creatures in 10ft of you take psychic damage equal to half your blue mage level + your Intelligence modifier. </p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -642,9 +642,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Telepathic Hub" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_TELEPATHIC_HUB">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MIMICRY_TELEPATHIC_HUB</requirements>
+    <element name="Telepathic Hub" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_TELEPATHIC_HUB">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TELEPATHIC_HUB</requirements>
         <description>
                 <p>You are able to create a number of simultaneous telepathic bonds equal to your Intelligence modifier (minimum of 1 connection) and share telepathic messages between all members of the hub. In addition your bonds no longer expire provided the member remains within range. You or the member can choose to sever a bond (no action required).</p>
         </description>
@@ -663,9 +663,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Protective Thrall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PROTECTIVE_THRALL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MIMICRY_PROTECTIVE_THRALL</requirements>
+    <element name="Protective Thrall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PROTECTIVE_THRALL">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PROTECTIVE_THRALL</requirements>
         <description>
                 <p>As a reaction when you are hit by an attack, and a creature you have charmed is within 5 feet of both you and the attacker, you can have the charmed creature take the damage instead. The charmed creature can then repeat its saving throw against the charm, ending it on a success.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -687,9 +687,9 @@
     </element>
     <!-- Mythical Lore -->
     <!-- To-DO: Add Grants for Cantrips -->
-    <element name="Azure Minora" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_AZURE_MINORA">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_AZURE_MINORA</requirements>
+    <element name="Azure Minora" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AZURE_MINORA">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AZURE_MINORA</requirements>
         <description>
                 <p>Your study of lore has revealed two new cantrips to you. When you learn this lore, select 2 cantrips from the wizard spell list, whenever you memorize this lore those cantrips become available to you. Your spellcasting ability for these cantrips is Intelligence.</p>
         </description>
@@ -708,9 +708,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Gaze of the Warden" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GAZE_OF_THE_WARDEN">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_GAZE_OF_THE_WARDEN</requirements>
+    <element name="Gaze of the Warden" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GAZE_OF_THE_WARDEN">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GAZE_OF_THE_WARDEN</requirements>
         <description>
                 <p>Using a reflective surface such as a mirror or the surface of a still pool of water, you can cast a clairvoyance spell without using a spell slot or material components.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -730,9 +730,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Heart Sight" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_HEART_SIGHT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_HEART_SIGHT</requirements>
+    <element name="Heart Sight" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HEART_SIGHT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEART_SIGHT</requirements>
         <description>
                 <p>When you touch a creature, you magically know its current emotional state. If the creature fails a Charisma saving throw, you can also learn the creature's alignment. Celestials, fiends, and undead automatically fail this saving throw.</p>
         </description>
@@ -751,9 +751,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Illumination" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ILLUMINATION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ILLUMINATION</requirements>
+    <element name="Illumination" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ILLUMINATION">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ILLUMINATION</requirements>
         <description>
                 <p>You can use your bonus action to shed bright light in a 10-foot radius and dim light for an additional 10 feet. You can use a bonus action to increase the radius of its brightness by 10ft up to a maximum of 30 feet, to decrease it by 10ft, or to suppress the light entirely.</p>
         </description>
@@ -772,9 +772,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Inscrutable" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_INSCRUTABLE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_INSCRUTABLE</requirements>
+    <element name="Inscrutable" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_INSCRUTABLE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSCRUTABLE</requirements>
         <description>
                 <p>You can use your bonus action to shed bright light in a 10-foot radius and dim light for an additional 10 feet. You can use a bonus action to increase the radius of its brightness by 10ft up to a maximum of 30 feet, to decrease it by 10ft, or to suppress the light entirely.</p>
         </description>
@@ -793,9 +793,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Iron Scent" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_IRON_SCENT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_IRON_SCENT</requirements>
+    <element name="Iron Scent" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_IRON_SCENT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IRON_SCENT</requirements>
         <description>
                 <p>You can pinpoint, by scent, the location of ferrous metal within 30 feet of you.</p>
         </description>
@@ -814,9 +814,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Labyrinthine Recall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_LABYRINTHINE_RECALL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_LABYRINTHINE_RECALL</requirements>
+    <element name="Labyrinthine Recall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LABYRINTHINE_RECALL">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LABYRINTHINE_RECALL</requirements>
         <description>
                 <p>You can perfectly recall any path you have traveled, and your always know which way is north. You cannot get lost unless magically deceived.</p>
         </description>
@@ -836,9 +836,9 @@
         </setters>
     </element>
     <!--To-Do: Updated Grants!!-->
-    <element name="Merfolks Blessing" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MERFOLKS_BLESSING">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_MERFOLKS_BLESSING</requirements>
+    <element name="Merfolks Blessing" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MERFOLKS_BLESSING">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MERFOLKS_BLESSING</requirements>
         <description>
                 <p>Your beast takes on an aquatic affinity. You gain a swimming speed equal to your walking speed, and can breathe both air and water.</p>
         </description>
@@ -857,9 +857,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Oil Spray" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_OIL_SPRAY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_OIL_SPRAY</requirements>
+    <element name="Oil Spray" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OIL_SPRAY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OIL_SPRAY</requirements>
         <description>
                 <p>You can use your action to release a spray of oil in a 5-foot wide, 20-foot long line covering each tile in the line's path. Each creature in that line must make a Dexterity saving throw or become soaked in oil for up to 1 minute when the oil dries. While soaked this way any exposure to a source of flame causes the target to take an additional 5 fire damage from the burning oil.</p>
                 <p class="indent">Each tile covered in oil can be lit, causing the square to set flame for 2 rounds, dealing 5 fire damage to each creature that enters the area or ends it turn in the area. A creature can take this damage only once per turn. The fire spreads to any adjacent oil covered squares at the end of each round.</p>
@@ -880,9 +880,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Oxidizing Touch" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_OXIDIZING_TOUCH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_OXIDIZING_TOUCH</requirements>
+    <element name="Oxidizing Touch" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OXIDIZING_TOUCH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OXIDIZING_TOUCH</requirements>
         <description>
                 <p>You corrode metal with a touch. If not being worn or carried, you can spend 10 minutes to destroy a 1-foot cube of nonmagical ferrous metal. The process is too slow to make use of in combat, however doing so extracts nutrients from the corroded metal and you can sustain yourself for a day with 2lbs of corrodible metal.</p>
                 <p class="indent">Wearing non-metallic gloves will block the effect of your touch and allow you to wield or touch metal without corroding it, however wearing metal armor will cause it to gradually erode, inflicting a -1 penalty to the AC it provides every 10 minutes. Armor reduced to an AC of 10 is destroyed.</p>
@@ -903,9 +903,9 @@
         </setters>
     </element>
     <!-- To-Do:Add Table -->
-    <element name="Psychometry" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PSYCHOMETRY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_PSYCHOMETRY</requirements>
+    <element name="Psychometry" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSYCHOMETRY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHOMETRY</requirements>
         <description>
                 <p>If you spend at least 10 minutes interacting with an object you gain magical insights into its history. The DM tells you one of the following characteristics of your choice:</p>
                 <p>• The item's name, if it has one
@@ -935,9 +935,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Repulsive Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_REPULSIVE_BREATH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_REPULSIVE_BREATH</requirements>
+    <element name="Repulsive Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_REPULSIVE_BREATH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_REPULSIVE_BREATH</requirements>
         <description>
                 <p>You can use your action to exhale a nauseating stench in a 15ft cone. Each creature in the area must succeed on a Wisdom saving throw to steel themselves, or become Frightened for 1 minute. A frightened creature that starts its turn in 15 feet of you must use all its movement to get as far from you as possible, finishing the movement before taking an action. If the creature ends its turn in a location where it doesn't have line of sight to you, it can repeat its saving throw, ending the effect on a success.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -957,9 +957,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Serpent Hair" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SERPENT_HAIR">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SERPENT_HAIR</requirements>
+    <element name="Serpent Hair" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SERPENT_HAIR">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SERPENT_HAIR</requirements>
         <description>
                 <p>Your hair is replaced with a mass of writhing snakes that are part of you, shifting and mirroring your emotions. You can also use your action to have them make a melee lore attack against an adjacent foe, dealing 1d4 piercing and 1d4 poison damage on a hit.</p>
         </description>
@@ -978,9 +978,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Temporal Flux" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_TEMPORAL_FLUX">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_TEMPORAL_FLUX</requirements>
+    <element name="Temporal Flux" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_TEMPORAL_FLUX">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TEMPORAL_FLUX</requirements>
         <description>
                 <p>You create a small, localized distortion in the flow of time that shuffles the order of events during combat. Each creature in 30 feet of you re-rolls its initiative.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -1000,9 +1000,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Vanity Mirror" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_VANITY_MIRROR">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_VANITY_MIRROR</requirements>
+    <element name="Vanity Mirror" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_VANITY_MIRROR">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VANITY_MIRROR</requirements>
         <description>
                 <p>You can use your action to surround yourself with illusory magic that causes creatures who look upon you to see a member of their own race and sex with roughly the same build as your normal appearance. This illusion lasts for up to 1 hour, or until you dismiss it (no action required), and does not stand up to close inspection. If someone attempts to touch you they will pass through the illusion learning you are disguised. Otherwise a creature can use an Intelligence (Investigation) check against your Lore save DC to discern that you are disguised.</p>
         </description>
@@ -1021,9 +1021,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Web of Hair" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WEB_OF_HAIR">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_WEB_OF_HAIR</requirements>
+    <element name="Web of Hair" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WEB_OF_HAIR">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_OF_HAIR</requirements>
         <description>
                 <p>You can use your action to rapidly grow your hair, filling a 30-foot cube of space adjacent to you before detaching. This web of hair is difficult terrain, its area is lightly obscured, and persists for 1 minute. A creature that moves into the web or starts its turn there must make a Dexterity saving throw or become Restrained while in the web. A creature can use a Strength check against your Lore save DC, freeing itself or a creature within 5 feet of it on a success. The webbing is immune to all damage except magical fire. a 5-foot cube of the web is destroyed it if takes at least 20 fire damage from a spell or other magical source on a single turn.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -1045,9 +1045,9 @@
     </element>
     <!--To-Do: Add higher level lore -->
     <!--Natural Lore-->
-    <element name="Adaptive Camouflage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ADAPTIVE_CAMOUFLAGE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ADAPTIVE_CAMOUFLAGE</requirements>
+    <element name="Adaptive Camouflage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ADAPTIVE_CAMOUFLAGE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADAPTIVE_CAMOUFLAGE</requirements>
         <description>
                 <p>You can use your bonus action to alter your skin and hair colour to more closely match the environment around you for up to 10 minutes, granting you advantage on Dexterity (Stealth) checks made for the duration.</p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
@@ -1068,9 +1068,9 @@
         </setters>
     </element>
     <!--To-Do: Dynamic range based on half move speed-->
-    <element name="Aggressive" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_AGGRESSIVE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_AGGRESSIVE</requirements>
+    <element name="Aggressive" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AGGRESSIVE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AGGRESSIVE</requirements>
         <description>
                 <p>You experience a rush of adrenaline that allows you to move up to half your speed straight towards a visible enemy as a bonus action.</p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
@@ -1090,9 +1090,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Athletic Endurance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ATHLETIC_ENDURANCE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ATHLETIC_ENDURANCE</requirements>
+    <element name="Athletic Endurance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ATHLETIC_ENDURANCE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ATHLETIC_ENDURANCE</requirements>
         <description>
                 <p>When you travel long distance your inner beast works in unison with those around you to go further. You and your allies have advantage on Constitution saving throws against exhaustion from pushing a forced march, and cover an additional mile per hour when you do.</p>
         </description>
@@ -1111,9 +1111,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Celerity" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CELERITY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_CELERITY</requirements>
+    <element name="Celerity" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CELERITY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CELERITY</requirements>
         <description>
                 <p>While not wearing armor or using a shield, your walking speed is increased by 10 feet.</p>
         </description>
@@ -1132,9 +1132,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Danger Sense" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DANGER_SENSE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_DANGER_SENSE</requirements>
+    <element name="Danger Sense" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DANGER_SENSE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DANGER_SENSE</requirements>
         <description>
                 <p>You can tap into your inner beast's heightened natural senses. While you aren't incapacitated, blinded, or deafened you have advantage on Dexterity saving throws.</p>
         </description>
@@ -1153,9 +1153,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Deadly Maul" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DEADLY_MAUL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MIMICRY_DEADLY_MAUL</requirements>
+    <element name="Deadly Maul" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DEADLY_MAUL">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DEADLY_MAUL</requirements>
         <description>
                 <p>You can use your action to jump up to 15 feet as part of your movement, landing on another creature who must make a Dexterity saving throw or fall Prone. On a successful save they do not fall prone, and are instead moved 5 feet to the nearest unoccupied adjacent square. You can then attack them with your nature's gift.</p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
@@ -1175,9 +1175,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Extraordinary Leap" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_EXTRAORDINARY_LEAP">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_EXTRAORDINARY_LEAP</requirements>
+    <element name="Extraordinary Leap" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_EXTRAORDINARY_LEAP">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EXTRAORDINARY_LEAP</requirements>
         <description>
                 <p>Your long jump distance is tripled; each foot of walking speed spent on the jump allows you to jump 3 feet.</p>
         </description>
@@ -1197,9 +1197,9 @@
         </setters>
     </element>
     <!--To-Do: Dynamic range based on move speed-->
-    <element name="Fledgling Wings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_FLEDGLING_WINGS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_FLEDGLING_WINGS</requirements>
+    <element name="Fledgling Wings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FLEDGLING_WINGS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FLEDGLING_WINGS</requirements>
         <description>
                 <p>Your beast has unlocked the secret of flight. You gain a fly speed equal to your walking speed, you can decide on the appearance of your wings and when/how they manifest, though you can only fly in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft. To use this speed, you can't be wearing medium or heavy armor.</p>
         </description>
@@ -1219,9 +1219,9 @@
         </setters>
     </element>
     <!--To-Do:Add grants-->
-    <element name="Hedge Wisdom" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_HEDGE_WISDOM">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_HEDGE_WISDOM</requirements>
+    <element name="Hedge Wisdom" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HEDGE_WISDOM">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEDGE_WISDOM</requirements>
         <description>
                 <p>You are granted insight into nature, bestowing upon you the following benefits:</p>
                 <table>
@@ -1245,9 +1245,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Keen Senses" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_KEEN_SENSES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_KEEN_SENSES</requirements>
+    <element name="Keen Senses" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_KEEN_SENSES">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_KEEN_SENSES</requirements>
         <description>
                 <p>Your beast's primal senses hone and magnify your qualia, allowing you to make Wisdom (Perception) checks with advantage.</p>
         </description>
@@ -1266,9 +1266,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Mighty Charge" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MIGHTY_CHARGE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MIMICRY_MIGHTY_CHARGE</requirements>
+    <element name="Mighty Charge" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIGHTY_CHARGE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MIGHTY_CHARGE</requirements>
         <description>
                 <p>You can use your action to charge up to your speed straight towards a target and make an attack with your nature's gift. On a hit, you deal additional bestial bludgeoning damage, and the target must make a Strength save or be pushed back 10 feet and knocked prone.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a a short or long rest.</p>
@@ -1288,9 +1288,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Natural Projectiles" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_NATURAL_PROJECTILES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_NATURAL_PROJECTILES</requirements>
+    <element name="Natural Projectiles" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_NATURAL_PROJECTILES">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURAL_PROJECTILES</requirements>
         <description>
                 <p>You sprout 12 sharp needles, spines or another organic projectile which you can shoot at targets as a natural ranged weapon with the Ammunition (range 20/80) property. You are considered proficient with the weapon, and can fire your projectiles making a ranged attack as normal. On a hit the target takes one bestial die of piercing damage plus your dexterity modifier.</p>
                 <p class="indent">Your projectiles regrow after a long rest up to a maximum of 12 total.</p>
@@ -1310,9 +1310,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Natures Gift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_NATURES_GIFT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_NATURES_GIFT</requirements>
+    <element name="Natures Gift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_NATURES_GIFT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURES_GIFT</requirements>
         <description>
                 <p>When you select this lore, choose a natural melee weapon attack such as a beak, bite, claw, fist, gore, hooves, slam, tail, talons, tusk, ram etc. While memorized, you grow any necessary physiology but the gift provides no additional benefit (Eg. you might choose wings to gain a wing attack, but you can't fly with them). You are also considered proficient with the weapon, it uses your strength modifier for attacks and damage and deals bestial damage of the appropriate type for the weapon - bludgeoning, piercing or slashing.</p>
                 <p class="indent">Once you choose a natural weapon it becomes fixed, however you can learn this lore multiple times choosing a different natural weapon each time, and each of which must be memorized separately (or you can replace the lore as normal).</p>
@@ -1333,9 +1333,9 @@
         </setters>
     </element>
     <!--Only 1 roar-->
-    <element name="Piercing Roar" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PIERCING_ROAR">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_PIERCING_ROAR</requirements>
+    <element name="Piercing Roar" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PIERCING_ROAR">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PIERCING_ROAR</requirements>
         <description>
                 <p>You can use your action to unleash an ear piercing roar audible up to 100 feet. Each creature in 30 feet of you must make a Constitution saving throw or flinch, unable to move until the end of their next turn.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -1355,9 +1355,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Savage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SAVAGE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MIMICRY_SAVAGE</requirements>
+    <element name="Savage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SAVAGE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_NATURES_GIFT,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SAVAGE</requirements>
         <description>
                 <p>You can use your action to rabidly attack in all directions. Make a melee attack against all adjacent creatures of your choice with your nature's gift weapon.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -1377,9 +1377,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Thermal Vision" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_THERMAL_VISION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_THERMAL_VISION</requirements>
+    <element name="Thermal Vision" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_THERMAL_VISION">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_THERMAL_VISION</requirements>
         <description>
                 <p>As a bonus action you can magically sense creatures purely by the heat they give off. Until the start of your next turn you can see creatures within 60 feet of you that aren't behind cover. This form of vision ignores invisibility and stealth. </p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
@@ -1399,9 +1399,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Tunneler" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_TUNNELER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_TUNNELER</requirements>
+    <element name="Tunneler" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_TUNNELER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TUNNELER</requirements>
         <description>
                 <p>Your inner beast grants you the knowledge of the burrower. You gain a burrowing speed equal to your walking speed, and when you use it, you leave a 5ft wide tunnel in your wake.</p>
         </description>
@@ -1420,9 +1420,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Web Crawler" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WEB_CRAWLER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_WEB_CRAWLER</requirements>
+    <element name="Web Crawler" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WEB_CRAWLER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_CRAWLER</requirements>
         <description>
                 <p>You are able to use the delicate step of the spider to ignore movement restrictions on webs. Additionally, you know the location of other creatures in contact with a web while you're in contact with it.</p>
         </description>
@@ -1441,9 +1441,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Wing Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WING_ATTACK">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_FLEDGLING_WINGS,ID_FFXIV_TRUE_BLUE_MIMICRY_WING_ATTACK</requirements>
+    <element name="Wing Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WING_ATTACK">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_FLEDGLING_WINGS,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WING_ATTACK</requirements>
         <description>
                 <p>You can use your wings to maneuver yourself from deadly situations. With a strong flap of them, creatures in 10 feet of you must make a Strength saving throw or be pushed 10 feet away from you. You can then move up to half your fly speed.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
@@ -1466,9 +1466,9 @@
     <!--To-Do: Add higher level lore -->
     <!--Primordial Lore-->
     <!-- Update Breath so you can select a type -->
-    <element name="Breath Weapon (Lesser)" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BREATH_WEAPON_LESSER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_BREATH_WEAPON_LESSER</requirements>
+    <element name="Breath Weapon (Lesser)" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BREATH_WEAPON_LESSER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_LESSER</requirements>
         <description>
                 <p>You can use your action to unleash an elemental breath weapon. When you learn this lore you can select either a line or cone shaped weapon, and a damage type from the following: acid, cold, fire, lightning, or poison. Your choices become fixed. A lesser breath weapon produces a 15ft cone or 15-foot long, 15-foot wide line. Each creature in the area must make a Dexterity saving throw, taking 4d6 damage of the chosen element type on a failed save, or half as much on a success.</p>
                 <p class="indent">You may learn this lore multiple times or replace an existing breath weapon lore, each time you learn it you may select a different combination of shape and damage types, and you cannot memorize more than one breath weapon at a time.</p>
@@ -1489,9 +1489,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Chromatic Lens" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CHROMATIC_LENS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_CHROMATIC_LENS</requirements>
+    <element name="Chromatic Lens" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CHROMATIC_LENS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CHROMATIC_LENS</requirements>
         <description>
                 <p>As a bonus action when you use a lore that inflicts Acid, Cold, Fire, Lightning, or Poison damage, you can change the energy to any of the other types listed here. The damage type can be changed after rolls are made but before the results are announced.</p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
@@ -1512,9 +1512,9 @@
         </setters>
     </element>
     <!--To-Do:Add grants-->
-    <element name="Dracolore" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DRACOLORE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_DRACOLORE</requirements>
+    <element name="Dracolore" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DRACOLORE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DRACOLORE</requirements>
         <description>
                 <p>You are granted the ancient lore of the draconic scribes, blessing you with the following features:</p>
                 <table>
@@ -1538,9 +1538,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Energy Absorption" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ENERGY_ABSORPTION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ENERGY_ABSORPTION</requirements>
+    <element name="Energy Absorption" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENERGY_ABSORPTION">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENERGY_ABSORPTION</requirements>
         <description>
                 <p>As a reaction when you are hit by a source of Acid, Cold, Fire, Lightning, or Poison, you instead take no damage and restore a number of hit points equal to the damage amount. You can only use this lore after you have been hit, but before the damage is rolled.</p>
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
@@ -1560,9 +1560,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Flaming Leap" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_FLAMING_LEAP">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_FLAMING_LEAP</requirements>
+    <element name="Flaming Leap" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FLAMING_LEAP">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FLAMING_LEAP</requirements>
         <description>
                 <p>As a bonus action you jump through the air to an unoccupied square within 30 feet. When you land, each creature in 10 feet of the destination must make a Dexterity saving throw or take bestial fire damage.</p>
                 <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>
@@ -1582,9 +1582,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Frigid Shield" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_FRIGID_SHIELD">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_FRIGID_SHIELD</requirements>
+    <element name="Frigid Shield" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FRIGID_SHIELD">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FRIGID_SHIELD</requirements>
         <description>
                 <p>You can manifest a shield of ice as a reaction when you see a creature make an attack against you. The shield grants you 10 temporary hit points for up to 1 minute. If your temporary hit points are reduced to 0 as the result of taking damage, each creature in 5 feet of you takes bestial Cold damage.</p>
                 <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>
@@ -1604,9 +1604,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Heart of the Dragon" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_HEART_OF_THE_DRAGON">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_HEART_OF_THE_DRAGON</requirements>
+    <element name="Heart of the Dragon" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HEART_OF_THE_DRAGON">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEART_OF_THE_DRAGON</requirements>
         <description>
                 <p>As a reaction, when you start your turn suffering from the frightened or paralyzed conditions, you can repeat your saving throw. On a success, you set a striking example to allies in 30 feet who gain advantage on saving throws until the start of your next turn.</p>
                 <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>
@@ -1626,9 +1626,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Hide of the Ancients" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_HIDE_OF_THE_ANCIENTS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_HIDE_OF_THE_ANCIENTS</requirements>
+    <element name="Hide of the Ancients" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HIDE_OF_THE_ANCIENTS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HIDE_OF_THE_ANCIENTS</requirements>
         <description>
                 <p>Your body is covered in draconic scales, granting you 1AC.</p>
         </description>
@@ -1647,9 +1647,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Ice Skate" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ICE_SKATE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_SNOWSHOES,ID_FFXIV_TRUE_BLUE_MIMICRY_ICE_SKATE</requirements>
+    <element name="Ice Skate" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ICE_SKATE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_SNOWSHOES,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ICE_SKATE</requirements>
         <description>
                 <p>As a bonus action you can leave a trail of rime and frost where you step. Until the end of your current turn, each square you move into becomes icy difficult terrain for up to 1 minute. The ice can also be melted prematurely by any source of magical flame.</p>
                 <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>        
@@ -1669,9 +1669,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Mud Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MUD_BREATH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_MUD_BREATH</requirements>
+    <element name="Mud Breath" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MUD_BREATH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MUD_BREATH</requirements>
         <description>
                 <p>You can use your action to spit a large globule of hot sticky mud at one creature you can see in 60 feet that is Large sized or smaller. The target must make a Dexterity saving throw or become restrained for 1 minute, repeating the saving throw at the end of each of its turns, and freeing itself on a success.</p>
                 <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>        
@@ -1691,9 +1691,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Olach Morrah" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_OLACH_MORRAH">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_OLACH_MORRAH</requirements>
+    <element name="Olach Morrah" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OLACH_MORRAH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OLACH_MORRAH</requirements>
         <description>
                 <p>By meditating for 10 minutes, you are able to become one with the earth, Petrifying yourself. While petrified in this way you are restrained, and can only perceive via tremorsense up to 60 feet around you. You can restore yourself at any time as an action.</p>
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>        
@@ -1713,9 +1713,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Primal Erudition" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PRIMAL_ERUDITION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_PRIMAL_ERUDITION</requirements>
+    <element name="Primal Erudition" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PRIMAL_ERUDITION">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PRIMAL_ERUDITION</requirements>
         <description>
                 <p>Your inner beast grants you ancient knowledge of the elementals. You gain the following features:</p>
                 <table>
@@ -1739,9 +1739,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Secrets of the Hordekeeper" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SECRETS_OF_THE_HORDEKEEPER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SECRETS_OF_THE_HORDEKEEPER</requirements>
+    <element name="Secrets of the Hordekeeper" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SECRETS_OF_THE_HORDEKEEPER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SECRETS_OF_THE_HORDEKEEPER</requirements>
         <description>
                 <p>Your inner beast gains a preternatural instinct for identifying value and worth in objects. You can spend 1 minute studying a gem or art piece, after which you learn its exact value; and if it is a gemstone, you also learn what kind of gemstone it is.</p>
                 <p class="indent">Additionally, you can cast the detect magic and identify spells as rituals that do not require material components.</p>        
@@ -1761,9 +1761,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Snowshoe" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SNOWSHOE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SNOWSHOE</requirements>
+    <element name="Snowshoe" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SNOWSHOE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SNOWSHOE</requirements>
         <description>
                 <p>You can move across or climb icy surfaces without making ability checks, and neither ice or snow cost extra movement for you to move across.</p>        
         </description>
@@ -1782,9 +1782,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Sonic Scream" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SONIC_SCREAM">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SONIC_SCREAM</requirements>
+    <element name="Sonic Scream" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SONIC_SCREAM">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SONIC_SCREAM</requirements>
         <description>
                 <p>You can use your action to conjure thunderous energy in a 15ft cube, starting in any square adjacent to you. Each creature in the area must succeed on a Strength saving throw or take bestial Thunder damage and be knocked prone.</p>    
                 <p class="indent">Once you use this lore you can't use it again until youfinish a short or long rest.</p>        
@@ -1806,9 +1806,9 @@
     </element>
     <!--To-Do: Add higher level lore -->
         <!--Sacred Lore-->
-    <element name="Boon of the Postmaster" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BOON_OF_THE_POSTMASTER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_BOON_OF_THE_POSTMASTER</requirements>
+    <element name="Boon of the Postmaster" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BOON_OF_THE_POSTMASTER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOON_OF_THE_POSTMASTER</requirements>
         <description>
                 <p>You have an uncanny intuition for finding specific locations and addresses in civilized settings. This intuition grants you advantage on ability checks made to navigate, find a specific address, or locate specific individuals in an urban environment.</p>        
         </description>
@@ -1827,9 +1827,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Discern Honesty" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DISCERN_HONESTY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_DISCERN_HONESTY</requirements>
+    <element name="Discern Honesty" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DISCERN_HONESTY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DISCERN_HONESTY</requirements>
         <description>
                 <p>You can use your action to channel divine wisdom. For 10 minutes you have advantage on Wisdom (Insight) checks to determine if a creature believes what it is saying.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -1849,9 +1849,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <element name="Divine Will" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_DIVINE_WILL">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_DIVINE_WILL</requirements>
+    <element name="Divine Will" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DIVINE_WILL">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DIVINE_WILL</requirements>
         <description>
                 <p>As a reaction when a creature you can see makes an attack roll, saving throw, or ability check you can cause the roll to be made with advantage or disadvantage.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -1872,9 +1872,9 @@
         </setters>
     </element>
     <!--To-Do:Add grants-->
-    <element name="Enlightenment" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_ENLIGHTENMENT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_ENLIGHTENMENT</requirements>
+    <element name="Enlightenment" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENLIGHTENMENT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENLIGHTENMENT</requirements>
         <description>
                 <p>You are gifted divine knowledge granting you the following benefits:</p>
                 <table>
@@ -1898,9 +1898,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Get Down!" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GET_DOWN">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_GET_DOWN</requirements>
+    <element name="Get Down!" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GET_DOWN">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GET_DOWN</requirements>
         <description>
                 <p>When you or an ally in 30 feet of you is made the target of a ranged attack, you can forewarn them. The target can use their reaction to drop to a prone position.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>       
@@ -1920,9 +1920,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glorious Light" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GLORIOUS_LIGHT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_GLORIOUS_LIGHT</requirements>
+    <element name="Glorious Light" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GLORIOUS_LIGHT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GLORIOUS_LIGHT</requirements>
         <description>
                 <p>When you create a magical source of light it becomes empowered with celestial might, overpowering magical darkness of any level.</p>        
                  
@@ -1942,9 +1942,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Guiding Winds" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GUIDING_WINDS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_GUIDING_WINDS</requirements>
+    <element name="Guiding Winds" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GUIDING_WINDS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GUIDING_WINDS</requirements>
         <description>
                 <p>As a reaction when an ally in 30 feet of you makes a ranged weapon attack, you can supply guiding winds that help ensure their shot meets its mark, granting them advantage on the attack roll.</p>        
                  
@@ -1965,9 +1965,9 @@
         </setters>
     </element>
     <!--Only 1 Stance at a Time!!!-->
-    <element name="Pack Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PACK_FORMATION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>!ID_FFXIV_TRUE_BLUE_PHALANX_FORMATION,ID_FFXIV_TRUE_BLUE_MIMICRY_PACK_FORMATION</requirements>
+    <element name="Pack Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION">
+        <supports>True Blue Mage</supports>
+        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PACK_FORMATION</requirements>
         <description>
                 <p>Your beast is blessed with the tactical knowledge of the celestials granting you the stance of the Pack. You can use your bonus action to enter the stance until the end of your next turn. For the duration while you are within 5 feet of two or more allies, each of you gain advantage on saving throws against being charmed or frightened.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -1987,9 +1987,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Phalanx Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PHALANX_FORMATION">
-        <supports>Blue Mage Variant</supports>
-        <requirements>!ID_FFXIV_TRUE_BLUE_PACK_FORMATION,ID_FFXIV_TRUE_BLUE_MIMICRY_PHALANX_FORMATION</requirements>
+    <element name="Phalanx Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION">
+        <supports>True Blue Mage</supports>
+        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PHALANX_FORMATION</requirements>
         <description>
                 <p>Your beast is blessed with the tactical knowledge of the celestials granting you the stance of the Phalanx. You can use your bonus action to enter the stance until the end of your next turn. For the duration while you are within 5 feet of an ally wielding a shield you both gain advantage on Dexterity based attacks and saving throws.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -2009,9 +2009,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Return to Nyx" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_RETURN_TO_NYX">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_RETURN_TO_NYX</requirements>
+    <element name="Return to Nyx" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_RETURN_TO_NYX">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RETURN_TO_NYX</requirements>
         <description>
                 <p>You can use your action to make a corpse you can see within 30ft to burst into a shower of radiant stars leaving no trace behind. Everything it is wearing or carrying remains. Each creature within 10ft of the corpse when it bursts must succeed on a Dexterity saving throw or take bestial radiant damage.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -2031,9 +2031,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Self Sacrifice" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SELF_SACRIFICE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SELF_SACRIFICE</requirements>
+    <element name="Self Sacrifice" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SELF_SACRIFICE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SELF_SACRIFICE</requirements>
         <description>
                 <p>As a reaction when an ally within 5 feet of you is hit by an attack, you can swap places with them and take the attack in their stead.</p>               
         </description>
@@ -2052,9 +2052,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Spiritual Sustenance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SPIRITUAL_SUSTENANCE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SPIRITUAL_SUSTENANCE</requirements>
+    <element name="Spiritual Sustenance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SPIRITUAL_SUSTENANCE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SPIRITUAL_SUSTENANCE</requirements>
         <description>
                 <p>Your inner beast can rely on the power of the divine to help sustain it, reducing your hunger. Your rations sustain you for twice as long as usual.</p>               
         </description>
@@ -2073,9 +2073,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Word of Truespeech: Forward" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WOT_FORWARD">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_FORWARD</requirements>
+    <element name="Word of Truespeech: Forward" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_FORWARD">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_FORWARD</requirements>
         <description>
                 <p>You can use your bonus action to utter a divine word that compels an ally in 30 feet of you to act. The target can use their reaction to move up to their speed towards an enemy.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -2095,9 +2095,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Word of Truespeech: Hold" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WOT_HOLD">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_HOLD</requirements>
+    <element name="Word of Truespeech: Hold" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_HOLD">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_HOLD</requirements>
         <description>
                 <p>You can use your bonus action to utter a divine word that aids an ally in 30 feet of you. The target gains advantage to saving throws against effects that would move them, or knock them prone.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -2117,9 +2117,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Word of Truespeech: Rally" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_WOT_RALLY">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_WOT_RALLY</requirements>
+    <element name="Word of Truespeech: Rally" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_RALLY">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RALLY</requirements>
         <description>
                 <p>You can use your bonus action to utter a divine word that compels an ally in 30 feet of you to act. The target can use their reaction to repeat one saving throw against an ongoing condition they are suffering.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -2141,9 +2141,9 @@
     </element>
     <!--To-Do: Add higher level lore -->
     <!--Paranormal Lore-->
-    <element name="Bite of the Kindred" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BITE_OF_THE_KINDRED">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_BITE_OF_THE_KINDRED</requirements>
+    <element name="Bite of the Kindred" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BITE_OF_THE_KINDRED">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BITE_OF_THE_KINDRED</requirements>
         <description>
                 <p>Your teeth grow into sharpened deadly fangs. You can use your fangs as a natural weapon to make a melee attack against an adjacent foe, dealing 1d6 piercing damage on a hit. You deal an additional 1d4 necrotic damage when you hit with your bite attack under the light of the full moon.</p>                  
         </description>
@@ -2162,9 +2162,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Bloodthirst" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BLOODTHIRST">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_BITE_OF_THE_KINDRED,ID_FFXIV_TRUE_BLUE_MIMICRY_BLOODTHIRST</requirements>
+    <element name="Bloodthirst" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BLOODTHIRST">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_BITE_OF_THE_KINDRED,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLOODTHIRST</requirements>
         <description>
                 <p>You can use your fangs to drain blood and life energy from a willing creature, or one that is grappled by you, incapacitated, or restrained. Make a melee attack against the target. If you hit you deal 1 piercing damage plus bestial necrotic damage, the target's maximum hit points are reduced by the amount of necrotic damage, and you regain hit points equal to the same amount. This reduction lasts until the target finishes a long rest.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -2184,9 +2184,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Bottom Treader" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_BOTTOM_TREADER">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_BOTTOM_TREADER</requirements>
+    <element name="Bottom Treader" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BOTTOM_TREADER">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOTTOM_TREADER</requirements>
         <description>
                 <p>You cannot swim, instead you sink to the bottom of water bodies. However, you stuffer no penalties to movement or attacks while underwater, and you are immune to the effects of being underwater while at a depth greater than 100 feet.</p>                
         </description>
@@ -2205,9 +2205,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Cloak of Shadows" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CLOAK_OF_SHADOWS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_CLOAK_OF_SHADOWS</requirements>
+    <element name="Cloak of Shadows" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CLOAK_OF_SHADOWS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CLOAK_OF_SHADOWS</requirements>
         <description>
                 <p>You can use your bonus action to emit dim light in a 10 foot radius. Non-magical light can't illuminate this area, and it lasts until you diminish it using your action.</p>             
         </description>
@@ -2226,9 +2226,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Ghost Sight" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_GHOST_SIGHT">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_GHOST_SIGHT</requirements>
+    <element name="Ghost Sight" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GHOST_SIGHT">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GHOST_SIGHT</requirements>
         <description>
                 <p>You can see 60 feet into the Ethereal Plane while on the Material Plane and vice-versa.</p>           
         </description>
@@ -2248,9 +2248,9 @@
         </setters>
     </element>
     <!--Only 1 Weapon at a Time!!!-->
-    <element name="Hellish Weapons" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_HELLISH_WEAPONS">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_HELLISH_WEAPONS</requirements>
+    <element name="Hellish Weapons" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HELLISH_WEAPONS">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HELLISH_WEAPONS</requirements>
         <description>
                 <p>As a bonus action on your turn you can deal poison damage instead of bludgeoning, piercing, or slashing with your next melee weapon attack.</p>             
         </description>
@@ -2270,8 +2270,8 @@
         </setters>
     </element>
     <element name="Maddening Feast" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MADDENING_FEAST">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_MADDENING_FEAST</requirements>
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MADDENING_FEAST</requirements>
         <description>
                 <p>You can use your action to spend 1 round feasting on the corpse of a creature that died in the last minute. Each of its allies in 60 feet that can see and hear your feast must make a Wisdom saving throw or become Frightened for 1 minute, repeating their save at the end of each turn. The feast is interrupted if you are damaged or moved, however if you spend a round feasting without interruption you regain 1 bestial die of hit points.</p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>       
@@ -2291,9 +2291,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Pale Blessing" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PALE_BLESSING">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_PALE_BLESSING</requirements>
+    <element name="Pale Blessing" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PALE_BLESSING">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PALE_BLESSING</requirements>
         <description>
                 <p>Undead that you create are bolstered by your inner beast's necromantic attunement. When you create undead their hit point maximum is increased by an amount equal to your blue mage level, they add your proficiency bonus to weapon damage rolls, and they have advantage on saving throws against effects that turn undead.</p>            
         </description>
@@ -2312,9 +2312,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element> 
-    <element name="Pest Shapes" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_PEST_SHAPES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_VERMIN_FORM,ID_FFXIV_TRUE_BLUE_MIMICRY_PEST_SHAPES</requirements>
+    <element name="Pest Shapes" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PEST_SHAPES">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_VERMIN_FORM,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PEST_SHAPES</requirements>
         <description>
                 <p>Your inner beast can tap into the forms of other pests, granting you additional options when taking on a vermin form. You can now become a bat, fly, spider, or snake instead.</p>        
                  
@@ -2334,9 +2334,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Raxivorts Tongue" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_RAXIVORTS_TONGUE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_RAXIVORTS_TONGUE</requirements>
+    <element name="Raxivorts Tongue" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_RAXIVORTS_TONGUE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RAXIVORTS_TONGUE</requirements>
         <description>
                 <p>You can communicate with bats, rats, giant bats, and giant rats. The knowledge and awareness of many such beasts are limited by their intelligence, but at a minimum can give you information about nearby locations, monsters, and whatever they have perceived in the past day. You might be able to persuade them to perform a small favor for you at the DM's discretion.</p>         
         </description>
@@ -2355,9 +2355,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Shadow Blend" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SHADOW_BLEND">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SHADOW_BLEND</requirements>
+    <element name="Shadow Blend" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SHADOW_BLEND">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHADOW_BLEND</requirements>
         <description>
                 <p>While in dim light or darkness you can use a bonus action to sink into the shadows for up to 10 minutes, granting you advantage on Dexterity (Stealth) checks made for the duration. This advantage ends early if you are exposed to light. </p>        
                 <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>       
@@ -2377,9 +2377,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Shadow Dance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SHADOW_DANCE">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SHADOW_DANCE</requirements>
+    <element name="Shadow Dance" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SHADOW_DANCE">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHADOW_DANCE</requirements>
         <description>
                 <p>You can use a bonus action to step into a square of dim light or darkness, and teleport to another square of dim light or darkness within 30 feet of your original position. </p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -2399,9 +2399,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Soul Weapon" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SOUL_WEAPON">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_SOUL_WEAPON</requirements>
+    <element name="Soul Weapon" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SOUL_WEAPON">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SOUL_WEAPON</requirements>
         <description>
                 <p>Your inner beast can shape and manifest your essence into a weapon to wield against your enemies. You can use your action to create a soul weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see the Weapons section for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>        
                 <p class="indent">Your soul weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p>       
@@ -2423,9 +2423,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Swarm Shapes" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_SWARM_SHAPES">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_VERMIN_FORM,ID_FFXIV_TRUE_BLUE_MIMICRY_SWARM_SHAPES</requirements>
+    <element name="Swarm Shapes" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SWARM_SHAPES">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_VERMIN_FORM,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SWARM_SHAPES</requirements>
         <description>
                 <p>Your inner beast can spread your essence over a multitude of smaller forms when you use vermin form. You can now become a swarm of bats, rats, insects, or spiders instead.</p>        
         </description>
@@ -2444,9 +2444,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Vermin Form" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_VERMIN_FORM">
-        <supports>Blue Mage Variant</supports>
-        <requirements>ID_FFXIV_TRUE_BLUE_MIMICRY_VERMIN_FORM</requirements>
+    <element name="Vermin Form" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_VERMIN_FORM">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VERMIN_FORM</requirements>
         <description>
                 <p>You can use your action to transform yourself into a rat for up to 1 hour, until you drop to 0 hit points, or until you revert as an action. While transformed your equipment merges as part of your rat form and you cannot activate, use or otherwise benefit from your equipment. You use the physical ability scores of the rat, but retain your mental scores, memories, alignment, and personality.</p>        
                 <p class="indent">When you revert to normal, you return to the number of hit points you had before you transformed, and if you revert as a result of dropping to 0 hit points any excess damage is carried over to your normal form. As long as the excess doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.</p>       

@@ -4,7 +4,7 @@
 		<name>FFXIV True Blue</name>
 		<description>The Blue Mage - Draft 4: True Blue Update.</description>
 		<author url="https://www.reddit.com/user/ViCaelestis/">u/ViCaelestis</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="FFXIV_True_Blue.index" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV_True_Blue.index" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 
         <!-- Other -->
         <file name="companions.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/companions.xml" />
-        <file name="spells-blue-variant.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells-blue-variant.xml" />
-        <file name="feats-blue-variant.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats-blue-variant.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
+        <file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 	</files>
 </index>

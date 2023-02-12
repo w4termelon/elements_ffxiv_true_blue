@@ -3,11 +3,11 @@
     <info>
 		<name>Companions</name>
 		<description>Companion creatures from the True Blue Mage update.</description>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="companions.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/companions.xml" />
 		</update>
 	</info>
-    <element name="Ooze Spawn" type="Companion" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_C_OOZE_SPAWN">
+    <element name="Ooze Spawn" type="Companion" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_C_OOZE_SPAWN">
 		<description />
 		<setters>
 			<set name="strength">8</set>
@@ -25,8 +25,8 @@
 			<set name="size">Tiny</set>
 			<set name="alignment">Lawful Evil</set>
 			<set name="challenge">1/4</set>
-			<set name="actions">ID_FFXIV_TRUE_BLUE_CI_PSEUDOPOD</set>
-            <set name="traits">ID_FFXIV_TRUE_BLUE_CI_BLINDSIGHT,ID_FFXIV_TRUE_BLUE_CI_PRONE,ID_FFXIV_TRUE_BLUE_CI_BLINDED,ID_FFXIV_TRUE_BLUE_CI_CHARMED,ID_FFXIV_TRUE_BLUE_CI_DEAFENED,ID_FFXIV_TRUE_BLUE_CI_EXHAUSTION</set>
+			<set name="actions">ID_FFXIV_TRUE_BLUE_MAGE_CI_PSEUDOPOD</set>
+            <set name="traits">ID_FFXIV_TRUE_BLUE_MAGE_CI_BLINDSIGHT,ID_FFXIV_TRUE_BLUE_MAGE_CI_PRONE,ID_FFXIV_TRUE_BLUE_MAGE_CI_BLINDED,ID_FFXIV_TRUE_BLUE_MAGE_CI_CHARMED,ID_FFXIV_TRUE_BLUE_MAGE_CI_DEAFENED,ID_FFXIV_TRUE_BLUE_MAGE_CI_EXHAUSTION</set>
 		</setters>
 		<rules>
 			<stat name="companion:ac" value="13" />
@@ -36,7 +36,7 @@
 			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
-    <element name="Pseudopod" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_PSEUDOPOD">
+    <element name="Pseudopod" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_PSEUDOPOD">
 		<description>
 			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) psychic damage.</p>
 		</description>
@@ -44,7 +44,7 @@
 			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) psychic damage.</description>
 		</sheet>
 	</element>    
-    <element name="Blindsight" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_BLINDSIGHT">
+    <element name="Blindsight" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_BLINDSIGHT">
 		<description>
 			<p>Blind beyond 60ft.</p>
 		</description>
@@ -52,7 +52,7 @@
 			<description>Blind beyond 60ft.</description>
 		</sheet>
 	</element>    
-    <element name="Condition Immunity: Blinded" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_BLINDED">
+    <element name="Condition Immunity: Blinded" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_BLINDED">
 		<description>
 			<p>Can't be afftected by the status condition: Blinded.</p>
 		</description>
@@ -60,7 +60,7 @@
 			<description>Can't be afftected by the status condition: Blind.</description>
 		</sheet>
 	</element>   
-    <element name="Condition Immunity: Charmed" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_CHARMED">
+    <element name="Condition Immunity: Charmed" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_CHARMED">
 		<description>
 			<p>Can't be afftected by the status condition: Charmed.</p>
 		</description>
@@ -68,7 +68,7 @@
 			<description>Can't be afftected by the status condition: Charmed.</description>
 		</sheet>
 	</element>     
-    <element name="Condition Immunity: Deafened" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_DEAFENED">
+    <element name="Condition Immunity: Deafened" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_DEAFENED">
 		<description>
 			<p>Can't be afftected by the status condition: Deafened.</p>
 		</description>
@@ -76,7 +76,7 @@
 			<description>Can't be afftected by the status condition: Deafened.</description>
 		</sheet>
 	</element>    
-    <element name="Condition Immunity: Exhaustion" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_EXHAUSTION">
+    <element name="Condition Immunity: Exhaustion" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_EXHAUSTION">
 		<description>
 			<p>Can't be afftected by the status condition: Exhaustion.</p>
 		</description>
@@ -84,7 +84,7 @@
 			<description>Can't be afftected by the status condition: Exhaustion.</description>
 		</sheet>
 	</element>    
-    <element name="Condition Immunity: Prone" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_CI_PRONE">
+    <element name="Condition Immunity: Prone" type="Companion Trait" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CI_PRONE">
 		<description>
 			<p>Can't be afftected by the status condition: Prone.</p>
 		</description>
