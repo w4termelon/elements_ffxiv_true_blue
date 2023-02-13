@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.5">
+		<update version="1.0.6">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -270,7 +270,6 @@
             <select type="Archetype" name="Blue Mage Discpline" supports="True Blue Mage Archetype" />
         </rules>
     </element>
-    <!--To-Do: Update supports -->
     <element name="Research Journal" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL">
         <description> 
             <p>Your research journal is the repository of blue mage lore you know. When you gain this feature at 1st level you add two species of your choice from the Case Studies table below, adding their related Lore to your research journal.</p>
@@ -279,8 +278,8 @@
             <description>Repository of blue mage lore you know. Memorizied Lore will appear in Spell List.</description>
         </sheet>
         <rules>
-			<select type="Feat Feature" name="Monster Mimicry" supports="(Monster Mimicry Cosmic||Monster Mimicry Natural||Monster Mimicry Mythical||Monster Mimicry Sacred||Monster Mimicry Paranormal||Monster Mimicry Primordial)" number="2" />
-			<select type="Feat" name="Next Lore" supports="Research Journal"/>
+			<select type="Class Feature" name="Monster Mimicry" supports="(Monster Mimicry Cosmic||Monster Mimicry Ancestral||Monster Mimicry Mythical||Monster Mimicry Sacred||Monster Mimicry Supernatural||Monster Mimicry Primordial)" number="2" />
+			<select type="Class Feature" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
     <element name="Libra" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LIBRA">
@@ -384,8 +383,9 @@
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SENTINEL_PROFICIENCIES" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE" />
-            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMPERIAL_CREED" />
-            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_ENDURANCE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_URHGAN_DEFENSE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_COLLECTIVE_MEMORY" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOUL_SHUFFLE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_WE_ARE_LEGION" />
         </description>
@@ -395,7 +395,7 @@
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT" level="1" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE" level="1" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_URHGAN_DEFENSE" level="1" />
-            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMPERIAL_CREED" level="6" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_COLLECTIVE_MEMORY" level="6" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH" level="10" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOUL_SHUFFLE" level="14" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_WE_ARE_LEGION" level="20" />
