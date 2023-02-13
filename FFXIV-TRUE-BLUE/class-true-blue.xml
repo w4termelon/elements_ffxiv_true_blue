@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.4">
+		<update version="1.0.5">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -95,6 +95,8 @@
             </table>
             <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE" />
             <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LORE" />
+            <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BESTIAL_DIE" />
+            <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_ESSENCES" />
             <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL" />
             <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LIBRA" />
             <div element="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_SPECIALIZATION" />
@@ -120,6 +122,8 @@
             <select type="Proficiency" name="Skill Proficiency" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LORE" level="1" />
+            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BESTIAL_DIE" level="1" />
+            <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_ESSENCES" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL" level="1" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LIBRA" level="2"  />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_SPECIALIZATION" level="3" />
@@ -217,18 +221,18 @@
             <stat name="true blue mage:spellcasting:slots:6" value="true blue mage:spellcasting:slots:count" level="11" />
 
             <!--Number of memorizable Blue Lore, equal to spell slots-->
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="True Blue Mage"/>
-			<select type="Spell" name="Learned Lore (True Blue Mage)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="True Blue Mage"/>
+			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="True Blue Mage"/>
         </rules>
     </element>
     <!--To-Do: Check if you can make additional die more visible-->
@@ -378,7 +382,8 @@
             <p>The immortal lions are a secretive group of Blue Mages from a long forgotten empire that mastered the dark art of binding essences together. By using forbidden alchemy, they can capture a portion of the inner beast and bind its essence to their own.</p>
             <p>However keeping their beast in control of so many warring essences is a constant struggle that many immortals succumb to, becoming naught but monsters themselves.</p>
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SENTINEL_PROFICIENCIES" />
-            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ENDURE_SCARS" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMPERIAL_CREED" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_ENDURANCE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOUL_SHUFFLE" />
@@ -387,9 +392,11 @@
         <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SENTINEL_PROFICIENCIES" level="1" />
-            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ENDURE_SCARS" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_URHGAN_DEFENSE" level="1" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMPERIAL_CREED" level="6" />
-            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_ENDURANCE" level="10" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH" level="10" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOUL_SHUFFLE" level="14" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_WE_ARE_LEGION" level="20" />
         </rules>
@@ -432,6 +439,18 @@
 		<sheet action="Action">
 			<description> You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</description>
 		</sheet>
+    </element>   
+    <!--To-Do: Check if Proficiency work correctly -->
+    <element name="Collective Memory" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_COLLECTIVE_MEMORY">
+        <description>
+            <p>At 6th level you can borrow the knowledge and skills of the many essences within you. When you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it. Your proficiency lasts until you use this feature to select a different proficiency.</p>
+        </description>
+		<sheet action="Rest">
+			<description>When you finish a short or long rest, you can choose one skill or tool proficiency.</description>
+		</sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill Proficiency"/>
+        </rules>
     </element>
     <element name="Immortal Strength" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH">
         <description>
