@@ -2,8 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.4">
-            <!--To-Do: rename to Class Feature-->
+		<update version="1.0.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
@@ -98,7 +97,6 @@
 			<select type="Class Feature" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
-    <!--To-Do: rename to Ancestral-->
     <!--Ancestral-->
     <element name="Research Journal - Ancestral Lore 1" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_RESEARCH_JOURNAL_ANCESTRAL_1">
         <supports>Research Journal</supports>
@@ -553,360 +551,456 @@
 			<select type="Class Feature" name="Next Lore" supports="Research Journal"/>
 		</rules>
     </element>
-    <!--To-Do: Add <sheet display="false" /> to all Lore feat features-->
     <!--LORE-->
     <element name="Aberrant Ground" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ABERRANT_GROUND">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element> 
-    <element name="AMORPHOUS_BODY" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AMORPHOUS_BODY">
-        <supports>Monster Mimicry Cosmic</supports>
-    </element>
     <element name="Adhesive Appendage" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADHESIVE_APPENDAGE">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>
     <element name="All-Around Vision" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ALL_AROUND_VISION">
             <supports>Monster Mimicry Cosmic</supports>
-    </element>    
-    <element name="Amorphous Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AMORPHOUS_BODY">
-            <supports>Monster Mimicry Cosmic</supports>
+            <sheet display="false" />
     </element>    
     <element name="Gelatinous Decoy" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GELATINOUS_DECOY">
             <supports>Monster Mimicry Cosmic</supports>
-    </element>
-    <element name="Instinctive Attack" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSTINCTIVE_ATTACK">
-            <supports>Monster Mimicry Cosmic</supports>
-    </element>    
+            <sheet display="false" />
+    </element> 
     <element name="King of the Puddings" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_KING_OF_THE_PUDDINGS">
             <supports>Monster Mimicry Cosmic</supports>
+            <sheet display="false" />
     </element>    
     <element name="Limited Telepathy" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIMITED_TELEPATHY">
-        <supports>Monster Mimicry Cosmic</supports>
-    </element>   
+            <supports>Monster Mimicry Cosmic</supports>
+            <sheet display="false" />
+    </element>    
     <element name="Maddening Glare" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MADDENING_GLARE">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>
     <element name="Mind-Breaking Touch" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MIND_BREAKING_TOUCH">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>    
     <element name="Ooze Climb" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OOZE_CLIMB">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>    
     <element name="Pseudopod Appendage" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSEUDOPOD_APPENDAGE">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>    
     <element name="Sensorium" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SENSORIUM">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>    
     <element name="Shape-Shift" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHAPE_SHIFT">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>    
     <element name="Slime Breath" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SLIME_BREATH">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>
     <element name="Sticky Secretions" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_STICKY_SECRETIONS">
         <supports>Monster Mimicry Cosmic</supports>
-    </element>    
+        <sheet display="false" />
+    </element> 
     <element name="Vomit Ooze" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VOMIT_OOZE">
         <supports>Monster Mimicry Cosmic</supports>
+        <sheet display="false" />
     </element>
     <element name="Alien Mind" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ALIEN_MIND">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>    
     <element name="Blinding Spores" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Caustic Expulsion" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CAUSTIC_EXPULSION">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:9]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Dream Eater" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREAM_EATER">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Eat Memories" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EAT_MEMORIES">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:6]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Enslave" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENSLAVE">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:7]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Exert Will" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EXERT_WILL">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Implosion" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IMPLOSION">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Psionic Rally" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSIONIC_RALLY">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>    
     <element name="Psychewall" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHEWALL">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:7]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Psychic Backlash" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHIC_BACKLASH">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:6]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Telepathic Hub" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TELEPATHIC_HUB">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
     </element>
     <element name="Protective Thrall" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PROTECTIVE_THRALL">
         <supports>Monster Mimicry Cosmic</supports>
         <requirements>[level:11]</requirements>
+        <sheet display="false" />
     </element>
     <!-- Mythical Lore -->
     <element name="Azure Minora" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AZURE_MINORA">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Gaze of the Warden" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GAZE_OF_THE_WARDEN">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Heart Sight" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEART_SIGHT">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Illumination" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ILLUMINATION">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Inscrutable" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSCRUTABLE">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Iron Scent" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IRON_SCENT">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Labyrinthine Recall" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LABYRINTHINE_RECALL">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Merfolks Blessing" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MERFOLKS_BLESSING">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Oil Spray" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OIL_SPRAY">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Oxidizing Touch" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OXIDIZING_TOUCH">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Psychometry" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHOMETRY">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Repulsive Breath" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_REPULSIVE_BREATH">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Serpent Hair" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SERPENT_HAIR">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Temporal Flux" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TEMPORAL_FLUX">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Vanity Mirror" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VANITY_MIRROR">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <element name="Web of Hair" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_OF_HAIR">
         <supports>Monster Mimicry Mythical</supports>
+        <sheet display="false" />
     </element>
     <!--Ancestral Lore-->
     <element name="Adaptive Camouflage" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADAPTIVE_CAMOUFLAGE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Aggressive" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AGGRESSIVE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Athletic Endurance" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ATHLETIC_ENDURANCE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Celerity" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CELERITY">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Danger Sense" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DANGER_SENSE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Deadly Maul" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DEADLY_MAUL">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Extraordinary Leap" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EXTRAORDINARY_LEAP">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Fledgling Wings" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FLEDGLING_WINGS">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Hedge Wisdom" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEDGE_WISDOM">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Keen Senses" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_KEEN_SENSES">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Mighty Charge" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MIGHTY_CHARGE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Natural Projectiles" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ANCESTRAL_PROJECTILES">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Natures Gift" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURES_GIFT">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Piercing Roar" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PIERCING_ROAR">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Savage" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SAVAGE">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Thermal Vision" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_THERMAL_VISION">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Tunneler" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TUNNELER">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Web Crawler" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_CRAWLER">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <element name="Wing Attack" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WING_ATTACK">
         <supports>Monster Mimicry Ancestral</supports>
+        <sheet display="false" />
     </element>
     <!--Primordial Lore-->
     <element name="Breath Weapon (Lesser)" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_LESSER">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Chromatic Lens" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CHROMATIC_LENS">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Dracolore" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DRACOLORE">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Energy Absorption" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENERGY_ABSORPTION">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Flaming Leap" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FLAMING_LEAP">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Frigid Shield" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FRIGID_SHIELD">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Heart of the Dragon" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEART_OF_THE_DRAGON">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Hide of the Ancients" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HIDE_OF_THE_ANCIENTS">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Ice Skate" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ICE_SKATE">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Mud Breath" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MUD_BREATH">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Olach Morrah" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OLACH_MORRAH">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Primal Erudition" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PRIMAL_ERUDITION">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Secrets of the Hordekeeper" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SECRETS_OF_THE_HORDEKEEPER">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Snowshoe" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SNOWSHOE">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <element name="Sonic Scream" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SONIC_SCREAM">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
     </element>
     <!--Sacred Lore-->
     <element name="Boon of the Postmaster" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOON_OF_THE_POSTMASTER">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Discern Honesty" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DISCERN_HONESTY">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>    
     <element name="Divine Will" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DIVINE_WILL">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
-    <!--To-Do:Add grants-->
     <element name="Enlightenment" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENLIGHTENMENT">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Get Down!" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GET_DOWN">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Glorious Light" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GLORIOUS_LIGHT">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Guiding Winds" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GUIDING_WINDS">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Pack Formation" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PACK_FORMATION">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Phalanx Formation" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PHALANX_FORMATION">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Return to Nyx" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RETURN_TO_NYX">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Self Sacrifice" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SELF_SACRIFICE">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Spiritual Sustenance" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SPIRITUAL_SUSTENANCE">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Word of Truespeech: Forward" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_FORWARD">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Word of Truespeech: Hold" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_HOLD">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
     <element name="Word of Truespeech: Rally" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RALLY">
         <supports>Monster Mimicry Sacred</supports>
+        <sheet display="false" />
     </element>
-    <!--To-Do: Rename to Supernatural-->
     <!--Supernatural Lore-->
     <element name="Bite of the Kindred" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BITE_OF_THE_KINDRED">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Bloodthirst" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLOODTHIRST">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Bottom Treader" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOTTOM_TREADER">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Cloak of Shadows" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CLOAK_OF_SHADOWS">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Ghost Sight" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GHOST_SIGHT">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Hellish Weapons" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HELLISH_WEAPONS">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Maddening Feast" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MADDENING_FEAST">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Pale Blessing" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PALE_BLESSING">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element> 
     <element name="Pest Shapes" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PEST_SHAPES">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Raxivorts Tongue" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RAXIVORTS_TONGUE">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Shadow Blend" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHADOW_BLEND">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Shadow Dance" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHADOW_DANCE">
         <supports>Monster Mimicry Supernatural</supports>
-    </element>
+        <sheet display="false" />
     <element name="Soul Weapon" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SOUL_WEAPON">
+    </element>
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Swarm Shapes" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SWARM_SHAPES">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
     <element name="Vermin Form" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VERMIN_FORM">
         <supports>Monster Mimicry Supernatural</supports>
+        <sheet display="false" />
     </element>
 </elements>
     

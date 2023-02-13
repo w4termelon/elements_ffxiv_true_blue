@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -22,18 +22,17 @@
     <!--To-Do: Rename to Ancestral-->
     <!--To-Do: Update Spell List-->
     <element name="Cosmic Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_COSMIC_LORE" />
-    <element name="Natural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
+    <element name="Ancestral Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
     <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PRIMORDIAL_LORE" />
     <element name="Sacred Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_SACRED_LORE" />
-    <element name="Paranormal Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PARANORMAL_LORE" />
+    <element name="Supernatural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PARANORMAL_LORE" />
     <element name="Mythical Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_MYTHICAL_LORE" />
     <!-- Cosmic Lore -->
     <element name="Aberrant Ground" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ABERRANT_GROUND">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ABERRANT_GROUND</requirements>
         <description>
-                <p>You can use your bonus action to make the ground around you in a 5ft radius dough-like difficult terrain for up to 1 minute.</p>
-                <p>The effect is centered on you and travels with you, ending early if you are unconscious or choose to dismiss it (no action required).</p>
+                <p>You can use your bonus action to make the ground around you in a 10ft radius dough-like difficult terrain for up to 1 minute. The effect is centered on you and travels with you, ending early if you are unconscious or choose to dismiss it (no action required).</p>
                 <p class="ident">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
         </description>
         <setters>
@@ -42,7 +41,7 @@
             <set name="school">Cosmic Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration">1 minute</set>
-            <set name="range">5 feet</set>
+            <set name="range">10 feet around you</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">false</set>
@@ -55,16 +54,15 @@
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE, ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADHESIVE_APPENDAGE</requirements>
         <description>
-                <p>As an action your pseudopod can secrete a sticky coating and be thrown at a target within 30 feet of you, using a ranged lore attack.</p>
-                <p>If the target is a creature, a hit deals your pseudopod's usual damage and it becomes grappled.</p>
-                <p class="ident">Alternatively the pseudopod can be employed as a grappling hook up to the same range, giving you advantage on climbing checks to ascend the limb.</p>
+                <p>As an action, you can launch your pseudopod towards a creature of your choice within 30 feet of you. Make a ranged lore attack, on a hit the target is grappled. The grapple lasts for 1 minute, or until the target or another creature within reach uses their action to break free.</p>
+                <p class="ident">You can use this lore a number of times equal to your proficiency bonus, regaining uses after a long rest.</p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
             <set name="school">Cosmic Lore</set>
-            <set name="time">1 action</set>
-            <set name="duration"></set>
+            <set name="time">1 action / proficiency bonus</set>
+            <set name="duration">1 minute</set>
             <set name="range">30 feet</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
@@ -74,12 +72,12 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!--In Review-->
     <element name="All-Around Vision" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ALL_AROUND_VISION">
             <supports>True Blue Mage</supports>
             <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ALL_AROUND_VISION</requirements>
             <description>
-                    <p>Be it by additional eyes, eye-stalks, or a preternatural sense, you are able to see in all directions at once.</p>
-                    <p>You double your proficiency bonus when making Wisdom(Perception) checks, and you cannot be surprised while your are notincapacitated.</p>
+                    <p>Be it by additional eyes, eye-stalks, or a preternatural sense, you are able to see in all directions at once. You double your proficiency bonus when making Wisdom(Perception) checks, and you cannot be surprised while your are not incapacitated.</p>
             </description>
             <setters>
                 <set name="keywords"></set>
@@ -95,28 +93,11 @@
                 <set name="isConcentration">false</set>
                 <set name="isRitual">false</set>
             </setters>
+            <rules>
+                <grant type="Class Feature" name="Perception Expertise" id="ID_EXPERTISE_SKILL_PERCEPTION"/>
+            </rules>
     </element>    
-    <element name="Amorphous Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AMORPHOUS_BODY">
-            <supports>True Blue Mage</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_ABERRANT_GROUND, ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AMORPHOUS_BODY</requirements>
-            <description>
-                    <p>You can move through a space as narrow as 1 inch wide without squeezing.</p>
-            </description>
-            <setters>
-                <set name="keywords"></set>
-                <set name="level">1</set>
-                <set name="school">Cosmic Lore</set>
-                <set name="time">passiv</set>
-                <set name="duration">passiv</set>
-                <set name="range">1 inch</set>
-                <set name="hasVerbalComponent">false</set>
-                <set name="hasSomaticComponent">false</set>
-                <set name="hasMaterialComponent">false</set>
-                <set name="materialComponent"></set>
-                <set name="isConcentration">false</set>
-                <set name="isRitual">false</set>
-            </setters>
-    </element>    
+    <!-- To-Do: Move Mythical-->
     <element name="Gelatinous Decoy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GELATINOUS_DECOY">
             <supports>True Blue Mage</supports>
             <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GELATINOUS_DECOY</requirements>
@@ -143,34 +124,12 @@
                 <set name="isConcentration">false</set>
                 <set name="isRitual">false</set>
             </setters>
-    </element>
-    <element name="Instinctive Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_INSTINCTIVE_ATTACK">
-            <supports>True Blue Mage</supports>
-            <requirements>ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSTINCTIVE_ATTACK</requirements>
-            <description>
-                    <p>When you use your action to make an attack, you can use a bonus action to make an attack with your pseudopod.</p>
-            </description>
-            <setters>
-                <set name="keywords"></set>
-                <set name="level">1</set>
-                <set name="school">Cosmic Lore</set>
-                <set name="time">1 bonus action</set>
-                <set name="duration"></set>
-                <set name="range"></set>
-                <set name="hasVerbalComponent">false</set>
-                <set name="hasSomaticComponent">false</set>
-                <set name="hasMaterialComponent">true</set>
-                <set name="materialComponent">Pseudopod Appendage</set>
-                <set name="isConcentration">false</set>
-                <set name="isRitual">false</set>
-            </setters>
-    </element>    
+    </element> 
     <element name="King of the Puddings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_KING_OF_THE_PUDDINGS">
             <supports>True Blue Mage</supports>
             <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_KING_OF_THE_PUDDINGS</requirements>
             <description>
-                    <p>Your inner beast radiates a calming aura that puts oozes at ease - a tactic they employ so as not to cannibalize one another.</p>
-                    <p>Ooze type monsters are indifferent to you, provided you aren't otherwise hostile and don't disturb them. If provoked to an aggressive state they will still treat you with hostility as normal.</p>
+                    <p>Your inner beast takes on ooze-like qualities that put other oozes at ease. Ooze type monsters are indifferent to you provided you don't disturb them, and you can move through a space as narrow as 1 inch wide without squeezing. If provoked to an aggressive state they will treat you with hostility as normal.</p>
             </description>
             <setters>
                 <set name="keywords"></set>
@@ -187,6 +146,7 @@
                 <set name="isRitual">false</set>
             </setters>
     </element>    
+    <!--In Review-->
     <element name="Limited Telepathy" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIMITED_TELEPATHY</requirements>
@@ -202,7 +162,7 @@
             <set name="school">Cosmic Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration">{{level:True Blue Mage}}</set>
-            <set name="range">30 feat to cast and {{}}</set>
+            <set name="range">Cast: 30ft and Maintain: {{int:modifier}}</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">false</set>
@@ -211,6 +171,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>   
+    <!-- To-Do: Move Mythical-->
     <element name="Maddening Glare" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MADDENING_GLARE">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MADDENING_GLARE</requirements>
@@ -234,6 +195,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!--In Review-->
     <element name="Mind-Breaking Touch" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIND_BREAKING_TOUCH">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MIND_BREAKING_TOUCH</requirements>
@@ -276,6 +238,9 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <stat name="innate speed:climb" value="innate speed" bonus="base" />
+        </rules>
     </element>    
     <element name="Pseudopod Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE">
         <supports>True Blue Mage</supports>
@@ -319,6 +284,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
+    <!-- To-Do: Move Mythical-->
     <element name="Shape-Shift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SHAPE_SHIFT">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SHAPE_SHIFT</requirements>
@@ -426,6 +392,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
+    <!-- To-Do: Move Ancestral-->
     <element name="Blinding Spores" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BLINDING_SPORES">
         <supports>True Blue Mage</supports>
         <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES</requirements>
@@ -469,6 +436,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Mythical-->
     <element name="Dream Eater" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DREAM_EATER">
         <supports>True Blue Mage</supports>
         <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREAM_EATER</requirements>
@@ -557,6 +525,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Mythical-->
     <element name="Implosion" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_IMPLOSION">
         <supports>True Blue Mage</supports>
         <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IMPLOSION</requirements>
@@ -1047,7 +1016,7 @@
         </setters>
     </element>
     <!--To-Do: Add higher level lore -->
-    <!--Natural Lore-->
+    <!--Ancestral Lore-->
     <element name="Adaptive Camouflage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ADAPTIVE_CAMOUFLAGE">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ADAPTIVE_CAMOUFLAGE</requirements>
@@ -1058,7 +1027,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration">10 minutes</set>
             <set name="range"></set>
@@ -1081,7 +1050,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1102,7 +1071,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration">1 hour</set>
             <set name="range">+1 mile</set>
@@ -1123,7 +1092,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range">+ 10 feet walking speed</set>
@@ -1144,7 +1113,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1166,7 +1135,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range">15 feet</set>
@@ -1187,7 +1156,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range">1 foot = jump 3 feet</set>
@@ -1209,7 +1178,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range">walking speed</set>
@@ -1236,7 +1205,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1257,7 +1226,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1279,7 +1248,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1301,7 +1270,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range">Ammunition 20/80</set>
@@ -1323,7 +1292,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration">passiv</set>
             <set name="range"></set>
@@ -1346,7 +1315,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 action</set>
             <set name="duration">passiv</set>
             <set name="range">30 feet</set>
@@ -1368,7 +1337,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range">adjacent</set>
@@ -1390,7 +1359,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration"></set>
             <set name="range">60 feet</set>
@@ -1411,7 +1380,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration">burrow speed = walking speed</set>
             <set name="range">5 feet wide tunnel</set>
@@ -1432,7 +1401,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -1454,7 +1423,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Natural Lore</set>
+            <set name="school">Ancestral Lore</set>
             <set name="time">1 Action</set>
             <set name="duration"></set>
             <set name="range">10 feet</set>
@@ -1808,7 +1777,8 @@
         </setters>
     </element>
     <!--To-Do: Add higher level lore -->
-        <!--Sacred Lore-->
+    <!--Sacred Lore-->
+    <!-- To-Do: Move Ancestral-->
     <element name="Boon of the Postmaster" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BOON_OF_THE_POSTMASTER">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOON_OF_THE_POSTMASTER</requirements>
@@ -1901,6 +1871,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Ancestral-->
     <element name="Get Down!" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GET_DOWN">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GET_DOWN</requirements>
@@ -1968,6 +1939,7 @@
         </setters>
     </element>
     <!--Only 1 Stance at a Time!!!-->
+    <!-- To-Do: Move Ancestral-->
     <element name="Pack Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION">
         <supports>True Blue Mage</supports>
         <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PACK_FORMATION</requirements>
@@ -2034,6 +2006,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Ancestral-->
     <element name="Self Sacrifice" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SELF_SACRIFICE">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SELF_SACRIFICE</requirements>
@@ -2076,6 +2049,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Ancestral-->
     <element name="Word of Truespeech: Forward" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_FORWARD">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_FORWARD</requirements>
@@ -2098,6 +2072,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Ancestral-->
     <element name="Word of Truespeech: Hold" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_HOLD">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_HOLD</requirements>
@@ -2120,6 +2095,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- To-Do: Move Ancestral-->
     <element name="Word of Truespeech: Rally" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_RALLY">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RALLY</requirements>
@@ -2143,7 +2119,7 @@
         </setters>
     </element>
     <!--To-Do: Add higher level lore -->
-    <!--Paranormal Lore-->
+    <!--Supernatural Lore-->
     <element name="Bite of the Kindred" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BITE_OF_THE_KINDRED">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BITE_OF_THE_KINDRED</requirements>
@@ -2153,7 +2129,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range">melee</set>
@@ -2175,7 +2151,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 action</set>
             <set name="duration">until long rest</set>
             <set name="range">melee</set>
@@ -2196,7 +2172,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2217,7 +2193,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration"></set>
             <set name="range">10 feet</set>
@@ -2238,7 +2214,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range">60 feet</set>
@@ -2260,7 +2236,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration"></set>
             <set name="range">melee</set>
@@ -2282,7 +2258,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 action + 1 turn</set>
             <set name="duration">1 minute</set>
             <set name="range">60 feet</set>
@@ -2303,7 +2279,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2325,7 +2301,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2346,7 +2322,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2368,7 +2344,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration">10 minutes</set>
             <set name="range"></set>
@@ -2390,7 +2366,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration"></set>
             <set name="range">30 feet</set>
@@ -2414,7 +2390,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 action</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2435,7 +2411,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">passiv</set>
             <set name="duration"></set>
             <set name="range"></set>
@@ -2458,7 +2434,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Paranormal Lore</set>
+            <set name="school">Supernatural Lore</set>
             <set name="time">1 action</set>
             <set name="duration">1 hour</set>
             <set name="range"></set>
