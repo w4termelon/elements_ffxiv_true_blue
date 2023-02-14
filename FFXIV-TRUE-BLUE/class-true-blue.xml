@@ -2,10 +2,11 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.6">
+		<update version="1.0.7">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
+
     <!--Ancestral,Cosmic,Primordial,Sacred,Supernatural,Mythical -->
     <element name="True Blue Mage" type="Class" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_TRUE_BLUE_MAGE">
         <description>
@@ -133,7 +134,6 @@
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_SCAN" level="9" />
             <grant type="Class Feature" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LEGENDARY_LORE" level="11" />
         </rules>
-
     </element>
     <element name="Lore" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_LORE">
         <description>
@@ -235,16 +235,19 @@
 			<select type="Spell" name="Memorizied Lore" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="True Blue Mage"/>
         </rules>
     </element>
-    <!--To-Do: Check if you can make additional die more visible-->
     <element name="Bestial Die" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BESTIAL_DIE">
         <description> 
             <p>You gain a bestial die which is a d6. Some lore and class features will call on you to roll your bestial die, or deal 'bestial damage' in which case you roll this die. This die is not expended when used.</p>
             <p class="indent">Your bestial die increases in size when you reach 5th level (d8), 11th Level (d10), and 17th Level (d12).</p>
         </description>
         <sheet>
-            <description>You gain a bestial die (d6). It increases in size: 5th level (d8), 11th Level (d10), and 17th Level (d12)</description>
+            <description>You have a bestial die of 1d{{blu:bestial die}}. This die is not expended when used.</description>
         </sheet>
         <rules>
+            <stat name="blu:bestial die" value="6" />
+            <stat name="blu:bestial die" value="2" level="5" />
+            <stat name="blu:bestial die" value="2" level="11" />
+            <stat name="blu:bestial die" value="2" level="17" />
 		</rules>
     </element>
     <!--To-Do: Add Creature Type Selection up to proficiency bonus-->
@@ -255,11 +258,10 @@
             <p class="indent">If you collect a new essence while at your limit, you can replace one of the essences within you with the newly acquired essence.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Each creautre's essence is unique, and you can hold a number of essences within yourself equal to your proficiency bonus for a number of days equal to your intelligence modifier. As long as you carry an essence within yourself you are aware of the species and type of the creature it came from (eg. Wolf is a species of type Beast; Pixie is a species of type Fey; and Zombie is a species of type Undead etc).&#13;
+                If you collect a new essence while at your limit, you can replace one of the essences within you with the newly acquired essence.
+            </description>
         </sheet>
-        <rules>
-
-		</rules>
     </element>
     <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE">
         <description>
@@ -296,7 +298,7 @@
             <p class="indent">Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</p>
         </description>
         <sheet action="1 minute" usage="Long Rest">
-            <description> By spending at least 1 minute observing or interacting with another creature, the DM reveals two of the following characteristics about it of your choice: Highest Ability Score, Lowest Ability Score, Special Senses, Armor Class, Current hit points, and a random condition or damage immunity (if any). Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</description>
+            <description>By spending at least 1 minute observing or interacting with another creature, the DM reveals two of the following characteristics about it of your choice: Highest Ability Score, Lowest Ability Score, Special Senses, Armor Class, Current hit points, and a random condition or damage immunity (if any). Once you use this feature, you can't learn additional information from the same creature again until you finish a short or long rest.</description>
         </sheet>
     </element>
     <!--To-Do: Add monster school selection-->
@@ -365,12 +367,12 @@
             <p class="indent">You can only memorize one legendary lore at a time as part of your memorized lore list, but you can memorize an additional legendary lore at 13th, 15th, and 17th level.</p>
         </description>
         <sheet display="false" />
-        <rules>
+        <!-- <rules>
             <select type="Class Feature" name="Legendary Lore (Limit 1)" supports="Legendary Lore" level="11" />
             <select type="Class Feature" name="Legendary Lore (Limit 2)" supports="Legendary Lore" level="13" />
             <select type="Class Feature" name="Legendary Lore (Limit 3)" supports="Legendary Lore" level="15" />
             <select type="Class Feature" name="Legendary Lore (Limit 4)" supports="Legendary Lore" level="17" />
-        </rules>
+        </rules> -->
     </element>
 
     <!--To-Do: Add other subclasses-->
@@ -401,19 +403,18 @@
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_WE_ARE_LEGION" level="20" />
         </rules>
     </element>
-    <!--To-Do: grant alchemist's supplies proficiency-->
     <element name="Sentinel Proficiencies" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SENTINEL_PROFICIENCIES">
         <description>
             <p>When you choose this discipline at 1st level, you gain proficiency with martial weapons, heavy armor, shields and alchemist's supplies.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <decsription>You gain proficiency with martial weapons, heavy armor, shields and alchemist's supplies.</decsription>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
         </rules>
     </element>
     <element name="Fearless Intercept" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_FEARLESS_INTERCEPT">
@@ -421,8 +422,13 @@
             <p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your Constitution modifier (to a minimum of 0 damage). You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</p>
         </description>
         <sheet action="Reaction">
-            <description>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you reduce the damage the target takes by 1d10 + your Constitution modifier (to a minimum of 0 damage). You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</description>
+            <description>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you reduce the damage the target takes by 1d10 + {{fearless intercept}}. You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</description>
+            <description level="10">When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you reduce the damage the target takes by 2d10 + {{fearless intercept}}. You must be wielding a shield or weapon, or possess a natural weapon to use this reaction.</description>
         </sheet>
+        <rules>
+            <stat name="fearless intercept" value="0" bonus="base" />
+            <stat name="fearless intercept" value="constitution:modifier" />
+        </rules>
     </element>
     <element name="Siphon Essence" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE">
         <description>
@@ -437,7 +443,7 @@
             <p>You are trained in Aht Urhganian military techniques. Once per turn, when you take the Attack action on your turn, you can forgo one of your attacks to focus on defensive positioning and parrying blows. You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</p>
         </description>
 		<sheet action="Action">
-			<description> You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</description>
+			<description>You gain a +2 bonus to AC until the start of your next turn while you wield a weapon or possess a natural weapon, and aren't incapacitated.</description>
 		</sheet>
     </element>   
     <!--To-Do: Check if Proficiency work correctly -->
@@ -445,11 +451,13 @@
         <description>
             <p>At 6th level you can borrow the knowledge and skills of the many essences within you. When you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it. Your proficiency lasts until you use this feature to select a different proficiency.</p>
         </description>
-		<sheet action="Rest">
+		<sheet action="1/Rest">
 			<description>When you finish a short or long rest, you can choose one skill or tool proficiency.</description>
 		</sheet>
         <rules>
-            <select type="Proficiency" supports="Skill Proficiency"/>
+            <select type="Proficiency" name="Collective Memory (True Blue)" supports="Skill Proficiency"/>
+            <!-- I don't think its super necessary to have this rule as its going to reset like every short or long rest.
+            More of something  aplayer to keep track of. -->
         </rules>
     </element>
     <element name="Immortal Strength" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_IMMORTAL_STRENGTH">
@@ -457,7 +465,7 @@
             <p>By 10th level, you can draw on the strength of your essencesto block your foes attacks. When you use Fearless Intercept, you now reduce the damage by 2d10 + your Constitution modifier instead.</p>
         </description>
         <sheet>
-            <description>When you endure scars, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</description>
+            <description>When you use Fearless Intercept, you have resistance to any damage your are forced to take, and you have advantage on your first saving throw to stave off any condition you are forced to accept.</description>
         </sheet>
     </element>
     <element name="Soul Shuffle" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOUL_SHUFFLE">
@@ -465,7 +473,7 @@
             <p>From 14th level, you are able to express greater control over the essences within. You can meditate for 10 minutes during a short rest to change the lore you have memorized. You can change a number of lore equal to your half your proficiency bonus rounded down.</p>
             <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
         </description>
-        <sheet action="10 minutes" usage="Long Rest">
+        <sheet action="10 minutes" usage="Short Rest">
             <description>You can meditate for 10 minutes during a short rest to change a number of lore you have memorized equal to half of your proficiency bonus rounded down.</description>
         </sheet>
     </element>
@@ -478,6 +486,96 @@
         <sheet usage="Long Rest">
             <description>When you finish a long rest, subtract up to 4 points from amongst your ability scores and redistribute them. You may raise an ability score above 20 this way,</description>
         </sheet>
+        <rules>
+            <!-- To do: Increase ability score caps, look at various magic items for code... -->
+        </rules>
     </element>
     
+    <element name="Gourmand" type="Archetype" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ARCHETYPE_GOURMAND">
+        <supports>True Blue Mage Archetype</supports>
+        <description>
+            <p>If there's one thing every being has in common with their inner beast it's the hunger, the compulsion that drives living beings to survive. Gourmands can use this link as a way to reach their beast, gifting it the essence of other beasts. Whether it's to fight their way to the top of the food chain, or simply discover every taste the world has to offer, you work with your beast to become what you eat.</p>
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_CULINARIAN_PROFICIENCIES" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_BESTIAL_BITE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOPHISTICATED_PALETTE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_DIRE_MAW" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_REINVIGORATE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_APEX_PREDATOR" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_CULINARIAN_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_BESTIAL_BITE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOPHISTICATED_PALETTE" level="6" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_DIRE_MAW" level="10" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_REINVIGORATE" level="14" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_APEX_PREDATOR" level="20" />
+        </rules>
+    </element>
+    <element name="Culinarian Proficiencies" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_CULINARIAN_PROFICIENCIES">
+        <description>
+            <p>When you choose this discipline at first level, you gain proficiency with tridents, and cook's utensils.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Learning Style" type="Archeype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE">
+        <description>
+            <p>Also at 1st level you have discovered how to acquire essence from the creatures of the world. The gourmand achieves this by feeding their inner beast and digesting the essence of others. You gain the following feature:</p>
+            <p class="indent"><strong>Devour. </strong>When a creature is slain within range of your movement, you can use your reaction to move to a square adjacent to it and channel your inner beast to consume it through you. If the creature is Medium sized or smaller you may devour it whole, otherwise if the creature is larger it can be badly maimed instead, losing a limb or similar sized portion of its body. If some or all of the creature was devoured, you acquire the creature's essence.</p>
+            <p class="indent">You can use this feature a number of times equal to your intelligence modifier and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{intelligence:modifier}}/Long Rest" alt="Devour">
+            <description>When a creature is slain within range of your movement, you can use your reaction to move to a square adjacent to it and channel your inner beast to consume it through you. If the creature is Medium sized or smaller you may devour it whole, otherwise if the creature is larger it can be badly maimed instead, losing a limb or similar sized portion of its body. If some or all of the creature was devoured, you acquire the creature's essence.</description>
+            <description level="10">When a creature is slain within range of your movement, you can use your reaction to move to a square adjacent to it and channel your inner beast to consume it through you. If the creature is Larger sized or smaller you may devour it whole, and consume up to a similarly sized portion of larger creatures. If some or all of the creature was devoured, you acquire the creature's essence.</description>
+        </sheet>
+    </element>
+    <element name="Bestial Bite" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_BESTIAL_BITE">
+        <description>
+            <p>Lastly, at 1st level your inner beast can manifest through you to strike at a foe. When you use your action to invoke a lore or take the attack action, you can use your bonus action to make a melee lore attack against a creautre within 5 feet of you, dealing 1d4 piercing damage plus your Intelligence modifier on a hit.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you use your action to invoke a lore or take the attack action, you can use your bonus action to make a melee lore attack against a creautre within 5 feet of you, dealing 1d4 piercing damage plus {{intelligence:modifier}} on a hit.</description>
+            <description level="10">When you use your action to invoke a lore or take the attack action, you can use your bonus action to make a melee lore attack against a creautre within 5 feet of you, dealing 1d6 piercing damage plus {{intelligence:modifier}} on a hit.</description>
+        </sheet>
+    </element>
+    <element name="Sophisticated Palette" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOPHISTICATED_PALETTE">
+        <description>
+            <p>At 6th level, your love of food has refined the precision of your taste buds and olfactory organs, granting you advantage on Intelligence(Perception) and (Investigation) checks related to taste and smell.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Intelligence(Perception) and (Investigation) checks related to taste and smell.</description>
+        </sheet>
+    </element>
+    <element name="Dire Maw" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_DIRE_MAW">
+        <description>
+            <p>By 10th level your body is growing stronger from the accumulated essence within, allowing your inner beast act through it to perform more viscious acts. Your Bestial Bite attack's damage improves to 1d6 piercing damage. Additionally you may now devour creatures that are Large or smaller whole, and consume up to a similarly sized portion of larger creatures.</p>
+        </description>
+        <sheet display="false">
+            <!-- Displayed on other feats gained at level 10, ie. Learning Style (Devour) and Bestial Bite -->
+        </sheet>
+    </element>
+    <element name="Reinvigorate" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_REINVIGORATE">
+        <description>
+            <p>From 14th level, the adrenaline rush of recognizing prey renews your hunger. When your blood in the water trait is triggered, you can refresh the use of one exhausted memorized lore that refreshes on a short or long rest.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="Long Rest">
+            <description>When your devour feature is triggered, you can refresh the use of one exhausted memorized lore that refreshes on a short or long rest.</description>
+            <!-- Blood in the Water trait does nto exist anymore, needs some balancing here... Maybe have it combo with devour when devouring a creature? -->
+        </sheet>
+    </element>
+    <element name="Apex Predator" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_APEX_PREDATOR">
+        <description>
+            <p>At 20th level, your inner beast is more easily able to manifest through you to consume creatures. You can now devour Large or smaller creatures whole, killing them instantly. When you do so, you also restore a number of hit points equal to your level.</p>
+        </description>
+        <sheet>
+            <description>You can now devour Large or smaller creatures whole, killing them instantly. When you do so, you also restore a number of hit points equal to your level ({{level}}).</description>
+        </sheet>
+    </element>
 </elements>
