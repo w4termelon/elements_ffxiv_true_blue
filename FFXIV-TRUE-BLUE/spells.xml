@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.5">
+		<update version="1.0.6">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -539,7 +539,7 @@
             <set name="isRitual">false</set>
         </setters>
         <rules>
-            <select type="Spell" name="Cantrip (Azure Minora)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="Wizard" />
+            <select type="Spell" name="Cantrip (Azure Minora)" supports="(Wizard||$(spellcasting:list)), 0" level="1" number="2" spellcasting="True Blue Mage" />
         </rules>
     </element>
     <element name="Gaze of the Warden" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GAZE_OF_THE_WARDEN">
