@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.4">
+		<update version="1.0.5">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -18,9 +18,6 @@
         15th = Tier 8
         17th = Tier 9
     -->
-    <!--To-Do: Rename to Supernatural-->
-    <!--To-Do: Rename to Ancestral-->
-    <!--To-Do: Update Spell List-->
     <element name="Cosmic Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_COSMIC_LORE" />
     <element name="Ancestral Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
     <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PRIMORDIAL_LORE" />
@@ -190,7 +187,7 @@
             <stat name="innate speed:climb" value="innate speed" bonus="base" />
         </rules>
     </element>    
-    <!--To-Do: Add Pseudolash [Too Weak]-->
+    <!--To-Do: Add Skill Pseudolash [Too Weak]-->
     <element name="Pseudopod Appendage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSEUDOPOD_APPENDAGE">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSEUDOPOD_APPENDAGE</requirements>
@@ -430,7 +427,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>    
-    <!-- To-Do: Add grant for immunity-->
     <element name="Psychewall" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PSYCHEWALL">
         <supports>True Blue Mage</supports>
         <requirements>[level:7], ID_FFXIV_TRUE_BLUE_MAGE_LIMITED_TELEPATHY,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PSYCHEWALL</requirements>
@@ -698,7 +694,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--To-Do: Add, water breathing condition-->
     <element name="Merfolks Blessing" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MERFOLKS_BLESSING">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MERFOLKS_BLESSING</requirements>
@@ -721,8 +716,10 @@
         </setters>
         <rules>
             <stat name="innate speed:swim" value="innate speed" bonus="base" />
+            <grant type="Condition" id="ID_FFXIV_TRUE_BLUE_MAGE_CONDITION_WATER_BREATHING"/>
         </rules>
     </element>
+    <element name="Water Breathing" type="Condition" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CONDITION_WATER_BREATHING" />
     <element name="Oil Spray" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OIL_SPRAY">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OIL_SPRAY</requirements>
@@ -1158,8 +1155,8 @@
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
-            <select type="Proficiency" name="Hedge Wisdom" number="1" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_MEDICINE" requirements="!ID_PROFICIENCY_SKILL_NATURE|!ID_PROFICIENCY_SKILL_MEDICINE"/>
-            <select type="Proficiency" name="Hedge Wisdom" number="1" supports="Skill" requirements="ID_PROFICIENCY_SKILL_NATURE,ID_PROFICIENCY_SKILL_MEDICINE"/>
+            <select type="Proficiency" name="Hedge Wisdom" number="1" supports="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_NATURE|ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_MEDICINE" requirements="!ID_PROFICIENCY_SKILL_NATURE|!ID_PROFICIENCY_SKILL_MEDICINE"/>
+            <select type="Proficiency" name="Hedge Wisdom" number="1" supports="Skill" requirements="ID_PROFICIENCY_SKILL_NATURE,ID_PROFICIENCY_SKILL_MEDICINE,!ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_MEDICINE,!ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_NATURE"/>
         </rules>
     </element>
     <element name="Keen Senses" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_KEEN_SENSES">
@@ -1518,7 +1515,7 @@
 </element>
     <!--To-Do: Add higher level lore -->
     <!--Primordial Lore-->
-    <!-- Update Breath so you can select a type -->
+    <!--To-Do: Update Breath so you can select a type -->
     <element name="Breath Weapon (Lesser)" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BREATH_WEAPON_LESSER">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_LESSER</requirements>
@@ -1554,7 +1551,7 @@
             <set name="level">1</set>
             <set name="school">Primordial Lore</set>
             <set name="time">1 bonus action</set>
-            <set name="duration"></set>
+            <set name="duration">Int mod / Day</set>
             <set name="range"></set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
@@ -1564,7 +1561,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--To-Do:Add grants-->
     <element name="Dracolore" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DRACOLORE">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DRACOLORE</requirements>
@@ -1590,6 +1586,11 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <select type="Proficiency" name="Dracolore" number="1" supports="Skill" requirements="ID_PROFICIENCY_SKILL_HISTORY,!ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_HISTORY"/>
+            <grant type="Proficiency" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_HISTORY" requirements="!ID_PROFICIENCY_SKILL_HISTORY"/>
+        </rules>
     </element>
     <element name="Energy Absorption" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENERGY_ABSORPTION">
         <supports>True Blue Mage</supports>
@@ -1699,6 +1700,9 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <stat name="ac" value="1"/>
+        </rules>
     </element>
     <element name="Ice Skate" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ICE_SKATE">
         <supports>True Blue Mage</supports>
@@ -1714,6 +1718,28 @@
             <set name="time">1 bonus action</set>
             <set name="duration">1 minute</set>
             <set name="range">equals your movement</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Backlash" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LIGHTNING_BACKLASH">
+        <supports>True Blue Mage</supports>
+        <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIGHTNING_BACKLASH</requirements>
+        <description>
+                <p>As a reaction when you take damage from a melee weapon attack, you can unleash a burst of lightning at the attacker. They must succeed on a Dexterity saving throw or suffer bestial lightning damage.</p>
+                <p class="indent">Once you use this lore you can't use it again until you finish a short or long rest.</p>        
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">1 reaction</set>
+            <set name="duration">1 / Rest</set>
+            <set name="range"></set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">false</set>
@@ -1791,6 +1817,9 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+        </rules>
     </element>
     <element name="Secrets of the Hordekeeper" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SECRETS_OF_THE_HORDEKEEPER">
         <supports>True Blue Mage</supports>
@@ -1813,6 +1842,10 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+        </rules>
     </element>
     <element name="Snowshoe" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SNOWSHOE">
         <supports>True Blue Mage</supports>
@@ -1872,7 +1905,7 @@
             <set name="school">Sacred Lore</set>
             <set name="time">1 action</set>
             <set name="duration">10 minutes</set>
-            <set name="range"></set>
+            <set name="range">Int mod / Day</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">false</set>
@@ -1893,7 +1926,7 @@
             <set name="level">1</set>
             <set name="school">Sacred Lore</set>
             <set name="time">1 reaction</set>
-            <set name="duration"></set>
+            <set name="duration">1/Rest</set>
             <set name="range"></set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
@@ -1903,7 +1936,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--To-Do:Add grants-->
     <element name="Enlightenment" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENLIGHTENMENT">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENLIGHTENMENT</requirements>
@@ -1929,13 +1961,17 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <select type="Proficiency" name="Enlightenment" number="1" supports="Skill" requirements="ID_PROFICIENCY_SKILL_RELIGION,!ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_RELIGION"/>
+            <grant type="Proficiency" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_RELIGION" requirements="!ID_PROFICIENCY_SKILL_RELIGION"/>
+        </rules>
     </element>
     <element name="Glorious Light" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GLORIOUS_LIGHT">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GLORIOUS_LIGHT</requirements>
         <description>
-                <p>When you create a magical source of light it becomes empowered with celestial might, overpowering magical darkness of any level.</p>        
-                 
+                <p>When you create a magical source of light it becomes empowered with celestial might, overpowering magical darkness of any level.</p>     
         </description>
         <setters>
             <set name="keywords"></set>
@@ -1957,7 +1993,6 @@
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GUIDING_WINDS</requirements>
         <description>
                 <p>As a reaction when an ally in 30 feet of you makes a ranged weapon attack, you can supply guiding winds that help ensure their shot meets its mark, granting them advantage on the attack roll.</p>        
-                 
         </description>
         <setters>
             <set name="keywords"></set>
@@ -2074,7 +2109,7 @@
             <set name="level">1</set>
             <set name="school">Supernatural Lore</set>
             <set name="time">1 action</set>
-            <set name="duration">until long rest</set>
+            <set name="duration">1/Rest</set>
             <set name="range">melee</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
@@ -2216,8 +2251,7 @@
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_VERMIN_FORM,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PEST_SHAPES</requirements>
         <description>
-                <p>Your inner beast can tap into the forms of other pests, granting you additional options when taking on a vermin form. You can now become a bat, fly, spider, or snake instead.</p>        
-                 
+                <p>Your inner beast can tap into the forms of other pests, granting you additional options when taking on a vermin form. You can now become a bat, fly, spider, or snake instead.</p>              
         </description>
         <setters>
             <set name="keywords"></set>
@@ -2268,7 +2302,7 @@
             <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
             <set name="duration">10 minutes</set>
-            <set name="range"></set>
+            <set name="range">1/Rest</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">false</set>
@@ -2289,7 +2323,7 @@
             <set name="level">1</set>
             <set name="school">Supernatural Lore</set>
             <set name="time">1 bonus action</set>
-            <set name="duration"></set>
+            <set name="duration">Int mod/Day</set>
             <set name="range">30 feet</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">false</set>

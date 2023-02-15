@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.6">
+		<update version="1.0.7">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
@@ -869,6 +869,10 @@
         <sheet display="false" />
     </element>
     <element name="Ice Skate" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ICE_SKATE">
+        <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
+    </element>
+    <element name="Lightning Backlash" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIGHTNING_BACKLASH">
         <supports>Monster Mimicry Primordial</supports>
         <sheet display="false" />
     </element>

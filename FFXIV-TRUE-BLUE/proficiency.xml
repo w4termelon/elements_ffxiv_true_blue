@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>True Blue Mage Proficiencies</name>
+		<update version="1.0.0">
+			<file name="proficiency.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/proficiency.xml" />
+		</update>
+	</info>
+    <element name="History" type="Proficiency" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_HISTORY">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        </rules>
+    </element>   
+     <element name="Nature" type="Proficiency" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_NATURE">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>   
+     <element name="Medicine" type="Proficiency" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_MEDICINE">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Religion" type="Proficiency" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PROFICIENCY_SKILL_RELIGION">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+        </rules>
+    </element>
+</elements>
