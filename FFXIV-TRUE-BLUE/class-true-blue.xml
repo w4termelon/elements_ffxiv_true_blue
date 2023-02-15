@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.7">
+		<update version="1.0.8">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -496,7 +496,7 @@
         <description>
             <p>If there's one thing every being has in common with their inner beast it's the hunger, the compulsion that drives living beings to survive. Gourmands can use this link as a way to reach their beast, gifting it the essence of other beasts. Whether it's to fight their way to the top of the food chain, or simply discover every taste the world has to offer, you work with your beast to become what you eat.</p>
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_CULINARIAN_PROFICIENCIES" />
-            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_GOURMAND_LEARNING_STYLE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_BESTIAL_BITE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOPHISTICATED_PALETTE" />
             <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_DIRE_MAW" />
@@ -506,7 +506,7 @@
         <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_CULINARIAN_PROFICIENCIES" level="1" />
-            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_GOURMAND_LEARNING_STYLE" level="1" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_BESTIAL_BITE" level="1" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SOPHISTICATED_PALETTE" level="6" />
             <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_DIRE_MAW" level="10" />
@@ -524,7 +524,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
         </rules>
     </element>
-    <element name="Learning Style" type="Archeype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LEARNING_STYLE">
+    <element name="Learning Style" type="Archeype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_GOURMAND_LEARNING_STYLE">
         <description>
             <p>Also at 1st level you have discovered how to acquire essence from the creatures of the world. The gourmand achieves this by feeding their inner beast and digesting the essence of others. You gain the following feature:</p>
             <p class="indent"><strong>Devour. </strong>When a creature is slain within range of your movement, you can use your reaction to move to a square adjacent to it and channel your inner beast to consume it through you. If the creature is Medium sized or smaller you may devour it whole, otherwise if the creature is larger it can be badly maimed instead, losing a limb or similar sized portion of its body. If some or all of the creature was devoured, you acquire the creature's essence.</p>
@@ -576,6 +576,112 @@
         </description>
         <sheet>
             <description>You can now devour Large or smaller creatures whole, killing them instantly. When you do so, you also restore a number of hit points equal to your level ({{level}}).</description>
+        </sheet>
+    </element>
+
+    <element name="Lore Master" type="Archetype" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ARCHETYPE_LORE_MASTER">
+        <supports>True Blue Mage Archetype</supports>
+        <description>
+            <p>While most blue mages enjoy the rush of facing their foes up close and personal, the lore master knows a better way. Through careful observation, reading, and analysis it is possible to gain an unprecedented understanding of the inner beast with none of the undignified quarreling. While they might not learn lore as quickly as others, they are able to draw extra benefits from the lore discover.</p>
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ARCANE_AZURE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LORE_MASTER_LEARNING_STYLE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_MONSTROUS_CUNNING" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SPELLSENSE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ESSENCE_FIELD" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_EXTRAPOLATE_LORE" />
+            <div element="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_KNOWLEDGE_IS_POWER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ARCANE_AZURE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LORE_MASTER_LEARNING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_MONSTROUS_CUNNING" level="1" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SPELLSENSE" level="6" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ESSENCE_FIELD" level="10" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_EXTRAPOLATE_LORE" level="14" />
+            <grant type="Archetype Feature" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_KNOWLEDGE_IS_POWER" level="20" />
+        </rules>
+    </element>
+    <element name="Arcane Azure" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ARCANE_AZURE">
+        <description>
+            <p>When you choose this discipline at 1st level, you learn two cantrips from the wizard spell list, your spellcasting ability for these cantrips is Intelligence.</p>
+        </description>
+        <sheet>
+            <description>You learn two cantrips from the wizard spell list, your spellcasting ability for these cantrips is Intelligence.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Arcane Azure)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Wizard" />
+        </rules>
+    </element>
+    <element name="Learning Style" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LORE_MASTER_LEARNING_STYLE">
+        <description>
+            <p>Also at 1st level you have discovered how to acquire essence from the creatures of the world. Lore master's accomplish this by studying creatures rather than by fighting them. You gain the following features:</p>
+            <p class="indent"><b>Case Study.</b> When you use your action to invoke a lore or take the attack action, you may use Libra as a bonus action to make a quick assessment of a creature within 60 feet of you. When used this way, Libra grants you only one characteristic instead of three and if the target is a non-humanoid creature you extract its essence.</p>
+            <p class="indent">You can use this feature a number of times equal to your intelligence modifier and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet alt="Cast Study" action="Bonus Action" usage="{{intelligence:modifier}}/Long Rest">
+            <description>When you use your action to invoke a lore or take the attack action, you may use Libra as a bonus action to make a quick assessment of a creature within 60 feet of you. When used this way, Libra grants you only one characteristic instead of three and if the target is a non-humanoid creature you extract its essence.</description>
+        </sheet>
+    </element>
+    <element name="Monstrous Cunning" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_MONSTROUS_CUNNING">
+        <description>
+            <p>Lastly at 1st level, your study of lore and how monsters fight allows you to weave cunning and strategy into your fighting style. Once per turn when you use your action to invoke a lore, or hit a creature with a weapon attack granted by your lore, you can impose one of the following effects:</p>
+            <ul>
+                <li>Add your intelligence modifier to the damage roll against one target.</li>
+                <li>Force the target to make a Strength save against your Lore save DC. On a failed save they are moved up to 10 feet horizontally in a direction of your choice.</li>
+                <li>Move yourself 5 feet horizontally in a direction of your choice, without provoking attacks of opportunity.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per turn when you use your action to invoke a lore, or hit a creature with a weapon attack granted by your lore, you can impose one of the following effects:&#13;
+                • Add your intelligence modifier to the damage roll against one target.&#13;
+                • Force the target to make a Strength save against your Lore save DC. On a failed save they are moved up to 10 feet horizontally in a direction of your choice.&#13;
+                • Move yourself 5 feet horizontally in a direction of your choice, without provoking attacks of opportunity.
+            </description>
+        </sheet>
+    </element>
+    <element name="Spellsense" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SPELLSENSE">
+        <description>
+            <p>At 6th level, you have an uncanny sense for magic that grants you the following benefits:</p>
+            <ul>
+                <li>You can cast <i>detect magic</i> at will, without spending a spell slot.</li>
+            </ul>
+            <p>When you use libra, you can now choose from the following characteristics to learn about the creature:</p>
+            <ul>
+                <li>Is Spellcaster? (Has the innate spellcasting, or spellcasting trait)</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can cast detect magic at will without expending a spell slot. When you use libra, you can now choose from the following characteristics to learn about the creature: "Is Spellcaster? (Has the innate spellcasting, or spellcasting trait)"</description>
+        </sheet>
+    </element>
+    <element name="Essence Field" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ESSENCE_FIELD">
+        <description>
+            <p>By 10th level, your mastery of lore manifesting techniques allows you to harness essence that is typically wasted when you invoke the powers of the inner beast. When you invoke a lore, you may gain a number of temporary hit points equal to your Intelligence modifier plus half your Blue Mage level, rounded up.</p>
+            <p class="indent">You can gain this benefit a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you invoke a lore, you may gain {{blu:essence field}} temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="blu:essence field" value="intelligence:modifier" />
+            <stat name="blu:essence field" value="level:true blue mage:half:up" />
+        </rules>
+    </element>
+    <element name="Extrapolate Lore" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_EXTRAPOLATE_LORE">
+        <description>
+            <p>By 14th level, you are able to garner additional insights into the studies you complete. When you study the beast with 5 field notes and roll a success you learn a second lore for the creature's species. Each lore is treated individually for the purposes of memorization and replacement.</p>
+        </description>
+        <sheet>
+            <description>When you study the beast with 5 field notes and roll a success you learn a second lore for the creature's species. Each lore is treated individually for the purposes of memorization and replacement.</description>
+        </sheet>
+    </element>
+    <element name="Knowledge is Power" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_KNOWLEDGE_IS_POWER">
+        <description>
+            <p class="indent">At 20th level, your insights into creatures and study of them can be shared with those around you. When you use your action to study a creature using Libra, you grant allied creatures within 30 feet of you advantage on their next attack roll, saving throw, or ability check that involves the target creature.</p>
+        </description>
+        <sheet action="Action">
+            <description>When you use your action to study a creature using Libra, you grant allied creatures within 30 feet of you advantage on their next attack roll, saving throw, or ability check that involves the target creature.</description>
         </sheet>
     </element>
 </elements>
