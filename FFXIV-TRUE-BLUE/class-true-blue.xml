@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.8">
+		<update version="1.0.9">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -610,7 +610,7 @@
             <description>You learn two cantrips from the wizard spell list, your spellcasting ability for these cantrips is Intelligence.</description>
         </sheet>
         <rules>
-            <select type="Spell" name="Cantrip (Arcane Azure)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Wizard" />
+            <select type="Spell" name="Cantrip (Arcane Azure)" supports="(Wizard||$(spellcasting:list)), 0" level="1" number="2" spellcasting="True Blue Mage" />
         </rules>
     </element>
     <element name="Learning Style" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_LORE_MASTER_LEARNING_STYLE">
@@ -654,6 +654,9 @@
         <sheet>
             <description>You can cast detect magic at will without expending a spell slot. When you use libra, you can now choose from the following characteristics to learn about the creature: "Is Spellcaster? (Has the innate spellcasting, or spellcasting trait)"</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spelcasting="True Blue Mage" prepared="true" />
+        </rules>
     </element>
     <element name="Essence Field" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_ESSENCE_FIELD">
         <description>
