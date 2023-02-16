@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.6">
+		<update version="1.0.7">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -517,9 +517,6 @@
     <!-- Mythical Lore -->
     <element name="Azure Minora" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AZURE_MINORA">
         <supports>True Blue Mage</supports>
-        <spellcasting name="Wizard" ability="Intelligence" allowReplace="true">
-			<list>Wizard</list>
-		</spellcasting>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AZURE_MINORA</requirements>
         <description>
                 <p>Your study of lore has revealed two new cantrips to you. When you learn this lore, select 2 cantrips from the wizard spell list, whenever you memorize this lore those cantrips become available to you. Your spellcasting ability for these cantrips is Intelligence.</p>
@@ -949,6 +946,121 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Azure Majora" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_AZURE_MAJORA">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AZURE_MAJORA</requirements>
+        <description>
+                <p>You draw upon the power of the inner beast and convert it into raw arcane potential. When you learn this lore, select one spell of 3rd Level or lower from the wizard spell list. Your spellcasting ability for this spell is Intelligence. While this lore is memorized you can cast the selected spell without using a spell slot or material components (components with a gold cost must be supplied). </p>
+                <p class="indent">You can't  do so again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 reaction</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <select type="Spell" name="Cantrip (Azure Majora)" supports="(Wizard||$(spellcasting:list)), 3" level="5" number="1" spellcasting="True Blue Mage" />
+        </rules>
+    </element>
+    <element name="Command Hair" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_COMMAND_HAIR">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_COMMAND_HAIR</requirements>
+        <description>
+                <p>You can use your action to magically grow and weave your hair into a 50ft length of rope which detaches from you with AC12 and 10 hit points. The rope remains under your control within 30 feet of you for up to 1 hour, after which it falls apart into worthless strands of hair.</p>
+                <p class="indent">You can use a bonus action to move the rope up to 20ft to a Large or smaller creature you can see, who must succeed on a Dexterity saving throw or become grappled by the rope (the escape DC is equal to your Lore save DC). The target is released if you die, if you become incapacitated, or by using another bonus action.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 hour</set>
+            <set name="range">50ft long</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Consume Magic" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CONSUME_MAGIC" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CONSUME_MAGIC</requirements>
+        <description>
+                <p>You can use your action to target a creature you can see concentrating on a spell in 60 feet of you. The creature must succeed on a Constitution saving throw or lose concentration. If you break the creature's concentration this way you gain 5 temporary hit points for each level of the spell that was ended, to a minimum of 5.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1/Rest</set>
+            <set name="range">60ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>   
+    <element name="Dimensional Rift" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DIMENSIONAL_RIFT"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DIMENSIONAL_RIFT</requirements>
+        <description>
+                <p>As a bonus action, you can create an invisible and immobile rift within an opening or frame within 5 feet of you, provided the space is no bigger than 10 feet on any side. The rift bridges the distance between that space and any point within 30 feet of it you can see or specify by distance and direction (such as "30 feet straight up").</p>
+                <p class="indent">While next to the rift, you can see through it and are considered to be next to the destination as well, and anything you put through the rift (including a portion of your body) emerges at the destination. Only you can use the rift, and it lasts until the end of your next turn.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration">1 Turn</set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Displacement" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DISPLACEMENT"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DISPLACEMENT</requirements>
+        <description>
+                <p>As an action you project an illusion that makes you appear to be standing near your actual location. For 1 minute attack rolls against you to have disadvantage. The effect is disrupted until the start of your next turn if an attack hits you, your speed is reduced to 0, or you are incapacitated.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <element name="Dream Eater" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DREAM_EATER">
             <supports>True Blue Mage</supports>
             <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREAM_EATER</requirements>
@@ -963,6 +1075,29 @@
                 <set name="time">1 reaction</set>
                 <set name="duration"></set>
                 <set name="range"></set>
+                <set name="hasVerbalComponent">false</set>
+                <set name="hasSomaticComponent">false</set>
+                <set name="hasMaterialComponent">false</set>
+                <set name="materialComponent"></set>
+                <set name="isConcentration">false</set>
+                <set name="isRitual">false</set>
+            </setters>
+    </element>
+    <element name="Fey Charm" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FEY_CHARM"  >
+            <supports>True Blue Mage</supports>
+            <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FEY_CHARM</requirements>
+            <description>
+                    <p>You can use your action to target a humanoid or beast you can see in 30 feet. If the target can see you, it must make a Wisdom save or be magically charmed. The creature regards you as a trusted friend to be heeded and protected. Although the target isn't under your control, it takes your requests or actions in the most favorable way possible.</p>
+                    <p>Each time you or your allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise the effect lasts 1 hour, or until you are slain, on a different plane of existence from the target, or end the effect as bonus action. If the target's saving throw is successful, the target is immune to your fey charm for 24 hours.</p>
+                    <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
+            </description>
+            <setters>
+                <set name="keywords"></set>
+                <set name="level">4</set>
+                <set name="school">Mythical Lore</set>
+                <set name="time">1 action</set>
+                <set name="duration">1 hour</set>
+                <set name="range">30 ft</set>
                 <set name="hasVerbalComponent">false</set>
                 <set name="hasSomaticComponent">false</set>
                 <set name="hasMaterialComponent">false</set>
@@ -990,6 +1125,185 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent"></set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Insatiable Greed" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_INSATIABLE_GREED"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSATIABLE_GREED,ID_FFXIV_TRUE_BLUE_MAGE_IRON_SCENT</requirements>
+        <description>
+                <p>You can use your action to sense the presence of gold, silver, electrum, or platinum in 30 feet of you. If you sense a source this way you can determine which location has the greatest amount, its direction, and the direction of its movement (if any). You cannot locate the source if any thickness of clay or lead, even a thin sheet, blocks a direct path between you and it.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration"></set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lilliputian Lyric" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LILLIPUTIAN_LYRIC" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LILLIPUTIAN_LYRIC</requirements>
+        <description>
+                <p>You can use your action to target a creature or object that is neither worn or carried within 30 feet of you, and call upon mischievous fey magic. The target is affected as if you had cast a reduce spell upon it, without using a spell slot or material components.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration"></set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Malevolent Obsession" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MALEVOLENT_POSSESSION"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MALEVOLENT_POSSESSION</requirements>
+        <description>
+                <p>You can use your action to present an inanimate object of 5lbs or less to a creature you can see within 30 feet, the target must succeed on a Wisdom saving throw or become charmed for up to 1 minute, or until you or your allies do anything to harm them.</p>
+                <p>While charmed this way the creature becomes obsessed with attaining the presented object and will attack anyone who gets between them and their possession of it. The charm ends if they retain possession of the item for a whole turn or if they succeed on a Wisdom saving throw repeated at the end of each turn.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pocket Dimension" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_POCKET_DIMENSION" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_POCKET_DIMENSION</requirements>
+        <description>
+                <p>You possess access to a demiplanar pocket roughly 64 cubic feet in size, which can hold up to 500lbs, resembling the interior of a bag or backpack inside. You can stow or obtain inanimate objects that aren't being worn or carried as an action by touching them, the object vanishing from sight or appearing in your hand (or an empty adjacent square if it is too large to hold) as appropriate.</p>
+                <p>If the pocket is overloaded, it is ruptured and destroyed as its contents are scattered in the Astral Plane. Only after 24 hours will the pocket mend and restores itself, ready for use once more.</p>
+                <p class="indent">If you are slain, or this lore is no longer memorized, all the contents of the pocket dimension spill out manifesting around you unharmed in the nearest open space.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration"></set>
+            <set name="range">64ft², 500lbs</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pond Chorus" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_POND_CHORUS" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_POND_CHORUS</requirements>
+        <description>
+                <p>You can use your action to call upon mischievous fey energies and target a creature within 60 feet of you. The target must succeed on a Wisdom saving throw or be transformed into a frog as if affected by a polymorph spell cast without spending a spell slot or using material components for up to 1 hour. You must concentrate on the effect for the duration.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 hour</set>
+            <set name="range">60ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spell Vitalization" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SPELL_VITALIZATION" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SPELL_VITALIZATION</requirements>
+        <description>
+                <p>As a reaction when a spell of 1st level or higher is cast within 30 feet, you can siphon some of the magic to enhance yourself. You can move up to twice your speed without provoking attacks of opportunity, then make a melee weapon attack.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 reaction</set>
+            <set name="duration"></set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Slip" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_TIME_SLIP" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TIME_SLIP,ID_FFXIV_TRUE_BLUE_MAGE_TEMPORAL_FLUX</requirements>
+        <description>
+                <p>You can use your action to create a debilitating distortion of time around a creature. Select a creature you can see within 30 feet to make a Constitution saving throw. On a failed save, the creature is temporarily subjected to old age for up to 1 minute.</p>
+                <p class="indent">For the duration their speed is reduced by 10 feet, they must roll a d4 and subtract the result from each Strength, Dexterity, or Constitution saving throw or ability check, and they can neither charm others or be charmed. They can repeat the saving throw at the end of each turn, ending the effect on themselves on a success.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pixie Dust" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PIXIE_DUST" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PIXIE_DUST</requirements>
+        <description>
+                <p>You can release a small puff of pixie dust towards a creature adjacent to you. The creature must succeed on a Constitution saving throw, or fall asleep for 1 minute. The creature is unconscious for the duration, however it wakes if it takes any damage or if another creature uses its action to shake the sleeper awake.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Mythical Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">adjacent</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>

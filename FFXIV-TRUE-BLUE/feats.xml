@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.7">
+		<update version="1.0.8">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
@@ -731,14 +731,84 @@
         <supports>Monster Mimicry Mythical</supports>
         <sheet display="false" />
     </element>
+    <element name="Azure Majora" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_AZURE_MAJORA">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Command Hair" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_COMMAND_HAIR">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>   
+    <element name="Consume Magic" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CONSUME_MAGIC">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>    
+    <element name="Dimensional Rift" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DIMENSIONAL_RIFT">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Displacement" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DISPLACEMENT">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>    
     <element name="Dream Eater" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREAM_EATER">
         <supports>Monster Mimicry Mythical</supports>
         <requirements>[level:5]</requirements>
         <sheet display="false" />
     </element>
+    <element name="Fey Charm" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FEY_CHARM">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
     <element name="Implosion" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IMPLOSION">
         <supports>Monster Mimicry Mythical</supports>
         <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Insatiable Greed" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INSATIABLE_GREED">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_IRON_SCENT</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Lilliputian Lyric" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LILLIPUTIAN_LYRIC">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Malevolent Obsession" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MALEVOLENT_POSSESSION">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Pocket Dimension" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_POCKET_DIMENSION">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Pond Chorus" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_POND_CHORUS">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Spell Vitalization" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SPELL_VITALIZATION">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Time Slip" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TIME_SLIP">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TEMPORAL_FLUX</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Pixie Dust" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PIXIE_DUST">
+        <supports>Monster Mimicry Mythical</supports>
+        <requirements>[level:11]</requirements>
         <sheet display="false" />
     </element>
     <!--Ancestral Lore-->
