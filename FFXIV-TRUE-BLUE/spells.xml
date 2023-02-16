@@ -716,10 +716,8 @@
         </setters>
         <rules>
             <stat name="innate speed:swim" value="innate speed" bonus="base" />
-            <grant type="Condition" id="ID_FFXIV_TRUE_BLUE_MAGE_CONDITION_WATER_BREATHING"/>
         </rules>
     </element>
-    <element name="Water Breathing" type="Condition" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CONDITION_WATER_BREATHING" />
     <element name="Oil Spray" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_OIL_SPRAY">
         <supports>True Blue Mage</supports>
         <requirements>ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_OIL_SPRAY</requirements>

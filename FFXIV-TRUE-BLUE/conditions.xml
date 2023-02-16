@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>General Conditions</name>
+		<update version="1.0.0">
+			<file name="conditions.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/conditions.xml" />
+		</update>
+	</info>
+<!-- Condition Immunities -->
+
+<element name="Immunity (Blinded)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_BLINDED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Charmed)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_CHARMED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Deafened)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_DEAFENED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Frightened)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Grappled)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_GRAPPLED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Incapacitated)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_INCAPACITATED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Paralyzed)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PARALYZED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Petrified)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PETRIFIED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Poisoned)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_POISONED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Prone)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PRONE">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Restrained)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_RESTRAINED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Stunned)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_STUNNED">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Unconscious)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_UNCONSCIOUS">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Immunity (Exhaustion)" type="Condition" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_EXHAUSTION">
+    <supports>Immunity</supports>
+</element>
+
+<element name="Condition Immunity (Blinded)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_BLINDED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_BLINDED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Charmed)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_CHARMED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_CHARMED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Deafened)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_DEAFENED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_DEAFENED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Frightened)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_FRIGHTENED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Grappled)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_GRAPPLED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_GRAPPLED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Incapacitated)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_INCAPACITATED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_INCAPACITATED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Paralyzed)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_PARALYZED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PARALYZED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Petrified)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_PETRIFIED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PETRIFIED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Poisoned)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_POISONED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Prone)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_PRONE">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_PRONE" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Restrained)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_RESTRAINED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_RESTRAINED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Stunned)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_STUNNED">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_STUNNED" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Unconscious)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_UNCONSCIOUS">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_UNCONSCIOUS" />
+    </rules>
+</element>
+
+<element name="Condition Immunity (Exhaustion)" type="Item" source="Internal" id="ID_INTERNAL_TRUE_BLUE_MAGE_ITEM_CONDITION_IMMUNITY_EXHAUSTION">
+    <setters>
+        <set name="category">Additional Feature</set>
+        <set name="slot">misc</set>
+        <set name="inventory-hidden">true</set>
+    </setters>
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_TRUE_BLUE_MAGE_CONDITION_DAMAGE_IMMUNITY_EXHAUSTION" />
+    </rules>
+</element>
+</elements>
