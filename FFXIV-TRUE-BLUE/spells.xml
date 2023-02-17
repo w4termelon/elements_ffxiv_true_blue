@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.7">
+		<update version="1.0.8">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -1439,6 +1439,9 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+        <rules>
+            <stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+        </rules>
     </element>
     <element name="Hedge Wisdom" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HEDGE_WISDOM">
         <supports>True Blue Mage</supports>
@@ -1560,7 +1563,7 @@
     <!--Needs Revision-->
     <element name="Pack Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION">
         <supports>True Blue Mage</supports>
-        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PACK_FORMATION</requirements>
+        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PACK_FORMATION,!ID_FFXIV_TRUE_BLUE_MAGE_BASTION_FORMATION</requirements>
         <description>
                 <p>Your beast reveals ancient tactical knowledge granting you the stance of the Pack. You can use your bonus action to enter the stance until the end of your next turn. For the duration while you are within 5 feet of two or more allies, each of you gain advantage on saving throws against being charmed or frightened.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       
@@ -1803,12 +1806,12 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Blinding Spores" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BLINDING_SPORES">
+    <element name="Bastion Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BASTION_FORMATION" >
         <supports>True Blue Mage</supports>
-        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES</requirements>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BASTION_FORMATION,!ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION,!ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION</requirements>
         <description>
-                <p>You can use your action to emit noxious spores. Each creature in a 10 foot radius of you must succeed on a Constitution saving throw or become Poisoned and Blinded for up to 1 minute. A poisoned creature can repeat its saving throw at the end of each turn.</p>
-                <p class="indent">Once you use this lore, you can't use it again until you finish a short, or long rest.</p>
+                <p>Your beast reveals ancient tactical knowledge granting you the stance of the Bastion. As a bonus action, you give yourself advantage on attacks of opportunity, and foes have disadvantage on melee attacks against you until the end of your next turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
         </description>
         <setters>
             <set name="keywords"></set>
@@ -1824,8 +1827,423 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
-</element>
-    <!--To-Do: Add higher level lore -->
+    </element>
+    <element name="Bestial Unity" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BESTIAL_UNITY" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BESTIAL_UNITY</requirements>
+        <description>
+                <p>On your turn, while mounted, your inner beast can command (no action required by you) your mount's beast to lash out. Your mount may use its reaction and make one attack against a target within 5 feet of you, this attack benefits from the effect of Bestial Might.</p>
+                <p class="indent">Additionally you have advantage on checks made to remain mounted.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">10 foot</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blinding Spores" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BLINDING_SPORES">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES</requirements>
+        <description>
+                <p>You can use your action to emit noxious spores. Each creature in a 15 foot radius of you must succeed on a Constitution saving throw or become Poisoned and Blinded for up to 1 minute. A poisoned creature can repeat its saving throw at the end of each turn.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short, or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">15 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!-- In review -->
+    <element name="Booming Roar" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BOOMING_ROAR"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOOMING_ROAR</requirements>
+        <description>
+                <p>You can use your action to unleash a thunderous roar audible up to 500 feet. Each creature in a 30-foot cone must make a Constitution saving throw or take 3d8 thunder damage, and become Deafened for up to 1 minute. A deafened creature can repeat its saving throw at the end of each turn ending the effect on a success.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>    
+    <!-- Needs to be redesigned -->
+    <element name="Dreadful Resilience" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DREADFUL_RESILIENCE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREADFUL_RESILIENCE</requirements>
+        <description>
+                <p>As a reaction when you take an amount of damage equal or greater than half your maximum hit points and survive, you can threaten your enemies. Foes who see and hear you in 30 foot must make a Wisdom saving throw or become Frightened of you for up to 1 minute, repeating the saving throw at the end of each turn.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Reactiob</set>
+            <set name="duration">1 minute</set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element> 
+    <element name="Engulf" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ENGULF" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENGULF</requirements>
+        <description>
+                <p>You can call on nature to ensnare a foe. As an action while you have a medium or smaller creature grappled, you envelop it with vines, plants and overgrowth for up to 1 minute or until the grapple is broken. The creature becomes blinded, restrained, and unable to breathe, and must succeed on a Constitution saving throw at the end of their turn or suffer bestial bludgeoning damage until the grapple ends. If you move, the engulfed creature moves with you. You can only have one creature engulfed at a time.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">1 Action</set>
+            <set name="duration">1 minute</set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fearless Resolve" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FEARLESS_RESOLVE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FEARLESS_RESOLVE</requirements>
+        <description>
+                <p>As a reaction when you see an ally reduced to 0 hit points you can move up to your speed towards them, restoring them to 1 hit point with a rapid medical aid if you reach them. Each attack of opportunity you trigger during this movement grants your ally an additional 1d4 hit points if you reach them, as the struggle fuels your resolve.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Reaction</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Green Blooded" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GREEN_BLOODED" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GREEN_BLOODED</requirements>
+        <description>
+                <p>Your beast has unlocked the secrets of regeneration. You can re-attach severed limbs immediately by holding it to the stump, or re-grow a lost limb over the course of a short or long rest. Additionally, when you spend Hit Dice during a short rest you restore an additional number of hit points equal to your proficiency bonus.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time"></set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Heavy Spines" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_HEAVY_SPINES" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEAVY_SPINES, ID_FFXIV_TRUE_BLUE_MAGE_NATURAL_PROJECTILES</requirements>
+        <description>
+                <p>Your projectiles grow larger and fewer. You grow half as many, but each deals two bestial die of damage on a hit instead of one.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time"></set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Inspiring Command: Attack" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_ATTACK" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_ATTACK</requirements>
+        <description>
+                <p>You can use your bonus action to compel an ally in 30 feet of you to act. The target can use their reaction to make a melee attack against an adjacent foe.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Bonus Action</set>
+            <set name="duration"></set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>    
+    <element name="Inspiring Command: Defend" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_DEFEND" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_DEFEND</requirements>
+        <description>
+                <p>You can use your bonus action to compel an ally in 30 feet of you to act. The target can use their reaction to take the dodge or hide action.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Bonus Action</set>
+            <set name="duration"></set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Inspiring Command: Retreat" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOT_RETREAT" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RETREAT</requirements>
+        <description>
+                <p>You can use your bonus action to compel an ally in 30 feet of you to act. The target can use their reaction to disengage and move up to their speed away from an enemy.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Bonus Action</set>
+            <set name="duration"></set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!-- Needs to be redesigned -->
+    <element name="Invoke Rage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_INVOKE_RAGE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INVOKE_RAGE</requirements>
+        <description>
+                <p>You can use your action to release a potent burst of targeted pheromones. Creatures of your choice in a 10-foot radius can use their reaction to make a melee weapon attack. If the attack reduces a creature to 0 hit points, they can move up to half their speed and make another melee attack.</p>
+                <p class="indent">Once you use this lore, you can't use it again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Action</set>
+            <set name="duration"></set>
+            <set name="range">10 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Juvenile Wings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_JUVENILE_WINGS" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_JUVENILE_WINGS,ID_FFXIV_TRUE_BLUE_MAGE_FLEDGLING_WINGS</requirements>
+        <description>
+                <p>Your wings are growing stronger each day and you are becoming more proficient with using them. You no longer fall to the ground if you end your turn in the air, and your fly speed increases by 15 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:medium],![armor:heavy]" />
+        </rules>
+    </element>
+    <!-- In review -->
+    <element name="Mature Wings" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MATURE_WINGS" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MATURE_WINGS,ID_FFXIV_TRUE_BLUE_MAGE_JUVENILE_WINGS</requirements>
+        <description>
+                <p>You have become fully accustomed to your wings and they have grown to full strength. Your flying speed increases by 15 feet, you can carry another creature while flying at half speed, and you can fly while wearing medium armor.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+    <element name="Relentless Stalker" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_RELENTLESS_STALKER" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RELENTLESS_STALKER</requirements>
+        <description>
+                <p>If you have met a creature or have access to an item they have come into contact with in the last month, you may use your action to obtain their scent.</p>
+                <p class="indent">When you do so, you gain the benefits of a locate creature spell for 1 hour without concentration. A creature being tracked this way can't surprise you or become hidden from you, and if invisible gains no benefit from the condition against you.</p>
+                <p class="indent">You can use this feature twice, regaining expended uses when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Action</set>
+            <set name="duration">1 hour</set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+    <!-- In review -->
+    <element name="Venomous Beast" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_VENOMOUS_BEAST" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:7],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VENOMOUS_BEAST,(ID_FFXIV_TRUE_BLUE_MAGE_NATURAL_PROJECTILES|ID_FFXIV_TRUE_BLUE_MAGE_NATURES_GIFT)</requirements>
+        <description>
+                <p>You can infuse a piercing natural weapon with an injury poison using your bonus action, which lasts for up to 1 minute. On a successful hit you deal an additional 3d8 poison damage, and the target must succeed on a Constitution saving throw or become Poisoned until the end of their next turn.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Action</set>
+            <set name="duration">1 minute</set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+    <element name="Web Flurry" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WEB_FLURRY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_FLURRY,ID_FFXIV_TRUE_BLUE_MAGE_WEB_SLING</requirements>
+        <description>
+                <p>When you use your action to web sling, you can select two targets within 30 feet of one another and shoot webbing at each of them. Additionally, you can use web sling up to three times per day, instead of twice.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">Action</set>
+            <set name="duration"></set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+    <!-- In review -->
+    <element name="Wounded Fury" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WOUNDED_FURY" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOUNDED_FURY</requirements>
+        <description>
+                <p>While you have less than half your total hit points, you deal an extra one die of bestial damage when you hit with a melee weapon attack, in addition to the normal damage for that weapon. While you have less than 10 hit points remaining, you deal two extra bestial dice damage instead.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Ancestral Lore</set>
+            <set name="time">passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <stat name="innate speed:fly" value="15" equipped="![armor:heavy]" />
+        </rules>
+    </element>
     <!--Primordial Lore-->
     <!--To-Do: Update Breath so you can select a type -->
     <element name="Breath Weapon (Lesser)" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BREATH_WEAPON_LESSER">
@@ -2323,7 +2741,7 @@
     </element>
     <element name="Phalanx Formation" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PHALANX_FORMATION">
         <supports>True Blue Mage</supports>
-        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PHALANX_FORMATION</requirements>
+        <requirements>!ID_FFXIV_TRUE_BLUE_MAGE_PACK_FORMATION,ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PHALANX_FORMATION,!ID_FFXIV_TRUE_BLUE_MAGE_BASTION_FORMATION</requirements>
         <description>
                 <p>Your beast is blessed with the tactical knowledge of the celestials granting you the stance of the Phalanx. You can use your bonus action to enter the stance until the end of your next turn. For the duration while you are within 5 feet of an ally wielding a shield you both gain advantage on Dexterity based attacks and saving throws.</p>        
                 <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>       

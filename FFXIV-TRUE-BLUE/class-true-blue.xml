@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage</name>
-		<update version="1.0.9">
+		<update version="1.0.10">
 			<file name="class-true-blue.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/FFXIV-TRUE-BLUE/class-true-blue.xml" />
 		</update>
 	</info>
@@ -175,7 +175,7 @@
             </center>
         </description>
         <sheet>
-			<description>You can prepare {{true blue mage:spellcasting:prepare}} Learned Lore from the your Research Journal.</description>
+			<description>You can memorize {{true blue mage:spellcasting:slots:count}} Learned Lore from your Research Journal.</description>
 		</sheet>
         <spellcasting name="True Blue Mage" ability="Intelligence" allowReplace="true">
 			<list>True Blue Mage</list>
@@ -258,10 +258,14 @@
             <p class="indent">If you collect a new essence while at your limit, you can replace one of the essences within you with the newly acquired essence.</p>
         </description>
         <sheet>
-            <description>Each creautre's essence is unique, and you can hold a number of essences within yourself equal to your proficiency bonus for a number of days equal to your intelligence modifier. As long as you carry an essence within yourself you are aware of the species and type of the creature it came from (eg. Wolf is a species of type Beast; Pixie is a species of type Fey; and Zombie is a species of type Undead etc).&#13;
-                If you collect a new essence while at your limit, you can replace one of the essences within you with the newly acquired essence.
+            <description>Each creautre's essence is unique, and you can hold equal to your proficiency bonus essences for {{true blue mage:essences:duration}} days. You are aware of the species and type of the creature the essence came from (eg. Wolf = Beast; Pixie = Fey; and Zombie = Undead etc).&#13;
+                While at your limit, you can replace one of the essences with a newly acquired essence.
             </description>
         </sheet>
+        <rules>
+            <stat name="true blue mage:essences:number" value="proficiency:bonus" bonus="base" />
+            <stat name="true blue mage:essences:duration" value="intelligence:modifier" bonus="base" />
+        </rules>
     </element>
     <element name="Blue Mage Discpline" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_CLASS_FEATURE_TRUE_BLUE_MAGE_BLUE_MAGE_DISCIPLINE">
         <description>
@@ -375,7 +379,6 @@
         </rules> -->
     </element>
 
-    <!--To-Do: Add other subclasses-->
     <!-- Subclasses -->
     <element name="Immortal Lion" type="Archetype" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ARCHETYPE_IMMORTAL_LION">
         <supports>True Blue Mage Archetype</supports>
@@ -432,11 +435,14 @@
     </element>
     <element name="Siphon Essence" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_SIPHON_ESSENCE">
         <description>
-            <p>When you use fearless intercept, you can make use of the momentary opening to siphon essence from the attacking creature. You can siphon essence a number of times equal to your Constitution modifier and regain all expended uses when you finish a long rest.</p>
+            <p>When you use fearless intercept, you can make use of the momentary opening to siphon essence from the attacking creature. You can siphon essence {{siphon Essence}} times and regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet action="CON mod" useage="Long Rest">
+        <sheet action="{{siphon Essence}}/Rest" >
             <description>When you use fearless intercept, you can make use of the momentary opening to siphon essence from the attacking creature.</description>
         </sheet>
+        <rules>
+            <stat name="siphon Essence" value="constitution:modifier" />
+        </rules>
     </element>
     <element name="Urhgan Defense" type="Archetype Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_ARCHETYPE_FEATURE_TRUE_BLUE_MAGE_URHGAN_DEFENSE">
         <description>

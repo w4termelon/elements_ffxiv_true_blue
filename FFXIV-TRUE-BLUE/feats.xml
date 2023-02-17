@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.8">
+		<update version="1.0.9">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
@@ -848,7 +848,7 @@
         <supports>Monster Mimicry Ancestral</supports>
         <sheet display="false" />
     </element>
-    <element name="Natural Projectiles" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ANCESTRAL_PROJECTILES">
+    <element name="Natural Projectiles" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURAL_PROJECTILES">
         <supports>Monster Mimicry Ancestral</supports>
         <sheet display="false" />
     </element>
@@ -900,7 +900,97 @@
         <supports>Monster Mimicry Ancestral</supports>
         <sheet display="false" />
     </element>
+    <element name="Bastion Formation" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BASTION_FORMATION">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element> 
+    <element name="Bestial Unity" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BESTIAL_UNITY">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
     <element name="Blinding Spores" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BLINDING_SPORES">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Booming Roar" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BOOMING_ROAR">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>    
+    <element name="Dreadful Resilience" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_DREADFUL_RESILIENCE">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Engulf" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ENGULF">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Fearless Resolve" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FEARLESS_RESOLVE">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Green Blooded" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GREEN_BLOODED">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Heavy Spines" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_HEAVY_SPINES">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURAL_PROJECTILES</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Inspiring Command: Attack" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_ATTACK">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Inspiring Command: Defend" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_DEFEND">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Inspiring Command: Retreat" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOT_RETREAT">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Invoke Rage" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_INVOKE_RAGE">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Juvenile Wings" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_JUVENILE_WINGS">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Mature Wings" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_MATURE_WINGS">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_JUVENILE_WINGS</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Relentless Stalker" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_RELENTLESS_STALKER">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:7]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Venomous Beast" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VENOMOUS_BEAST">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:7],(ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURES_GIFT|ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_NATURAL_PROJECTILES)</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Web Flurry" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_FLURRY">
+        <supports>Monster Mimicry Ancestral</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WEB_SLING</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Wounded Fury" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WOUNDED_FURY">
         <supports>Monster Mimicry Ancestral</supports>
         <requirements>[level:5]</requirements>
         <sheet display="false" />
