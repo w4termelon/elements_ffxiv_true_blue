@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Feats</name>
-		<update version="1.0.9">
+		<update version="1.0.10">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/feats.xml" />
 		</update>
 	</info>
@@ -1058,6 +1058,131 @@
     </element>
     <element name="Sonic Scream" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SONIC_SCREAM">
         <supports>Monster Mimicry Primordial</supports>
+        <sheet display="false" />
+    </element>
+    <element name="Breath Weapon (Greater)" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_GREATER">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_LESSER</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Cinder Blast" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CINDER_BLAST">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Earth Tide" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EARTH_TIDE">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Elemental Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <rules>
+            <select type="Class Feature" name="Elemental Body Type" supports="Elemental Body Type" />    
+        </rules>
+        <sheet display="false" />
+    </element>
+    <element name="Elemental Body II" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_II">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <rules>
+            <select type="Class Feature" name="Elemental Body Type" supports="Elemental Body Type" />    
+        </rules>
+        <sheet display="false" />
+    </element>
+    <element name="Elemental Body III" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_III">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_II</requirements>
+        <rules>
+            <select type="Class Feature" name="Elemental Body Type" supports="Elemental Body Type" />    
+        </rules>
+        <sheet display="false" />
+    </element>    
+    <element name="Elemental Body IV" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_IV">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_III</requirements>
+        <rules>
+            <select type="Class Feature" name="Elemental Body Type" supports="Elemental Body Type" />    
+        </rules>
+        <sheet display="false" />
+    </element>
+    <element name="Elemental Body V" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_V">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY_IV</requirements>
+        <rules>
+            <select type="Class Feature" name="Elemental Body Type" supports="Elemental Body Type" />    
+        </rules>
+        <sheet display="false" />
+    </element>
+    <element name="Acid Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ACID_BODY">
+        <supports>Elemental Body Type</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Cold Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_COLD_BODY">
+        <supports>Elemental Body Type</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <sheet display="false" />
+    </element>    
+    <element name="Fire Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FIRE_BODY">
+        <supports>Elemental Body Type</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Lightning Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIGHTNING_BODY">
+        <supports>Elemental Body Type</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Thunder Body" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_THUNDER_BODY">
+        <supports>Elemental Body Type</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_ELEMENTAL_BODY</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Generate Charge" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GENERATE_CHARGE">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="One With the Elements" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ONE_WITH_THE_ELEMENTS">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:6]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Pyretic" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PYRETIC">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Self Destruct" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SELF_DESTRUCT">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Stormstride" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_STORMSTRIDE">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Wind Javelin" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WIND_JAVELIN">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:5]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Channel the Storm" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CHANNEL_THE_STORM">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:11]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Terrifying Presence" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TERRIFYING_PRESENCE">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:11]</requirements>
+        <sheet display="false" />
+    </element>
+    <element name="Voltaic Fog" type="Class Feature" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VOLTAIC_FOG">
+        <supports>Monster Mimicry Primordial</supports>
+        <requirements>[level:11]</requirements>
         <sheet display="false" />
     </element>
     <!--Sacred Lore-->

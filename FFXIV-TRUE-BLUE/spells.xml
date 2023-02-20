@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>True Blue Mage Lore</name>
-		<update version="1.0.8">
+		<update version="1.0.9">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/w4termelon/elements_ffxiv_true_blue/main/FFXIV-TRUE-BLUE/spells.xml" />
 		</update>
 	</info>
@@ -22,7 +22,7 @@
     <element name="Ancestral Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_NATURAL_LORE" />
     <element name="Primordial Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PRIMORDIAL_LORE" />
     <element name="Sacred Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_SACRED_LORE" />
-    <element name="Supernatural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_PARANORMAL_LORE" />
+    <element name="Supernatural Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_SUPERNATURAL_LORE" />
     <element name="Mythical Lore" type="Magic School"  source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_MS_MYTHICAL_LORE" />
     <!-- Cosmic Lore -->
     <element name="Aberrant Ground" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ABERRANT_GROUND">
@@ -1307,7 +1307,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--To-Do: Add higher level lore -->
     <!--Ancestral Lore-->
     <element name="Adaptive Camouflage" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ADAPTIVE_CAMOUFLAGE">
         <supports>True Blue Mage</supports>
@@ -2620,7 +2619,378 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--To-Do: Add higher level lore -->
+    <element name="Breath Weapon (Greater)" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_BREATH_WEAPON_GREATER">
+        <supports>True Blue Mage</supports>
+        <requirements>[level:9],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_BREATH_WEAPON_GREATER,ID_FFXIV_TRUE_BLUE_MAGE_BREATH_WEAPON_LESSER</requirements>
+        <description>
+                <p>Your inner beast is growing accustomed to channeling elemental energies. You can select one breath weapon from your journal and upgrade it to a greater breath weapon, dealing an additional 5d6 damage of its type, and increasing its area by 15ft (30ft cone, or 30ft long, 5ft wide line).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Boost</set>
+            <set name="duration"></set>
+            <set name="range">15 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cinder Blast" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CINDER_BLAST" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CINDER_BLAST</requirements>
+        <description>
+                <p>As an action you exhale a blast of hot cinders in a 15ft cone, each creature in the area must make a Dexterity saving throw or become blinded until the start of your next turn.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">1 Action</set>
+            <set name="duration"></set>
+            <set name="range">15 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Earth Tide" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_EARTH_TIDE"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_EARTH_TIDE</requirements>
+        <description>
+                <p>You can use your action to reach into dirt or stone underfoot and rip it up, unleashing a tidal wave of debris in a 10-foot wide, 30-foot long line. Each square in the waves path becomes difficult terrain, and each creature in its path must make a Dexterity saving throw or take 4d8 damage, and becomes buried beneath rubble.</p>
+                <p class="indent">While buried, a creature is restrained and cannot stand, the only action it can take on its turn is to make a Strength check against your lore DC to escape. An adjacent unburied creature can attempt to pull them free as an action making a similar check.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">1 Action</set>
+            <set name="duration"></set>
+            <set name="range">10x30ft line</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Acid Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ACID_BODY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ACID_BODY</requirements>
+        <description>
+                <p>Any nonmagical weapon made of metal or wood that hits you corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If the penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits you is destroyed after dealing damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cold Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_COLD_BODY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_COLD_BODY</requirements>
+        <description>
+                <p>You produce an aura of cold in a radius of 5 feet around you. At the start of your turn, all nonmagical flames in the aura are extinguished, and any creature that starts its turn in the area takes 1d4 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fire Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_FIRE_BODY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_FIRE_BODY</requirements>
+        <description>
+                <p>When you hit with a melee attack, if the target is a creature or a flammable object that isn't being worn or attended, it ignites. Until a creature takes an action to douse the fire, the target takes 1d4 fire damage at the start of each of its turns.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_LIGHTNING_BODY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_LIGHTNING_BODY</requirements>
+        <description>
+                <p>When you are targeted by or included in the area of an attack that deals lightning damage, the energy is amplified by your elemental body dealing an additional 1d4 lightning damage to all targets besides yourself.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thunder Body" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_THUNDER_BODY"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_THUNDER_BODY</requirements>
+        <description>
+                <p>You produce an aura of turbulent winds up to 10 feet around you. A creature that tries to move closer to you must spend 2 feet of movement for each foot of distance it moves towards you, and has disadvantage on Wisdom (Perception) checks made in the area.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Generate Charge" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_GENERATE_CHARGE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_GENERATE_CHARGE</requirements>
+        <description>
+                <p>You can use your action to start building an electrical charge in your body that continues to grow for the next minute. While active, you can use your bonus action on each turn to discharge the lightning at a target, and if the target is a creature you can make a ranged lore attack, dealing bestial lightning damage on a hit. If you fail to discharge the lightning this way by the end of each turn for the duration, you take the lightning damage instead.</p>
+                <p class="indent">This lore requires you to concentrate on it as if it were a spell and ends early if concentration is disrupted.</p>
+                <p class="indent"> Once you use this lore, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="One With the Elements" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_ONE_WITH_THE_ELEMENTS" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:6],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_ONE_WITH_THE_ELEMENTS</requirements>
+        <description>
+                <p>Your inner beast has learned to attune itself to an element. When you select this lore, choose one of the following damage types: acid, cold, fire, lightning, poison. Your choice becomes fixed, and when you memorize this lore you gain resistance to the selected damage type. You can only memorize one instance of this lore at a time.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules>
+            <select type="Condition" name="One With the Elements" supports="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING,ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Pyretic" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_PYRETIC" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_PYRETIC</requirements>
+        <description>
+                <p>You infuse a creature with debilitating heat. Select a creature you can see within 30 feet to make a Constitution saving throw. On a failed save the creature is cursed with elemental heat, and takes bestial fire damage whenever they take an action. They can repeat their saving throw at the end of each turn, ending the effect on themselves on a success.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">1 Action</set>
+            <set name="duration"></set>
+            <set name="range">30ft</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Self Destruct" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_SELF_DESTRUCT"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_SELF_DESTRUCT</requirements>
+        <description>
+                <p>Your inner beast rapidly converts your living essence into an explosive burst of flame. You sacrifice all of your remaining hit points, and creatures in a 20-foot-radius sphere centered on you must succeed at a dexterity saving throw or take 1d10 fire damage per 10 hit points sacrificed, or half as much damage on a successful save.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">1 Action</set>
+            <set name="duration"></set>
+            <set name="range">20ft radius</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stormstride" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_STORMSTRIDE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_STORMSTRIDE</requirements>
+        <description>
+                <p>As a bonus action while you are within the area of a storm (of any element), you and your equipment vanish, reappearing in any unoccupied square within the radius of the storm.</p>
+                <p class="indent">You can use this lore a number of times per day equal to your Intelligence modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Bonus Action</set>
+            <set name="duration"></set>
+            <set name="range"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wind Javelin" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_WIND_JAVELIN" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:5],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_WIND_JAVELIN</requirements>
+        <description>
+                <p>You can use your action to channels the elemental power of thunder to conjure a javelin-like form of wind and rain. You hurl the javelin at a point you can see within 600 feet of you. Each creature in 20 feet of the point must succeed on a Constitution saving throw or take 3d10 thunder damage and become deafened for 1 minute, repeating the saving throw at the end of each of their turns, ending the effect on themselves on a success.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Action</set>
+            <set name="duration"></set>
+            <set name="range">600ft + 20ft aoe</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Channel the Storm" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_CHANNEL_THE_STORM" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_CHANNEL_THE_STORM</requirements>
+        <description>
+                <p>Within the area of a storm, you can use your action to draw on its elemental power. Select a point within the storm's area up to 120ft from you, each creature in a 20ft radius of that point must make a Dexterity saving throw. A target takes 10d6 damage of the storm's elemental type on a failed save, or half as much damage on a successful one.</p>
+                <p class="indent">Once you use this ability you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Action</set>
+            <set name="duration"></set>
+            <set name="range">120ft + 20ft aoe</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Terrifying Presence" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_TERRIFYING_PRESENCE" >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_TERRIFYING_PRESENCE</requirements>
+        <description>
+                <p>You project an aura of daunting strength and ancient cunning. Creatures within 10 feet of you suffer a penalty to saving throws against being frightened equal to your Intelligence modifier (minimum -1) as long as you are conscious.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration"></set>
+            <set name="range">10ft aoe</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Voltaic Fog" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_VOLTAIC_FOG"  >
+        <supports>True Blue Mage</supports>
+        <requirements>[level:11],ID_FFXIV_TRUE_BLUE_MAGE_MIMICRY_VOLTAIC_FOG</requirements>
+        <description>
+                <p>You manifest and concentrate on a 20-foot-radius sphere of electrically charged fog centered on a point you can see within 120 feet. The fog spreads around corners, and lasts for up to 10 minutes, until you lose concentration, or until a strong wind disperses the fog. Its area is heavily obscured.</p>
+                <p class="indent">A creature entering the fog's area for the first time on a turn or starting its turn there, must succeed on a Constitution saving throw or suffer 6d8 lightning damage, or only half as much on a successful save.</p>
+                <p class="indent">The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Primordial Lore</set>
+            <set name="time">Passiv</set>
+            <set name="duration">10min</set>
+            <set name="range">120ft + 20ft aoe</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <!--Sacred Lore-->
     <element name="Discern Honesty" type="Spell" source="The Blue Mage: True Blue Update" id="ID_FFXIV_TRUE_BLUE_MAGE_DISCERN_HONESTY">
         <supports>True Blue Mage</supports>
